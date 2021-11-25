@@ -65,9 +65,4 @@
       <Filter>Fichiers sources</Filter>
     </Text>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\..\Desktop\dump_script.sql">
-      <Filter>Fichiers sources</Filter>
-    </None>
-  </ItemGroup>
 </Project>
