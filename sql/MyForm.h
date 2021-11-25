@@ -139,6 +139,7 @@ namespace P6new {
 			this->btn_update->TabIndex = 4;
 			this->btn_update->Text = L"UPD";
 			this->btn_update->UseVisualStyleBackColor = true;
+			this->btn_update->Click += gcnew System::EventHandler(this, &MyForm::btn_update_Click);
 			// 
 			// txt_id
 			// 
@@ -176,11 +177,11 @@ namespace P6new {
 			this->tabPage1->Controls->Add(this->dgv_enr);
 			this->tabPage1->Controls->Add(this->btn_load);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
-			this->tabPage1->Name = L"tabPage1";
+			this->tabPage1->Name = L"Load BDD";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage1->Size = System::Drawing::Size(499, 304);
 			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"tabPage1";
+			this->tabPage1->Text = L"Load BDD";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// tabPage2
@@ -193,11 +194,11 @@ namespace P6new {
 			this->tabPage2->Controls->Add(this->btn_delete);
 			this->tabPage2->Controls->Add(this->txt_id);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
-			this->tabPage2->Name = L"tabPage2";
+			this->tabPage2->Name = L"Add Data";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage2->Size = System::Drawing::Size(499, 304);
 			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"tabPage2";
+			this->tabPage2->Text = L"Add Data";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// dataGridView1
@@ -244,7 +245,10 @@ namespace P6new {
 		this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
 	}
 	
-	};
+	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
+		//this->oSvc = ;
+	}
+};
 
 }
 
