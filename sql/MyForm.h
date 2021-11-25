@@ -57,6 +57,9 @@ namespace P6new {
 	private: System::Windows::Forms::TabPage^ tabPage1;
 	private: System::Windows::Forms::TabPage^ tabPage2;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::TabPage^ tabPage3;
+	private: System::Windows::Forms::TabPage^ tabPage4;
+	private: System::Windows::Forms::TabPage^ tabPage5;
 
 
 
@@ -87,6 +90,9 @@ namespace P6new {
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -166,6 +172,9 @@ namespace P6new {
 			// 
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Controls->Add(this->tabPage4);
+			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Location = System::Drawing::Point(1, 1);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -177,11 +186,11 @@ namespace P6new {
 			this->tabPage1->Controls->Add(this->dgv_enr);
 			this->tabPage1->Controls->Add(this->btn_load);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
-			this->tabPage1->Name = L"Load BDD";
+			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage1->Size = System::Drawing::Size(499, 304);
 			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"Load BDD";
+			this->tabPage1->Text = L"Client";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
 			// tabPage2
@@ -194,11 +203,11 @@ namespace P6new {
 			this->tabPage2->Controls->Add(this->btn_delete);
 			this->tabPage2->Controls->Add(this->txt_id);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
-			this->tabPage2->Name = L"Add Data";
+			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage2->Size = System::Drawing::Size(499, 304);
 			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Add Data";
+			this->tabPage2->Text = L"Personnel";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// dataGridView1
@@ -208,6 +217,36 @@ namespace P6new {
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->Size = System::Drawing::Size(472, 150);
 			this->dataGridView1->TabIndex = 8;
+			// 
+			// tabPage3
+			// 
+			this->tabPage3->Location = System::Drawing::Point(4, 22);
+			this->tabPage3->Name = L"tabPage3";
+			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage3->Size = System::Drawing::Size(499, 304);
+			this->tabPage3->TabIndex = 2;
+			this->tabPage3->Text = L"Commande";
+			this->tabPage3->UseVisualStyleBackColor = true;
+			// 
+			// tabPage4
+			// 
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Name = L"Stock";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(499, 304);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"Stock";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// tabPage5
+			// 
+			this->tabPage5->Location = System::Drawing::Point(4, 22);
+			this->tabPage5->Name = L"tabPage5";
+			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage5->Size = System::Drawing::Size(499, 304);
+			this->tabPage5->TabIndex = 4;
+			this->tabPage5->Text = L"Stats";
+			this->tabPage5->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
