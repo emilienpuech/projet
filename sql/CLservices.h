@@ -1,6 +1,6 @@
 //CLservice.h********************************************************************************
 #pragma once
-#include "CLmapTB.h"
+#include "map.h"
 #include "CAD.h"
 
 namespace NS_Comp_Svc

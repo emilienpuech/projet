@@ -16,49 +16,52 @@
     <Filter Include="Fichiers sources\CAD cpp">
       <UniqueIdentifier>{8067a545-1c5e-4470-b591-8355b6643015}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\MAP cpp">
+      <UniqueIdentifier>{ea5755a1-1912-41f8-b0db-518a7b712859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Service cpp">
+      <UniqueIdentifier>{51741883-6918-4811-85b9-73011cb7216d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Pas toucher">
+      <UniqueIdentifier>{3c0f5e97-9c0a-418b-80e4-ccf32b895807}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="CLmap.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="CLservices.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="MyForm1.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="CAD.cpp">
       <Filter>Fichiers sources\CAD cpp</Filter>
     </ClCompile>
+    <ClCompile Include="CLmap.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CLservices.cpp">
+      <Filter>Fichiers sources\Service cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Fichiers sources\Pas toucher</Filter>
+    </ClCompile>
+    <ClCompile Include="WinForm.cpp">
+      <Filter>Fichiers sources\Pas toucher</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MyForm1.h">
+    <ClInclude Include="MyForm.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="CLservices.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="CLmapTB.h">
+    <ClInclude Include="map.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyComponent.h">
-      <Filter>Fichiers sources</Filter>
     </ClInclude>
     <ClInclude Include="CAD.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Texte.txt">
+    <Text Include="Commentaire.txt">
       <Filter>Fichiers sources</Filter>
     </Text>
   </ItemGroup>

@@ -5,7 +5,7 @@
 
 //Main.CPP*********************************************************************************************
 #include "pch.h"
-#include "MyForm1.h"
+#include "MyForm.h"
 using namespace System;
 using namespace System::Windows::Forms;
 

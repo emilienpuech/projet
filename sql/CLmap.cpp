@@ -1,7 +1,7 @@
 
 //CLmap.CPP*****************************************************************************************
 #include "pch.h"
-#include "CLmapTB.h"
+#include "map.h"
 
 System::String^ NS_Comp_Mappage::CLmapTB::Select(void)
 {

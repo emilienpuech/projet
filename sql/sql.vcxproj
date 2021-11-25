@@ -119,18 +119,14 @@
     <ClCompile Include="CAD.cpp" />
     <ClCompile Include="CLmap.cpp" />
     <ClCompile Include="CLservices.cpp" />
-    <ClCompile Include="MyForm1.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="WinForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAD.h" />
-    <ClInclude Include="CLmapTB.h" />
+    <ClInclude Include="map.h" />
     <ClInclude Include="CLservices.h" />
-    <ClInclude Include="MyComponent.h">
-      <FileType>CppClass</FileType>
-    </ClInclude>
-    <ClInclude Include="MyForm1.h">
+    <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="pch.h" />
@@ -143,7 +139,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Texte.txt" />
+    <Text Include="Commentaire.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
