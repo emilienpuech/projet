@@ -55,6 +55,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram.cd" />
+    <Text Include="Texte.txt">
+      <Filter>Fichiers sources</Filter>
+    </Text>
   </ItemGroup>
 </Project>
