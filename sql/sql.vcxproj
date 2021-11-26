@@ -116,14 +116,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CL_Mapping_Adresse.cpp" />
+    <ClCompile Include="CL_Mapping_Article.cpp" />
+    <ClCompile Include="CL_Mapping_Beneficier.cpp" />
     <ClCompile Include="CAD.cpp" />
+    <ClCompile Include="CL_Mapping_Client.cpp" />
     <ClCompile Include="CLmap.cpp" />
     <ClCompile Include="CLservices.cpp" />
+    <ClCompile Include="CL_Mapping_Commande.cpp" />
+    <ClCompile Include="CL_Mapping_Employer.cpp" />
+    <ClCompile Include="CL_Mapping_Paiement.cpp" />
+    <ClCompile Include="CL_Mapping_Remise.cpp" />
+    <ClCompile Include="CL_Mapping_Taxe.cpp" />
+    <ClCompile Include="CL_Mapping_Taxer.cpp" />
+    <ClCompile Include="CL_Mapping_Ville.cpp" />
+    <ClCompile Include="CL_Mappping_Composer.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="WinForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CL_Mapping_Adresse.h" />
+    <ClInclude Include="CL_Mapping_Article.h" />
+    <ClInclude Include="CL_Mapping_Beneficier.h" />
     <ClInclude Include="CAD.h" />
+    <ClInclude Include="CL_Mapping_Client.h" />
+    <ClInclude Include="CL_Mapping_Commande.h" />
+    <ClInclude Include="CL_Mapping_Composer.h" />
+    <ClInclude Include="CL_Mapping_Employer.h" />
+    <ClInclude Include="CL_Mapping_Paiement.h" />
+    <ClInclude Include="CL_Mapping_Remise.h" />
+    <ClInclude Include="CL_Mapping_Taxe.h" />
+    <ClInclude Include="CL_Mapping_Taxer.h" />
+    <ClInclude Include="CL_Mapping_Ville.h" />
     <ClInclude Include="map.h" />
     <ClInclude Include="CLservices.h" />
     <ClInclude Include="MyForm.h">

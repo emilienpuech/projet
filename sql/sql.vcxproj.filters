@@ -42,6 +42,42 @@
     <ClCompile Include="WinForm.cpp">
       <Filter>Fichiers sources\Pas toucher</Filter>
     </ClCompile>
+    <ClCompile Include="CL_Mapping_Adresse.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Article.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Beneficier.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Client.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Commande.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mappping_Composer.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Employer.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Paiement.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Remise.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Taxe.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Taxer.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="CL_Mapping_Ville.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -58,6 +94,42 @@
     </ClInclude>
     <ClInclude Include="CAD.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Adresse.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Article.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Beneficier.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Client.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Commande.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Composer.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Employer.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Paiement.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Remise.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Taxe.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Taxer.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Ville.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
