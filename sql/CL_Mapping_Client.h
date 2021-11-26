@@ -9,7 +9,8 @@ namespace NS_Comp_Mappage
 		int Id;
 		System::String^ nom;
 		System::String^ prenom;
-		System::String^ date_de_naissance;
+		System::String^ date_de_naissance; // formater la string pour correspondre aux DATE en SQL
+		// YYYY-MM-DD format du string en SQL
 
 	public:
 		System::String^ Select(void);

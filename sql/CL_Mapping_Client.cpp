@@ -7,12 +7,12 @@
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Select(void)
 {
-	return;
+	return"SELECT [numeroClient], [Nom], [Prenom], [DateNaissance] FROM [projetpoo].[dbo].[Client];";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Insert(void)
 {
-	return;
+		return "INSERT INTO [projetpoo].[dbo].[Client] ([Nom], [Prenom], [DateNaissance]) VALUES('" + this->nom + "','" + this->prenom + "','" + this->date_de_naissance + "');";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Delete(void)
