@@ -41,7 +41,7 @@ namespace P6new {
 	private: System::Windows::Forms::DataGridView^ dgv_enr;
 	protected:
 
-	private: System::Windows::Forms::Button^ btn_load;
+
 	private: System::Windows::Forms::Button^ btn_insert;
 	private: System::Windows::Forms::Button^ btn_delete;
 	private: System::Windows::Forms::Button^ btn_update;
@@ -60,6 +60,38 @@ namespace P6new {
 	private: System::Windows::Forms::TabPage^ tabPage3;
 	private: System::Windows::Forms::TabPage^ tabPage4;
 	private: System::Windows::Forms::TabPage^ tabPage5;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::DataGridView^ dataGridView2;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::TextBox^ textBox5;
+	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::TextBox^ textBox6;
+	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::Button^ button12;
+	private: System::Windows::Forms::TextBox^ textBox8;
+	private: System::Windows::Forms::Button^ button13;
+	private: System::Windows::Forms::TextBox^ textBox9;
+	private: System::Windows::Forms::Button^ button14;
+	private: System::Windows::Forms::Button^ button15;
+	private: System::Windows::Forms::TextBox^ textBox10;
+	private: System::Windows::Forms::Button^ button16;
+	private: System::Windows::Forms::TextBox^ textBox11;
+	private: System::Windows::Forms::Button^ button17;
+	private: System::Windows::Forms::TextBox^ textBox12;
+	private: System::Windows::Forms::DataGridView^ dataGridView3;
+	private: System::Windows::Forms::DataGridView^ dataGridView4;
 
 
 
@@ -79,7 +111,6 @@ namespace P6new {
 		void InitializeComponent(void)
 		{
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
-			this->btn_load = (gcnew System::Windows::Forms::Button());
 			this->btn_insert = (gcnew System::Windows::Forms::Button());
 			this->btn_delete = (gcnew System::Windows::Forms::Button());
 			this->btn_update = (gcnew System::Windows::Forms::Button());
@@ -93,11 +124,49 @@ namespace P6new {
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
+			this->button14 = (gcnew System::Windows::Forms::Button());
+			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
+			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
+			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			this->tabPage3->SuspendLayout();
+			this->tabPage4->SuspendLayout();
+			this->tabPage5->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// dgv_enr
@@ -108,19 +177,9 @@ namespace P6new {
 			this->dgv_enr->Size = System::Drawing::Size(472, 150);
 			this->dgv_enr->TabIndex = 0;
 			// 
-			// btn_load
-			// 
-			this->btn_load->Location = System::Drawing::Point(34, 159);
-			this->btn_load->Name = L"btn_load";
-			this->btn_load->Size = System::Drawing::Size(75, 129);
-			this->btn_load->TabIndex = 1;
-			this->btn_load->Text = L"Load DB";
-			this->btn_load->UseVisualStyleBackColor = true;
-			this->btn_load->Click += gcnew System::EventHandler(this, &MyForm::btn_load_Click);
-			// 
 			// btn_insert
 			// 
-			this->btn_insert->Location = System::Drawing::Point(37, 260);
+			this->btn_insert->Location = System::Drawing::Point(84, 254);
 			this->btn_insert->Name = L"btn_insert";
 			this->btn_insert->Size = System::Drawing::Size(75, 37);
 			this->btn_insert->TabIndex = 2;
@@ -130,7 +189,7 @@ namespace P6new {
 			// 
 			// btn_delete
 			// 
-			this->btn_delete->Location = System::Drawing::Point(37, 169);
+			this->btn_delete->Location = System::Drawing::Point(84, 162);
 			this->btn_delete->Name = L"btn_delete";
 			this->btn_delete->Size = System::Drawing::Size(75, 37);
 			this->btn_delete->TabIndex = 3;
@@ -139,7 +198,7 @@ namespace P6new {
 			// 
 			// btn_update
 			// 
-			this->btn_update->Location = System::Drawing::Point(37, 217);
+			this->btn_update->Location = System::Drawing::Point(84, 208);
 			this->btn_update->Name = L"btn_update";
 			this->btn_update->Size = System::Drawing::Size(75, 37);
 			this->btn_update->TabIndex = 4;
@@ -149,21 +208,21 @@ namespace P6new {
 			// 
 			// txt_id
 			// 
-			this->txt_id->Location = System::Drawing::Point(145, 260);
+			this->txt_id->Location = System::Drawing::Point(172, 260);
 			this->txt_id->Name = L"txt_id";
 			this->txt_id->Size = System::Drawing::Size(307, 20);
 			this->txt_id->TabIndex = 5;
 			// 
 			// txt_nom
 			// 
-			this->txt_nom->Location = System::Drawing::Point(145, 217);
+			this->txt_nom->Location = System::Drawing::Point(172, 217);
 			this->txt_nom->Name = L"txt_nom";
 			this->txt_nom->Size = System::Drawing::Size(307, 20);
 			this->txt_nom->TabIndex = 6;
 			// 
 			// txt_prenom
 			// 
-			this->txt_prenom->Location = System::Drawing::Point(145, 169);
+			this->txt_prenom->Location = System::Drawing::Point(172, 169);
 			this->txt_prenom->Name = L"txt_prenom";
 			this->txt_prenom->Size = System::Drawing::Size(307, 20);
 			this->txt_prenom->TabIndex = 7;
@@ -183,8 +242,14 @@ namespace P6new {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->button2);
+			this->tabPage1->Controls->Add(this->button3);
+			this->tabPage1->Controls->Add(this->textBox1);
+			this->tabPage1->Controls->Add(this->button4);
+			this->tabPage1->Controls->Add(this->textBox2);
+			this->tabPage1->Controls->Add(this->button5);
+			this->tabPage1->Controls->Add(this->textBox3);
 			this->tabPage1->Controls->Add(this->dgv_enr);
-			this->tabPage1->Controls->Add(this->btn_load);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
@@ -195,6 +260,7 @@ namespace P6new {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->button1);
 			this->tabPage2->Controls->Add(this->dataGridView1);
 			this->tabPage2->Controls->Add(this->btn_insert);
 			this->tabPage2->Controls->Add(this->txt_prenom);
@@ -220,6 +286,14 @@ namespace P6new {
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->dataGridView2);
+			this->tabPage3->Controls->Add(this->button6);
+			this->tabPage3->Controls->Add(this->button7);
+			this->tabPage3->Controls->Add(this->textBox4);
+			this->tabPage3->Controls->Add(this->button8);
+			this->tabPage3->Controls->Add(this->textBox5);
+			this->tabPage3->Controls->Add(this->button9);
+			this->tabPage3->Controls->Add(this->textBox6);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
@@ -230,16 +304,33 @@ namespace P6new {
 			// 
 			// tabPage4
 			// 
+			this->tabPage4->Controls->Add(this->dataGridView3);
+			this->tabPage4->Controls->Add(this->button10);
+			this->tabPage4->Controls->Add(this->button11);
+			this->tabPage4->Controls->Add(this->textBox7);
+			this->tabPage4->Controls->Add(this->button12);
+			this->tabPage4->Controls->Add(this->textBox8);
+			this->tabPage4->Controls->Add(this->button13);
+			this->tabPage4->Controls->Add(this->textBox9);
 			this->tabPage4->Location = System::Drawing::Point(4, 22);
-			this->tabPage4->Name = L"Stock";
+			this->tabPage4->Name = L"tabPage4";
 			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage4->Size = System::Drawing::Size(499, 304);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Stock";
 			this->tabPage4->UseVisualStyleBackColor = true;
+			this->tabPage4->Click += gcnew System::EventHandler(this, &MyForm::tabPage4_Click);
 			// 
 			// tabPage5
 			// 
+			this->tabPage5->Controls->Add(this->dataGridView4);
+			this->tabPage5->Controls->Add(this->button14);
+			this->tabPage5->Controls->Add(this->button15);
+			this->tabPage5->Controls->Add(this->textBox10);
+			this->tabPage5->Controls->Add(this->button16);
+			this->tabPage5->Controls->Add(this->textBox11);
+			this->tabPage5->Controls->Add(this->button17);
+			this->tabPage5->Controls->Add(this->textBox12);
 			this->tabPage5->Location = System::Drawing::Point(4, 22);
 			this->tabPage5->Name = L"tabPage5";
 			this->tabPage5->Padding = System::Windows::Forms::Padding(3);
@@ -247,6 +338,268 @@ namespace P6new {
 			this->tabPage5->TabIndex = 4;
 			this->tabPage5->Text = L"Stats";
 			this->tabPage5->UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(7, 162);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(75, 129);
+			this->button1->TabIndex = 9;
+			this->button1->Text = L"Load DB";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(17, 159);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(75, 129);
+			this->button2->TabIndex = 16;
+			this->button2->Text = L"Load DB";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(94, 251);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(75, 37);
+			this->button3->TabIndex = 10;
+			this->button3->Text = L"INS";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(182, 166);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(307, 20);
+			this->textBox1->TabIndex = 15;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(94, 205);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(75, 37);
+			this->button4->TabIndex = 12;
+			this->button4->Text = L"UPD";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(182, 214);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(307, 20);
+			this->textBox2->TabIndex = 14;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(94, 159);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(75, 37);
+			this->button5->TabIndex = 11;
+			this->button5->Text = L"DEL";
+			this->button5->UseVisualStyleBackColor = true;
+			// 
+			// textBox3
+			// 
+			this->textBox3->Location = System::Drawing::Point(182, 257);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(307, 20);
+			this->textBox3->TabIndex = 13;
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(7, 168);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(75, 129);
+			this->button6->TabIndex = 16;
+			this->button6->Text = L"Load DB";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(84, 261);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(75, 37);
+			this->button7->TabIndex = 10;
+			this->button7->Text = L"INS";
+			this->button7->UseVisualStyleBackColor = true;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Location = System::Drawing::Point(172, 175);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(307, 20);
+			this->textBox4->TabIndex = 15;
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(84, 214);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(75, 37);
+			this->button8->TabIndex = 12;
+			this->button8->Text = L"UPD";
+			this->button8->UseVisualStyleBackColor = true;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Location = System::Drawing::Point(172, 223);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(307, 20);
+			this->textBox5->TabIndex = 14;
+			// 
+			// button9
+			// 
+			this->button9->Location = System::Drawing::Point(84, 168);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(75, 37);
+			this->button9->TabIndex = 11;
+			this->button9->Text = L"DEL";
+			this->button9->UseVisualStyleBackColor = true;
+			// 
+			// textBox6
+			// 
+			this->textBox6->Location = System::Drawing::Point(172, 266);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(307, 20);
+			this->textBox6->TabIndex = 13;
+			// 
+			// button10
+			// 
+			this->button10->Location = System::Drawing::Point(16, 168);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(75, 129);
+			this->button10->TabIndex = 16;
+			this->button10->Text = L"Load DB";
+			this->button10->UseVisualStyleBackColor = true;
+			// 
+			// button11
+			// 
+			this->button11->Location = System::Drawing::Point(93, 260);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(75, 37);
+			this->button11->TabIndex = 10;
+			this->button11->Text = L"INS";
+			this->button11->UseVisualStyleBackColor = true;
+			// 
+			// textBox7
+			// 
+			this->textBox7->Location = System::Drawing::Point(181, 175);
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->Size = System::Drawing::Size(307, 20);
+			this->textBox7->TabIndex = 15;
+			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(93, 214);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(75, 37);
+			this->button12->TabIndex = 12;
+			this->button12->Text = L"UPD";
+			this->button12->UseVisualStyleBackColor = true;
+			// 
+			// textBox8
+			// 
+			this->textBox8->Location = System::Drawing::Point(181, 223);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(307, 20);
+			this->textBox8->TabIndex = 14;
+			// 
+			// button13
+			// 
+			this->button13->Location = System::Drawing::Point(93, 168);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(75, 37);
+			this->button13->TabIndex = 11;
+			this->button13->Text = L"DEL";
+			this->button13->UseVisualStyleBackColor = true;
+			// 
+			// textBox9
+			// 
+			this->textBox9->Location = System::Drawing::Point(181, 266);
+			this->textBox9->Name = L"textBox9";
+			this->textBox9->Size = System::Drawing::Size(307, 20);
+			this->textBox9->TabIndex = 13;
+			// 
+			// button14
+			// 
+			this->button14->Location = System::Drawing::Point(17, 168);
+			this->button14->Name = L"button14";
+			this->button14->Size = System::Drawing::Size(75, 129);
+			this->button14->TabIndex = 16;
+			this->button14->Text = L"Load DB";
+			this->button14->UseVisualStyleBackColor = true;
+			// 
+			// button15
+			// 
+			this->button15->Location = System::Drawing::Point(94, 261);
+			this->button15->Name = L"button15";
+			this->button15->Size = System::Drawing::Size(75, 37);
+			this->button15->TabIndex = 10;
+			this->button15->Text = L"INS";
+			this->button15->UseVisualStyleBackColor = true;
+			// 
+			// textBox10
+			// 
+			this->textBox10->Location = System::Drawing::Point(182, 175);
+			this->textBox10->Name = L"textBox10";
+			this->textBox10->Size = System::Drawing::Size(307, 20);
+			this->textBox10->TabIndex = 15;
+			// 
+			// button16
+			// 
+			this->button16->Location = System::Drawing::Point(94, 214);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(75, 37);
+			this->button16->TabIndex = 12;
+			this->button16->Text = L"UPD";
+			this->button16->UseVisualStyleBackColor = true;
+			// 
+			// textBox11
+			// 
+			this->textBox11->Location = System::Drawing::Point(182, 223);
+			this->textBox11->Name = L"textBox11";
+			this->textBox11->Size = System::Drawing::Size(307, 20);
+			this->textBox11->TabIndex = 14;
+			// 
+			// button17
+			// 
+			this->button17->Location = System::Drawing::Point(94, 168);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(75, 37);
+			this->button17->TabIndex = 11;
+			this->button17->Text = L"DEL";
+			this->button17->UseVisualStyleBackColor = true;
+			// 
+			// textBox12
+			// 
+			this->textBox12->Location = System::Drawing::Point(182, 266);
+			this->textBox12->Name = L"textBox12";
+			this->textBox12->Size = System::Drawing::Size(307, 20);
+			this->textBox12->TabIndex = 13;
+			// 
+			// dataGridView2
+			// 
+			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView2->Location = System::Drawing::Point(7, 12);
+			this->dataGridView2->Name = L"dataGridView2";
+			this->dataGridView2->Size = System::Drawing::Size(472, 150);
+			this->dataGridView2->TabIndex = 17;
+			// 
+			// dataGridView3
+			// 
+			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView3->Location = System::Drawing::Point(16, 6);
+			this->dataGridView3->Name = L"dataGridView3";
+			this->dataGridView3->Size = System::Drawing::Size(472, 150);
+			this->dataGridView3->TabIndex = 17;
+			// 
+			// dataGridView4
+			// 
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->Location = System::Drawing::Point(17, 0);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->Size = System::Drawing::Size(472, 150);
+			this->dataGridView4->TabIndex = 17;
 			// 
 			// MyForm
 			// 
@@ -260,9 +613,19 @@ namespace P6new {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->EndInit();
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
+			this->tabPage1->PerformLayout();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
+			this->tabPage5->ResumeLayout(false);
+			this->tabPage5->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -287,6 +650,10 @@ namespace P6new {
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 		//this->oSvc = ;
 	}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 
 }
