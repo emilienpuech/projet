@@ -30,7 +30,7 @@
     <ClCompile Include="CAD.cpp">
       <Filter>Fichiers sources\CAD cpp</Filter>
     </ClCompile>
-    <ClCompile Include="CLmap.cpp">
+    <ClCompile Include="exempleCLmap.cpp">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClCompile>
     <ClCompile Include="CLservices.cpp">
@@ -86,7 +86,7 @@
     <ClInclude Include="CLservices.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="map.h">
+    <ClInclude Include="exemplemap.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">

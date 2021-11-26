@@ -1,6 +1,3 @@
-
-
-
 //CLservice.CPP***************************************************************************************
 #include "pch.h"
 #include "CLservices.h"
@@ -27,4 +24,3 @@ void NS_Comp_Svc::CLservices::ajouterUnePersonne(System::String^ nom, System::St
 
 	this->oCad->actionRows(sql);
 }
-

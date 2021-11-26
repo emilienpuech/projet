@@ -1,11 +1,11 @@
 
 //CLmap.CPP*****************************************************************************************
 #include "pch.h"
-#include "map.h"
+#include "exemplemap.h"
 
 System::String^ NS_Comp_Mappage::CLmapTB::Select(void)
 {
-	return "SELET [id_adresse], [nom_adresse], [ville], [nom], [prenom] FROM[test].[dbo].[adresse] JOIN [test].[dbo].[personne] ON [personne].[id] = [adresse].[id]; ";
+	return "SELET [id_adresse], [nom_adresse], [ville], [nom], [prenom] FROM[test].[dbo].[adresse] JOIN [test].[dbo].[personne] ON [personne].[id] = [adresse].[id];";
 }
 System::String^ NS_Comp_Mappage::CLmapTB::Insert(void)
 {
