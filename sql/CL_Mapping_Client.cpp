@@ -25,7 +25,10 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Client::Update(void)
 	return;
 }
 
-
+// tout nos Setter NOM PRENOM DATE DE NAISSANCE
+void NS_Comp_Mappage::CL_Mapping_Client::setNom(System::String^ nom){ this->nom = nom; }
+void NS_Comp_Mappage::CL_Mapping_Client::setPrenom(System::String^ prenom){ this->prenom = prenom; }
+void NS_Comp_Mappage::CL_Mapping_Client::setdate_de_naissance(System::String^ date_de_naissance){ this->date_de_naissance = date_de_naissance; }
 
 
 
@@ -49,7 +52,6 @@ namespace NS_Comp_Mappage
 		System::String^ Delete(void);
 		System::String^ Update(void);
 
-		void setId(int);
 		void setNom(System::String^);
 		void setPrenom(System::String^);
 		void setdate_de_naissance(System::String^);

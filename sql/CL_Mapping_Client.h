@@ -18,7 +18,7 @@ namespace NS_Comp_Mappage
 		System::String^ Delete(void);
 		System::String^ Update(void);
 
-		void setId(int);
+
 		
 		void setNom(System::String^);
 		void setPrenom(System::String^);
