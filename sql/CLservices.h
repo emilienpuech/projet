@@ -22,7 +22,10 @@ namespace NS_Comp_Svc
 	public:
 		CLservices(void);
 		System::Data::DataSet^ select_tout_nos_client(System::String^);
-		void ajouterUnePersonne(System::String^, System::String^);
+		int convert_string_to_int(System::String^);
+		void upd_un_client(int, System::String^, System::String^, System::String^);
+		void ins_un_client(System::String^, System::String^, System::String^);
+		void del_un_client(int);
 		
 
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage

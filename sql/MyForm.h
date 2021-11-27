@@ -1,5 +1,4 @@
 
-
 //MyForm.H*********************************************************************************************
 #pragma once
 #include "CLservices.h"
@@ -93,6 +92,7 @@ namespace P6new {
 	private: System::Windows::Forms::TextBox^ textBox12;
 	private: System::Windows::Forms::DataGridView^ dataGridView3;
 	private: System::Windows::Forms::DataGridView^ dataGridView4;
+	private: System::Windows::Forms::TextBox^ textBox13;
 
 
 
@@ -120,6 +120,7 @@ namespace P6new {
 			this->txt_prenom = (gcnew System::Windows::Forms::TextBox());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -253,6 +254,7 @@ namespace P6new {
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->textBox13);
 			this->tabPage1->Controls->Add(this->button2);
 			this->tabPage1->Controls->Add(this->button3);
 			this->tabPage1->Controls->Add(this->textBox1);
@@ -269,6 +271,14 @@ namespace P6new {
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Client";
 			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// textBox13
+			// 
+			this->textBox13->Location = System::Drawing::Point(370, 366);
+			this->textBox13->Name = L"textBox13";
+			this->textBox13->Size = System::Drawing::Size(587, 31);
+			this->textBox13->TabIndex = 17;
+			this->textBox13->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox13_TextChanged);
 			// 
 			// button2
 			// 
@@ -290,6 +300,7 @@ namespace P6new {
 			this->button3->TabIndex = 10;
 			this->button3->Text = L"INS";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// textBox1
 			// 
@@ -298,6 +309,7 @@ namespace P6new {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(610, 31);
 			this->textBox1->TabIndex = 15;
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
 			// button4
 			// 
@@ -308,6 +320,7 @@ namespace P6new {
 			this->button4->TabIndex = 12;
 			this->button4->Text = L"UPD";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// textBox2
 			// 
@@ -316,6 +329,7 @@ namespace P6new {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(610, 31);
 			this->textBox2->TabIndex = 14;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// button5
 			// 
@@ -326,6 +340,7 @@ namespace P6new {
 			this->button5->TabIndex = 11;
 			this->button5->Text = L"DEL";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// textBox3
 			// 
@@ -334,6 +349,7 @@ namespace P6new {
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(610, 31);
 			this->textBox3->TabIndex = 13;
+			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
 			// 
 			// tabPage2
 			// 
@@ -718,12 +734,12 @@ namespace P6new {
 
 	private: System::Void btn_insert_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
+		//this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
 	}
 
 
 
-	
+
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 		//this->oSvc = ;
 	}
@@ -745,16 +761,55 @@ namespace P6new {
 	}
 
 
-
+// select client
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Refresh();
 		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
 		this->dgv_enr->DataSource = this->oDs;
 		this->dgv_enr->DataMember = "Rsl";
 		// code test de string connection
-		
+
 	}
-	   
+
+// del client
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->del_un_client(this->oSvc->convert_string_to_int(this->textBox1->Text));
+
+	}
+
+
+//upd client
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->upd_un_client(this->oSvc->convert_string_to_int(this->textBox1->Text),this->textBox13->Text, this->textBox2->Text, this->textBox3->Text);
+			
+	}
+// ins client
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->ins_un_client(this->textBox2->Text, this->textBox13->Text, this->textBox3->Text);
+	}
+	/*
+		   1 id
+		   2 nom
+		   13 prenom
+		   3 date
+	*/
+
+
+	
+
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}   
+
+	private: System::Void textBox13_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+
 };
 
 
@@ -762,6 +817,3 @@ namespace P6new {
 
 
 }
-
-
-

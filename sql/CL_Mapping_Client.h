@@ -19,7 +19,7 @@ namespace NS_Comp_Mappage
 		System::String^ Update(void);
 
 
-		
+		void setid(int);
 		void setNom(System::String^);
 		void setPrenom(System::String^);
 		void setdate_de_naissance(System::String^);
