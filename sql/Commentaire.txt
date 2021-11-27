@@ -1,4 +1,6 @@
 
+Ma data connection string ne pas supprimer
+this->sCnx = "Data Source=DESKTOP-B8TDUS7\\SQLSERVER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
 
 
