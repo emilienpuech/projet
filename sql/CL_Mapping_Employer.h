@@ -19,7 +19,7 @@ namespace Ns_comp_Mappage
 
 		void setNom(System::String^);
 		void setPrenom(System::String^);
-		void setdate_Embauche(System::String^ datEmbauche);
+		void setdate_Embauche(System::String^ date_Embauche);
 		
 		
 	};

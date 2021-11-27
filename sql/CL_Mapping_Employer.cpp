@@ -25,5 +25,5 @@ System::String^ Ns_comp_Mappage::CL_Mapping_Employer::Update(void)
 // tout nos Setter NOM PRENOM DATE D'Embauche
 void Ns_comp_Mappage::CL_Mapping_Employer::setNom(System::String^ nom) { this->nom = nom; }
 void Ns_comp_Mappage::CL_Mapping_Employer::setPrenom(System::String^ prenom) { this->prenom = prenom; }
-void Ns_comp_Mappage::CL_Mapping_Employer::setdate_Embauche(System::String^ datEmbauche) { this->date_Embauche = date_Embauche; }
+void Ns_comp_Mappage::CL_Mapping_Employer::setdate_Embauche(System::String^ date_Embauche) { this->date_Embauche = date_Embauche; }
 
