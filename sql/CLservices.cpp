@@ -48,7 +48,7 @@ void NS_Comp_Svc::CLservices::del_un_client(int id)
 	System::String^ sql;
 
 	this->Mapp_client->setid(id);
-	sql = this->Mapp_client->Update();
+	sql = this->Mapp_client->Delete();
 
 	this->oCad->actionRows(sql);
 }
