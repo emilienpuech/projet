@@ -761,6 +761,12 @@ namespace P6new {
 	}
 
 
+
+
+
+		   // --------------------------------------  CLIENT
+		   // 
+		   
 // select client
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Refresh();
@@ -793,6 +799,12 @@ namespace P6new {
 		   13 prenom
 		   3 date
 	*/
+
+		// --------------------------------------  CLIENT
+		// 
+
+
+
 
 
 	

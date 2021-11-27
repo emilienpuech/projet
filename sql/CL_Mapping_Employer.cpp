@@ -5,7 +5,7 @@
 // syntaxe de noms de collonnes a corriger 
 
 
-System::String^ Ns_comp_Mappage::CL_Mapping_Employer::select(void) 
+System::String^ Ns_comp_Mappage::CL_Mapping_Employer::Select(void) 
 {
 	return"Select [IDEmployer],[Nom],[Prenom],[DateEmbauche] FROM [projetpoo].[dbo].[Employer];";
 }

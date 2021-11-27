@@ -10,7 +10,7 @@ namespace Ns_comp_Mappage
 		System::String^ prenom;
 		System::String^ date_Embauche;
 	public:
-		System::String^ select(void);
+		System::String^ Select(void);
 		System::String^ Insert(void);
 		System::String^ Delete(void);
 		System::String^ Update(void);
