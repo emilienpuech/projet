@@ -39,6 +39,7 @@ namespace P6new {
 			}
 		}
 	private: System::Windows::Forms::DataGridView^ dgv_enr;
+		   //dgv_enr_CellContentClick
 	protected:
 
 
@@ -745,10 +746,14 @@ namespace P6new {
 
 
 
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
-	// code test de string connection
-}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Refresh();
+		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
+		this->CellContentClick->DataSource = this->oDs;
+		this->CellContentClick->DataMember = "Rsl";
+		// code test de string connection
+		
+	}
 	   
 };
 
