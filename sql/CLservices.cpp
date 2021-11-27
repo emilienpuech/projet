@@ -10,10 +10,11 @@ NS_Comp_Svc::CLservices::CLservices(void)
 }
 System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_client(System::String^ dataTableName)
 {
-	System::String^ sql;
 
+	System::String^ sql;
 	sql = this->Mapp_client->Select();
 	return this->oCad->getRows(sql, dataTableName);
+
 }
 
 void NS_Comp_Svc::CLservices::ajouterUnePersonne(System::String^ nom, System::String^ prenom)
