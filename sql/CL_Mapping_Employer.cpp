@@ -2,10 +2,12 @@
 #include "pch.h"
 #include "CL_Mapping_Employer.h"
 
+// syntaxe de noms de collonnes a corriger 
+
 
 System::String^ Ns_comp_Mappage::CL_Mapping_Employer::select(void) 
 {
-	return"Select [IDE_Employer],[nom],[prenom],[date_Embauche] FROM [projetpoo].[dbo].[Employer];";
+	return"Select [IDEmployer],[Nom],[Prenom],[DateEmbauche] FROM [projetpoo].[dbo].[Employer];";
 }
 System::String^ Ns_comp_Mappage::CL_Mapping_Employer::Insert(void)
 {
@@ -18,7 +20,7 @@ System::String^ Ns_comp_Mappage::CL_Mapping_Employer::Delete(void)
 }
 System::String^ Ns_comp_Mappage::CL_Mapping_Employer::Update(void) 
 {
-	return "UPDATE[projetpoo].[dbo].[Employer] SET Nom = " + this->nom + ", Prenom = " + this->prenom + ", date_Embauche = '' = " + this->nom + " WHERE IDEemployer = " + this->Id + "; ";
+	return "UPDATE [projetpoo].[dbo].[Employer] SET Nom = " + this->nom + ", Prenom = " + this->prenom + ", date_Embauche = '' = " + this->nom + " WHERE IDEemployer = " + this->Id + ";";
 }
 // tout nos Setter NOM PRENOM DATE D'Embauche
 void Ns_comp_Mappage::CL_Mapping_Employer::setNom(System::String^ nom) { this->nom = nom; }

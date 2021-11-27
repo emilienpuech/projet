@@ -749,8 +749,8 @@ namespace P6new {
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Refresh();
 		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
-		this->CellContentClick->DataSource = this->oDs;
-		this->CellContentClick->DataMember = "Rsl";
+		this->dgv_enr->DataSource = this->oDs;
+		this->dgv_enr->DataMember = "Rsl";
 		// code test de string connection
 		
 	}
