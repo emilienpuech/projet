@@ -121,14 +121,13 @@
     <ClCompile Include="CL_Mapping_Beneficier.cpp" />
     <ClCompile Include="CAD.cpp" />
     <ClCompile Include="CL_Mapping_Client.cpp" />
-    <ClCompile Include="CLmap.cpp" />
+    <ClCompile Include="exempleCLmap.cpp" />
     <ClCompile Include="CLservices.cpp" />
     <ClCompile Include="CL_Mapping_Commande.cpp" />
     <ClCompile Include="CL_Mapping_Employer.cpp" />
     <ClCompile Include="CL_Mapping_Paiement.cpp" />
     <ClCompile Include="CL_Mapping_Remise.cpp" />
     <ClCompile Include="CL_Mapping_Taxe.cpp" />
-    <ClCompile Include="CL_Mapping_Taxer.cpp" />
     <ClCompile Include="CL_Mapping_Ville.cpp" />
     <ClCompile Include="CL_Mappping_Composer.cpp" />
     <ClCompile Include="pch.cpp" />
@@ -146,9 +145,8 @@
     <ClInclude Include="CL_Mapping_Paiement.h" />
     <ClInclude Include="CL_Mapping_Remise.h" />
     <ClInclude Include="CL_Mapping_Taxe.h" />
-    <ClInclude Include="CL_Mapping_Taxer.h" />
     <ClInclude Include="CL_Mapping_Ville.h" />
-    <ClInclude Include="map.h" />
+    <ClInclude Include="exemplemap.h" />
     <ClInclude Include="CLservices.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
