@@ -1,10 +1,18 @@
 //CLservice.h********************************************************************************
 #pragma once
-#include "exemplemap.h"
 #include "CAD.h"
+
 #include "Cl_Mapping_Client.h"
 #include "CL_Mapping_Employer.h"
 #include "CL_Mapping_Adresse.h"
+#include "CL_Mapping_Article.h"
+#include "CL_Mapping_Beneficier.h"
+#include "CL_Mapping_Commande.h"
+#include "CL_Mapping_Composer.h"
+#include "CL_Mapping_Paiement.h"
+#include "CL_Mapping_Remise.h"
+#include "CL_Mapping_Taxe.h"
+#include "CL_Mapping_Ville.h"
 
 
 
@@ -18,10 +26,11 @@ namespace NS_Comp_Svc
 								   
 		
 		// Classe de mappage 
-		NS_Comp_Mappage::CLmapTB^ oMappTB;
 		NS_Comp_Mappage::CL_Mapping_Client^ Mapp_client;
 		NS_Comp_Mappage::CL_Mapping_Employer^ Mapp_employer;
 		NS_Comp_Mappage::CL_Mapping_Adresse^ Mapp_adresse;
+		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise;
+		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe;
 	
 	
 	public:

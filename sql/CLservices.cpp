@@ -5,8 +5,8 @@
 NS_Comp_Svc::CLservices::CLservices(void)
 {
 	this->oCad = gcnew NS_Comp_Data::CLcad();
-	this->oMappTB = gcnew NS_Comp_Mappage::CLmapTB();
 	this->Mapp_client = gcnew NS_Comp_Mappage::CL_Mapping_Client();
+	this->Mapp_adresse = gcnew NS_Comp_Mappage::CL_Mapping_Adresse();
 }
 int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 {
