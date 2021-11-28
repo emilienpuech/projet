@@ -6,14 +6,15 @@ namespace NS_Comp_Mappage
 	{
 	private:
 		System::String^ nomRemise;
-		int pourcentageRemise;
+		float pourcentageRemise;
 	public:
+		/*
 		void setnomRemise(System::String^ nomRemise);
-		void setpourcentageRemise(int pourcentageRemise);
+		void setpourcentageRemise(float pourcentageRemise);
 		String^ SELECT(void);
 		String^ INSERT(void);
 		String^ DELETE(void);
 		String^ UPDATE(void);
-
+		*/
 	};
 }
