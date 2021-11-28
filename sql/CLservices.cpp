@@ -69,6 +69,7 @@ void NS_Comp_Svc::CLservices::del_un_client(int id)
 
 
 
+
 // Employer 
 System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_employer(System::String^ dataTableName)
 {
@@ -119,12 +120,68 @@ void NS_Comp_Svc::CLservices::del_un_employer(int id)
 	sql = this->Mapp_employer->Delete();
 
 	this->oCad->actionRows(sql);
+}// Employer 
+
+
+
+
+//ADRESSE
+
+
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_adresse(System::String^ dataTableName)
+{
+
+	System::String^ sql;
+	sql = this->Mapp_adresse->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
 }
 
-// Employer 
+
+void NS_Comp_Svc::CLservices::ins_une_adresse(int numero , System::String^ rue, System::String^ type_adresse, int numero_client, int id_ville)
+{
+	System::String^ sql;
+
+	this->Mapp_adresse->setnumero(numero);
+	this->Mapp_adresse->setrue(rue);
+	this->Mapp_adresse->settype_adresse(type_adresse);
+	this->Mapp_adresse->setnumero_client(numero_client);
+	this->Mapp_adresse->setid_ville(id_ville);
+
+	sql = this->Mapp_adresse->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_une_adresse(int id , int numero, System::String^ rue, System::String^ type_adresse, int numero_client, int id_ville)
+{
+	System::String^ sql;
+	this->Mapp_adresse->setid(id);
+	this->Mapp_adresse->setnumero(numero);
+	this->Mapp_adresse->setrue(rue);
+	this->Mapp_adresse->settype_adresse(type_adresse);
+	this->Mapp_adresse->setnumero_client(numero_client);
+	this->Mapp_adresse->setid_ville(id_ville);
+
+	sql = this->Mapp_adresse->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_une_adresse(int id)
+{
+	System::String^ sql;
+
+	this->Mapp_adresse->setid(id);
+	sql = this->Mapp_adresse->Delete();
+
+	this->oCad->actionRows(sql);
+}// ADRESSE 
 
 
 
 
-
-
+//ADRESSE
