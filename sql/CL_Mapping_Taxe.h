@@ -8,9 +8,8 @@ namespace NS_Comp_Mappage
 			System::String^ nomtaxe;
 			int pourcentagetaxe;
 		public :
-			CL_Mapping_Taxe(void);
-			void getpourcentageTaxe();
-			void setpourcentageTaxe(float);
+			void setnomtaxe(System::String^ nomtaxe);
+			void setpourcentageTaxe(int pourcentagetaxe);
 			String^ SELECT(void);
 			String^ INSERT(void);
 			String^ DELETE(void);

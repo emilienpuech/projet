@@ -8,9 +8,8 @@ namespace NS_Comp_Mappage
 		System::String^ nomRemise;
 		int pourcentageRemise;
 	public:
-		CL_Mapping_Remise(void);
-		void getpourcentageRemise();
-		void setpourcentageRemise(int);
+		void setnomRemise(System::String^ nomRemise);
+		void setpourcentageRemise(int pourcentageRemise);
 		String^ SELECT(void);
 		String^ INSERT(void);
 		String^ DELETE(void);

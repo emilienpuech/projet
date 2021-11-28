@@ -14,10 +14,37 @@ int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 }
 
 
+/*
+	fait
+
+Client 
+Employer
+
+
+
+A faire
+
+Adresse (ajouter les villes)
+
+Remise
+Taxe
+
+Mode de paiement
+Article
+Commande
+Satistique
+
+
+
+
+
+
+
+*/
+
+
+
 // CLIENT
-
-
-
 System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_client(System::String^ dataTableName)
 {
 
@@ -125,10 +152,9 @@ void NS_Comp_Svc::CLservices::del_un_employer(int id)
 
 
 
+
+
 //ADRESSE
-
-
-
 System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_adresse(System::String^ dataTableName)
 {
 
@@ -182,6 +208,3 @@ void NS_Comp_Svc::CLservices::del_une_adresse(int id)
 }// ADRESSE 
 
 
-
-
-//ADRESSE
