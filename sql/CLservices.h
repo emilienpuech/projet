@@ -31,6 +31,7 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Adresse^ Mapp_adresse;
 		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise;
 		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe;
+		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 	
 	
 	public:
@@ -52,13 +53,16 @@ namespace NS_Comp_Svc
 		void del_un_employer(int);
 
 		// Adresse
-
 		System::Data::DataSet^ select_tout_nos_adresse(System::String^);
 		void upd_une_adresse(int, int, System::String^, System::String^, int , int );
 		void ins_une_adresse(int, System::String^, System::String^, int, int);
 		void del_une_adresse(int);
 
-
+		// Mode de Paiement
+		System::Data::DataSet^ select_tout_nos_mode_de_paiement(System::String^);
+		void upd_un_mode_de_paiement(int, System::String^);
+		void ins_un_mode_de_paiement(System::String^);
+		void del_un_mode_de_paiement(int);
 
 
 

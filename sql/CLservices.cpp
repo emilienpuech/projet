@@ -22,6 +22,7 @@ int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 
 Client 
 Employer
+Mode de paiement
 
 
 
@@ -32,7 +33,6 @@ Adresse (ajouter les villes)
 Remise
 Taxe
 
-Mode de paiement
 Article
 Commande
 Satistique
@@ -211,3 +211,47 @@ void NS_Comp_Svc::CLservices::del_une_adresse(int id)
 }// ADRESSE 
 
 
+
+
+
+// PAIEMENT
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_mode_de_paiement(System::String^ dataTableName){
+	System::String^ sql;
+	sql = this->Mapp_paiement->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+
+void NS_Comp_Svc::CLservices::ins_un_mode_de_paiement(System::String^ mode_de_paiement)
+{
+	System::String^ sql;
+
+	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
+
+	sql = this->Mapp_paiement->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_un_mode_de_paiement(int id,System::String^ mode_de_paiement)
+{
+	System::String^ sql;
+	this->Mapp_paiement->setid(id);
+	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
+	sql = this->Mapp_paiement->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_un_mode_de_paiement(int id)
+{
+	System::String^ sql;
+
+	this->Mapp_paiement->setid(id);
+	sql = this->Mapp_paiement->Delete();
+
+	this->oCad->actionRows(sql);
+}// PAIEMENT
