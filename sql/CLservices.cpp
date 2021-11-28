@@ -18,7 +18,7 @@ int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 
 
 /*
-	FAIT
+	fait
 
 Client 
 Employer

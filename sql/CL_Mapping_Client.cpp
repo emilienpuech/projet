@@ -22,7 +22,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Client::Delete(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Update(void)
 {
-	return "UPDATE[projetpoo].[dbo].[Client] SET Nom ='" + this->nom + "', Prenom ='" + this->prenom + "', DateNaissance ='" + this->date_de_naissance + "' WHERE numeroClient = '" + this->Id + "';";
+	return "UPDATE[projetpoo].[dbo].[Client] SET Nom ='" + this->nom + "', Prenom ='" + this->prenom + "', DateNaissance ='" + this->date_de_naissance + "' WHERE numeroClient = '" + this->Id + "'; ";
 }
 
 
