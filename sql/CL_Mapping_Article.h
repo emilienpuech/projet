@@ -1,5 +1,5 @@
 #pragma once
-namespace Ns_comp_Mappage
+namespace NS_Comp_Mappage
 {
 	ref class CL_Mapping_Article
 	{
@@ -7,9 +7,9 @@ namespace Ns_comp_Mappage
 		System::String^ sSql;
 		int Id;
 		System::String^ nom;
-		System::String^ quantite_de_stock;
-		System::String^ prix_produit;
-		System::String^ seuil_reapprovisionnement;
+		int quantite_de_stock;
+		int prix_produit;
+		int seuil_reapprovisionnement;
 	public:
 		System::String^ Select(void);
 		System::String^ Insert(void);
@@ -18,10 +18,10 @@ namespace Ns_comp_Mappage
 
 
 
-		void setnom(System::String^);
-		void setquantite_de_stock(System::String^);
-		void setprix_produit(System::String^);
-		void setseuilreapprovisionnement(System::String^ seuilreapprovisionnement);
+		void setnom(System::String^ nom);
+		void setquantite_de_stock(int quantite_de_stock);
+		void setprix_produit(int prix_produit);
+		void setseuilreapprovisionnement(int seuil_reapprovisionnement);
 		
 		
 	};
