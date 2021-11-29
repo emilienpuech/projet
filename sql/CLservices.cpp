@@ -10,6 +10,7 @@ NS_Comp_Svc::CLservices::CLservices(void)
 	this->Mapp_employer = gcnew NS_Comp_Mappage::CL_Mapping_Employer();
 	this->Mapp_remise = gcnew NS_Comp_Mappage::CL_Mapping_Remise();
 	this->Mapp_taxe = gcnew NS_Comp_Mappage::CL_Mapping_Taxe();
+	
 }
 int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 {
