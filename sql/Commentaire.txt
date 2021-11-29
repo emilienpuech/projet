@@ -34,6 +34,24 @@ this->sCnx = "Data Source=DESKTOP-B8TDUS7\\SQLSERVER;Integrated Security=True;Co
 
 
 
+	Sql query -->
+
+Select * from Adresse
+Select * from Article
+Select * from Beneficier
+Select * from Client
+Select * from Commande
+Select * from Composer
+Select * from Employe
+Select * from ModePaiement
+Select * from Paiement
+Select * from Posseder
+Select * from Remise
+Select * from Taxe
+Select * from Taxer
+Select * from Ville
+
+
 
 // Microsoft SQL Server Data structure + data
 /*------------------------------------------------------------
