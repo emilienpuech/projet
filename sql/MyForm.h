@@ -112,7 +112,8 @@ namespace P6new {
 	private: System::Windows::Forms::DataGridView^ dataGridView3;
 	private: System::Windows::Forms::Button^ button10;
 	private: System::Windows::Forms::Button^ button11;
-	private: System::Windows::Forms::TextBox^ textBox7;
+	private: System::Windows::Forms::TextBox^ ID_Produit;
+
 	private: System::Windows::Forms::TextBox^ textBox8;
 	private: System::Windows::Forms::TextBox^ textBox9;
 	private: System::Windows::Forms::Button^ button12;
@@ -234,7 +235,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->ID_Produit = (gcnew System::Windows::Forms::TextBox());
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->button12 = (gcnew System::Windows::Forms::Button());
@@ -451,7 +452,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->tabPage4->Controls->Add(this->dataGridView3);
 			this->tabPage4->Controls->Add(this->button10);
 			this->tabPage4->Controls->Add(this->button11);
-			this->tabPage4->Controls->Add(this->textBox7);
+			this->tabPage4->Controls->Add(this->ID_Produit);
 			this->tabPage4->Controls->Add(this->textBox8);
 			this->tabPage4->Controls->Add(this->textBox9);
 			this->tabPage4->Controls->Add(this->button12);
@@ -554,12 +555,12 @@ private: System::Windows::Forms::Button^ button21;
 			this->button11->Text = L"INS";
 			this->button11->UseVisualStyleBackColor = true;
 			// 
-			// textBox7
+			// ID_Produit
 			// 
-			this->textBox7->Location = System::Drawing::Point(347, 175);
-			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(141, 20);
-			this->textBox7->TabIndex = 15;
+			this->ID_Produit->Location = System::Drawing::Point(347, 175);
+			this->ID_Produit->Name = L"ID_Produit";
+			this->ID_Produit->Size = System::Drawing::Size(141, 20);
+			this->ID_Produit->TabIndex = 15;
 			// 
 			// textBox8
 			// 
@@ -618,11 +619,12 @@ private: System::Windows::Forms::Button^ button21;
 			// label11
 			// 
 			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(261, 234);
+			this->label11->Location = System::Drawing::Point(222, 230);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(74, 13);
+			this->label11->Size = System::Drawing::Size(113, 13);
 			this->label11->TabIndex = 20;
-			this->label11->Text = L"ID Commande";
+			this->label11->Text = L"Reference Commande";
+			this->label11->Click += gcnew System::EventHandler(this, &MyForm::label11_Click);
 			// 
 			// label10
 			// 
@@ -1048,7 +1050,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->label21->AutoSize = true;
 			this->label21->Location = System::Drawing::Point(237, 199);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(97, 13);
+			this->label21->Size = System::Drawing::Size(86, 13);
 			this->label21->TabIndex = 28;
 			this->label21->Text = L"Moyen Paiement";
 			// 
@@ -1092,10 +1094,10 @@ private: System::Windows::Forms::Button^ button21;
 			// dataGridView5
 			// 
 			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView5->Location = System::Drawing::Point(6, 2);
+			this->dataGridView5->Location = System::Drawing::Point(15, 2);
 			this->dataGridView5->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView5->Name = L"dataGridView5";
-			this->dataGridView5->Size = System::Drawing::Size(236, 78);
+			this->dataGridView5->Size = System::Drawing::Size(471, 163);
 			this->dataGridView5->TabIndex = 22;
 			// 
 			// button18
@@ -1204,9 +1206,11 @@ private: System::Windows::Forms::Button^ button21;
 
 
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
-		//this->oSvc = ;
+		
 	}
+		
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
 	}
 	private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -1236,7 +1240,9 @@ private: System::Windows::Forms::Button^ button21;
 	}
 	private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 
 
 
