@@ -36,13 +36,10 @@ this->sCnx = "Data Source=DESKTOP-B8TDUS7\\SQLSERVER;Integrated Security=True;Co
 
 
 // Microsoft SQL Server Data structure
-
-
 /*------------------------------------------------------------
 *        Script SQLSERVER 
 ------------------------------------------------------------*/
-/*CREATE DATABASE projetpoo;
-*/
+
 
 /*------------------------------------------------------------
 -- Table: Client
@@ -65,6 +62,8 @@ CREATE TABLE Commande(
 	DateEmission    DATE NOT NULL ,
 	numeroClient    INT  NOT NULL  ,
 	CONSTRAINT Commande_PK PRIMARY KEY (RefCommande)
+
+	,CONSTRAINT Commande_Client_FK FOREIGN KEY (numeroClient) REFERENCES Client(numeroClient)
 );
 
 
@@ -89,6 +88,9 @@ CREATE TABLE Adresse(
 	numeroClient   INT   ,
 	IDVille        INT  NOT NULL  ,
 	CONSTRAINT Adresse_PK PRIMARY KEY (IDAdresse)
+
+	,CONSTRAINT Adresse_Client_FK FOREIGN KEY (numeroClient) REFERENCES Client(numeroClient)
+	,CONSTRAINT Adresse_Ville0_FK FOREIGN KEY (IDVille) REFERENCES Ville(IDVille)
 );
 
 
@@ -136,6 +138,9 @@ CREATE TABLE Paiement(
 	RefCommande       VARCHAR (20) NOT NULL ,
 	IDMoyenPaiement   INT  NOT NULL  ,
 	CONSTRAINT Paiement_PK PRIMARY KEY (IDPaiement)
+
+	,CONSTRAINT Paiement_Commande_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
+	,CONSTRAINT Paiement_ModePaiement0_FK FOREIGN KEY (IDMoyenPaiement) REFERENCES ModePaiement(IDMoyenPaiement)
 );
 
 
@@ -144,7 +149,6 @@ CREATE TABLE Paiement(
 ------------------------------------------------------------*/
 CREATE TABLE Remise(
 	idPaiement          INT IDENTITY (1,1) NOT NULL ,
-	nomRemise			CHAR (20)  NOT NULL  ,
 	pourcentageRemise   FLOAT  NOT NULL  ,
 	CONSTRAINT Remise_PK PRIMARY KEY (idPaiement)
 );
@@ -161,6 +165,9 @@ CREATE TABLE Composer(
 	pourcentageTVA   FLOAT  NOT NULL ,
 	Couleur          CHAR (20)  NOT NULL  ,
 	CONSTRAINT Composer_PK PRIMARY KEY (Reference,RefCommande)
+
+	,CONSTRAINT Composer_Article_FK FOREIGN KEY (Reference) REFERENCES Article(Reference)
+	,CONSTRAINT Composer_Commande0_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
 );
 
 
@@ -171,8 +178,10 @@ CREATE TABLE Taxer(
 	IDTaxe      INT  NOT NULL ,
 	Reference   INT  NOT NULL  ,
 	CONSTRAINT Taxer_PK PRIMARY KEY (IDTaxe,Reference)
-);
 
+	,CONSTRAINT Taxer_Taxe_FK FOREIGN KEY (IDTaxe) REFERENCES Taxe(IDTaxe)
+	,CONSTRAINT Taxer_Article0_FK FOREIGN KEY (Reference) REFERENCES Article(Reference)
+);
 
 
 /*------------------------------------------------------------
@@ -182,6 +191,9 @@ CREATE TABLE Beneficier(
 	idPaiement    INT  NOT NULL ,
 	RefCommande   VARCHAR (20) NOT NULL  ,
 	CONSTRAINT Beneficier_PK PRIMARY KEY (idPaiement,RefCommande)
+
+	,CONSTRAINT Beneficier_Remise_FK FOREIGN KEY (idPaiement) REFERENCES Remise(idPaiement)
+	,CONSTRAINT Beneficier_Commande0_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
 );
 
 
@@ -196,72 +208,10 @@ CREATE TABLE Employe(
 	IDAdresse           INT  NOT NULL ,
 	IDEmploye_Employe   INT    ,
 	CONSTRAINT Employe_PK PRIMARY KEY (IDEmploye)
+
+	,CONSTRAINT Employe_Adresse_FK FOREIGN KEY (IDAdresse) REFERENCES Adresse(IDAdresse)
+	,CONSTRAINT Employe_Employe0_FK FOREIGN KEY (IDEmploye_Employe) REFERENCES Employe(IDEmploye)
 );
 
 
 
-
-ALTER TABLE Commande
-	ADD CONSTRAINT Commande_Client0_FK
-	FOREIGN KEY (numeroClient)
-	REFERENCES Client(numeroClient);
-
-ALTER TABLE Adresse
-	ADD CONSTRAINT Adresse_Client0_FK
-	FOREIGN KEY (numeroClient)
-	REFERENCES Client(numeroClient);
-
-ALTER TABLE Adresse
-	ADD CONSTRAINT Adresse_Ville1_FK
-	FOREIGN KEY (IDVille)
-	REFERENCES Ville(IDVille);
-
-ALTER TABLE Paiement
-	ADD CONSTRAINT Paiement_Commande0_FK
-	FOREIGN KEY (RefCommande)
-	REFERENCES Commande(RefCommande);
-
-ALTER TABLE Paiement
-	ADD CONSTRAINT Paiement_ModePaiement1_FK
-	FOREIGN KEY (IDMoyenPaiement)
-	REFERENCES ModePaiement(IDMoyenPaiement);
-
-ALTER TABLE Composer
-	ADD CONSTRAINT Composer_Article0_FK
-	FOREIGN KEY (Reference)
-	REFERENCES Article(Reference);
-
-ALTER TABLE Composer
-	ADD CONSTRAINT Composer_Commande1_FK
-	FOREIGN KEY (RefCommande)
-	REFERENCES Commande(RefCommande);
-
-ALTER TABLE Taxer
-	ADD CONSTRAINT Taxer_Taxe0_FK
-	FOREIGN KEY (IDTaxe)
-	REFERENCES Taxe(IDTaxe);
-
-ALTER TABLE Taxer
-	ADD CONSTRAINT Taxer_Article1_FK
-	FOREIGN KEY (Reference)
-	REFERENCES Article(Reference);
-
-ALTER TABLE Beneficier
-	ADD CONSTRAINT Beneficier_Remise0_FK
-	FOREIGN KEY (idPaiement)
-	REFERENCES Remise(idPaiement);
-
-ALTER TABLE Beneficier
-	ADD CONSTRAINT Beneficier_Commande1_FK
-	FOREIGN KEY (RefCommande)
-	REFERENCES Commande(RefCommande);
-
-ALTER TABLE Employe
-	ADD CONSTRAINT Employe_Adresse0_FK
-	FOREIGN KEY (IDAdresse)
-	REFERENCES Adresse(IDAdresse);
-
-ALTER TABLE Employe
-	ADD CONSTRAINT Employe_Employe1_FK
-	FOREIGN KEY (IDEmploye_Employe)
-	REFERENCES Employe(IDEmploye);

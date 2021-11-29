@@ -6,8 +6,8 @@ namespace NS_Comp_Mappage
     {
     private:
         int id;
-        System::String^ nom_remise;
-        float pourcentageremise;
+        System::String^ nom_taxe;
+        float pourcentagetaxe;
         
 
 
@@ -17,8 +17,8 @@ namespace NS_Comp_Mappage
         System::String^ Delete(void);
         System::String^ Update(void);
         void setid(int id);
-        void setNom_remise(System::String^ nom_remise);
-        void setPourcentageremise(float pourcentageremise);
+        void setnom_taxe(System::String^ nom_taxe);
+        void setpourcentagetaxe(float pourcentageremise);
         
     };
 }

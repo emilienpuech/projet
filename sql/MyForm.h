@@ -100,42 +100,46 @@ namespace P6new {
 	private: System::Windows::Forms::TabPage^ tabPage7;
 	private: System::Windows::Forms::TabPage^ tabPage6;
 	private: System::Windows::Forms::TabPage^ tabPage5;
-	private: System::Windows::Forms::DataGridView^ dataGridView4;
-	private: System::Windows::Forms::Button^ button14;
-	private: System::Windows::Forms::Button^ button15;
+	private: System::Windows::Forms::DataGridView^ dataGridViewStat;
+
+
+
 	private: System::Windows::Forms::TextBox^ textBox10;
 	private: System::Windows::Forms::TextBox^ textBox11;
 	private: System::Windows::Forms::TextBox^ textBox12;
-	private: System::Windows::Forms::Button^ button16;
-	private: System::Windows::Forms::Button^ button17;
+
+
 	private: System::Windows::Forms::TabPage^ tabPage4;
-	private: System::Windows::Forms::DataGridView^ dataGridView3;
-	private: System::Windows::Forms::Button^ button10;
-	private: System::Windows::Forms::Button^ button11;
+	private: System::Windows::Forms::DataGridView^ dataGridViewStock;
+
+
+
 	private: System::Windows::Forms::TextBox^ ID_Produit;
 
 	private: System::Windows::Forms::TextBox^ textBox8;
 	private: System::Windows::Forms::TextBox^ textBox9;
-	private: System::Windows::Forms::Button^ button12;
-	private: System::Windows::Forms::Button^ button13;
+
+
 	private: System::Windows::Forms::TabPage^ tabPage3;
-	private: System::Windows::Forms::DataGridView^ dataGridView2;
-	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Button^ button7;
+private: System::Windows::Forms::DataGridView^ dataGridViewCommande;
+
+
+
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::TextBox^ textBox5;
 	private: System::Windows::Forms::TextBox^ textBox6;
-	private: System::Windows::Forms::Button^ button8;
-	private: System::Windows::Forms::Button^ button9;
+
+
 	private: System::Windows::Forms::TabPage^ tabPage2;
-	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::DataGridView^ dataGridView1;
-	private: System::Windows::Forms::Button^ btn_insert;
+private: System::Windows::Forms::DataGridView^ dataGridViewPersonnel;
+
+
+
 	private: System::Windows::Forms::TextBox^ txt_prenom;
 	private: System::Windows::Forms::TextBox^ txt_nom;
 	private: System::Windows::Forms::TextBox^ txt_id;
-	private: System::Windows::Forms::Button^ btn_update;
-	private: System::Windows::Forms::Button^ btn_delete;
+
+
 	private: System::Windows::Forms::TabPage^ tabPage1;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
@@ -149,7 +153,8 @@ namespace P6new {
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::DataGridView^ dgv_enr;
+private: System::Windows::Forms::DataGridView^ DataGrindViewClient;
+
 	private: System::Windows::Forms::TabControl^ tabControl1;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label7;
@@ -178,11 +183,35 @@ private: System::Windows::Forms::TextBox^ textBox21;
 private: System::Windows::Forms::TextBox^ textBox18;
 private: System::Windows::Forms::TextBox^ textBox19;
 private: System::Windows::Forms::TextBox^ textBox20;
-private: System::Windows::Forms::DataGridView^ dataGridView5;
-private: System::Windows::Forms::Button^ button18;
-private: System::Windows::Forms::Button^ button19;
-private: System::Windows::Forms::Button^ button20;
-private: System::Windows::Forms::Button^ button21;
+private: System::Windows::Forms::DataGridView^ dataGridViewPaiement;
+
+
+
+
+
+private: System::Windows::Forms::Button^ Load_BDD_Personnel;
+private: System::Windows::Forms::Button^ Insert_Personnel;
+private: System::Windows::Forms::Button^ Update_Personnel;
+private: System::Windows::Forms::Button^ Update_Stock;
+private: System::Windows::Forms::Button^ Insert_Stock;
+private: System::Windows::Forms::Button^ Load_Bdd_Stock;
+private: System::Windows::Forms::Button^ DELETE_Commande;
+private: System::Windows::Forms::Button^ Update_Commande;
+private: System::Windows::Forms::Button^ Insert_Commande;
+private: System::Windows::Forms::Button^ Load_Bdd_Commande;
+private: System::Windows::Forms::Button^ DELETE_Personnel;
+private: System::Windows::Forms::Button^ Delete_Stat;
+private: System::Windows::Forms::Button^ Update_Stat;
+private: System::Windows::Forms::Button^ Insert_Stat;
+private: System::Windows::Forms::Button^ Load_Bdd_Stat;
+private: System::Windows::Forms::Button^ Delete_Stock;
+private: System::Windows::Forms::Button^ Delete_Paiement;
+private: System::Windows::Forms::Button^ UPDATE_Paiement;
+private: System::Windows::Forms::Button^ Insert_Paiement;
+private: System::Windows::Forms::Button^ Load_BDD_Paiement;
+
+
+
 
 
 
@@ -216,14 +245,10 @@ private: System::Windows::Forms::Button^ button21;
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
 			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
-			this->button14 = (gcnew System::Windows::Forms::Button());
-			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->dataGridViewStat = (gcnew System::Windows::Forms::DataGridView());
 			this->textBox10 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox11 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox12 = (gcnew System::Windows::Forms::TextBox());
-			this->button16 = (gcnew System::Windows::Forms::Button());
-			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->label15 = (gcnew System::Windows::Forms::Label());
@@ -232,40 +257,28 @@ private: System::Windows::Forms::Button^ button21;
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->textBox17 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox16 = (gcnew System::Windows::Forms::TextBox());
-			this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->dataGridViewStock = (gcnew System::Windows::Forms::DataGridView());
 			this->ID_Produit = (gcnew System::Windows::Forms::TextBox());
 			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->dataGridViewCommande = (gcnew System::Windows::Forms::DataGridView());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->textBox15 = (gcnew System::Windows::Forms::TextBox());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->btn_insert = (gcnew System::Windows::Forms::Button());
+			this->dataGridViewPersonnel = (gcnew System::Windows::Forms::DataGridView());
 			this->txt_prenom = (gcnew System::Windows::Forms::TextBox());
 			this->txt_nom = (gcnew System::Windows::Forms::TextBox());
 			this->txt_id = (gcnew System::Windows::Forms::TextBox());
-			this->btn_update = (gcnew System::Windows::Forms::Button());
-			this->btn_delete = (gcnew System::Windows::Forms::Button());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -279,7 +292,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
+			this->DataGrindViewClient = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage8 = (gcnew System::Windows::Forms::TabPage());
 			this->label23 = (gcnew System::Windows::Forms::Label());
@@ -290,24 +303,40 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox18 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox19 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox20 = (gcnew System::Windows::Forms::TextBox());
-			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
-			this->button18 = (gcnew System::Windows::Forms::Button());
-			this->button19 = (gcnew System::Windows::Forms::Button());
-			this->button20 = (gcnew System::Windows::Forms::Button());
-			this->button21 = (gcnew System::Windows::Forms::Button());
+			this->dataGridViewPaiement = (gcnew System::Windows::Forms::DataGridView());
+			this->Load_BDD_Personnel = (gcnew System::Windows::Forms::Button());
+			this->Insert_Personnel = (gcnew System::Windows::Forms::Button());
+			this->Update_Personnel = (gcnew System::Windows::Forms::Button());
+			this->DELETE_Personnel = (gcnew System::Windows::Forms::Button());
+			this->Load_Bdd_Commande = (gcnew System::Windows::Forms::Button());
+			this->Insert_Commande = (gcnew System::Windows::Forms::Button());
+			this->Update_Commande = (gcnew System::Windows::Forms::Button());
+			this->DELETE_Commande = (gcnew System::Windows::Forms::Button());
+			this->Load_Bdd_Stock = (gcnew System::Windows::Forms::Button());
+			this->Insert_Stock = (gcnew System::Windows::Forms::Button());
+			this->Update_Stock = (gcnew System::Windows::Forms::Button());
+			this->Delete_Stock = (gcnew System::Windows::Forms::Button());
+			this->Load_Bdd_Stat = (gcnew System::Windows::Forms::Button());
+			this->Insert_Stat = (gcnew System::Windows::Forms::Button());
+			this->Update_Stat = (gcnew System::Windows::Forms::Button());
+			this->Delete_Stat = (gcnew System::Windows::Forms::Button());
+			this->Load_BDD_Paiement = (gcnew System::Windows::Forms::Button());
+			this->Insert_Paiement = (gcnew System::Windows::Forms::Button());
+			this->UPDATE_Paiement = (gcnew System::Windows::Forms::Button());
+			this->Delete_Paiement = (gcnew System::Windows::Forms::Button());
 			this->tabPage5->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewStat))->BeginInit();
 			this->tabPage4->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewStock))->BeginInit();
 			this->tabPage3->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewCommande))->BeginInit();
 			this->tabPage2->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPersonnel))->BeginInit();
 			this->tabPage1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->DataGrindViewClient))->BeginInit();
 			this->tabControl1->SuspendLayout();
 			this->tabPage8->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabPage7
@@ -326,17 +355,17 @@ private: System::Windows::Forms::Button^ button21;
 			// 
 			// tabPage5
 			// 
+			this->tabPage5->Controls->Add(this->Delete_Stat);
+			this->tabPage5->Controls->Add(this->Update_Stat);
+			this->tabPage5->Controls->Add(this->Insert_Stat);
+			this->tabPage5->Controls->Add(this->Load_Bdd_Stat);
 			this->tabPage5->Controls->Add(this->label19);
 			this->tabPage5->Controls->Add(this->label18);
 			this->tabPage5->Controls->Add(this->label17);
-			this->tabPage5->Controls->Add(this->dataGridView4);
-			this->tabPage5->Controls->Add(this->button14);
-			this->tabPage5->Controls->Add(this->button15);
+			this->tabPage5->Controls->Add(this->dataGridViewStat);
 			this->tabPage5->Controls->Add(this->textBox10);
 			this->tabPage5->Controls->Add(this->textBox11);
 			this->tabPage5->Controls->Add(this->textBox12);
-			this->tabPage5->Controls->Add(this->button16);
-			this->tabPage5->Controls->Add(this->button17);
 			this->tabPage5->Location = System::Drawing::Point(4, 22);
 			this->tabPage5->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage5->Name = L"tabPage5";
@@ -373,33 +402,15 @@ private: System::Windows::Forms::Button^ button21;
 			this->label17->TabIndex = 18;
 			this->label17->Text = L"ID Paiement";
 			// 
-			// dataGridView4
+			// dataGridViewStat
 			// 
-			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView4->Location = System::Drawing::Point(8, 0);
-			this->dataGridView4->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView4->Name = L"dataGridView4";
-			this->dataGridView4->Size = System::Drawing::Size(236, 78);
-			this->dataGridView4->TabIndex = 17;
-			this->dataGridView4->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView4_CellContentClick);
-			// 
-			// button14
-			// 
-			this->button14->Location = System::Drawing::Point(17, 168);
-			this->button14->Name = L"button14";
-			this->button14->Size = System::Drawing::Size(75, 129);
-			this->button14->TabIndex = 16;
-			this->button14->Text = L"Load DB";
-			this->button14->UseVisualStyleBackColor = true;
-			// 
-			// button15
-			// 
-			this->button15->Location = System::Drawing::Point(94, 261);
-			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(75, 37);
-			this->button15->TabIndex = 10;
-			this->button15->Text = L"INS";
-			this->button15->UseVisualStyleBackColor = true;
+			this->dataGridViewStat->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridViewStat->Location = System::Drawing::Point(9, 0);
+			this->dataGridViewStat->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewStat->Name = L"dataGridViewStat";
+			this->dataGridViewStat->Size = System::Drawing::Size(481, 163);
+			this->dataGridViewStat->TabIndex = 17;
+			this->dataGridViewStat->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView4_CellContentClick);
 			// 
 			// textBox10
 			// 
@@ -422,26 +433,12 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox12->Size = System::Drawing::Size(149, 20);
 			this->textBox12->TabIndex = 13;
 			// 
-			// button16
-			// 
-			this->button16->Location = System::Drawing::Point(94, 214);
-			this->button16->Name = L"button16";
-			this->button16->Size = System::Drawing::Size(75, 37);
-			this->button16->TabIndex = 12;
-			this->button16->Text = L"UPD";
-			this->button16->UseVisualStyleBackColor = true;
-			// 
-			// button17
-			// 
-			this->button17->Location = System::Drawing::Point(94, 168);
-			this->button17->Name = L"button17";
-			this->button17->Size = System::Drawing::Size(75, 37);
-			this->button17->TabIndex = 11;
-			this->button17->Text = L"DEL";
-			this->button17->UseVisualStyleBackColor = true;
-			// 
 			// tabPage4
 			// 
+			this->tabPage4->Controls->Add(this->Delete_Stock);
+			this->tabPage4->Controls->Add(this->Update_Stock);
+			this->tabPage4->Controls->Add(this->Insert_Stock);
+			this->tabPage4->Controls->Add(this->Load_Bdd_Stock);
 			this->tabPage4->Controls->Add(this->label16);
 			this->tabPage4->Controls->Add(this->label15);
 			this->tabPage4->Controls->Add(this->label14);
@@ -449,14 +446,10 @@ private: System::Windows::Forms::Button^ button21;
 			this->tabPage4->Controls->Add(this->label12);
 			this->tabPage4->Controls->Add(this->textBox17);
 			this->tabPage4->Controls->Add(this->textBox16);
-			this->tabPage4->Controls->Add(this->dataGridView3);
-			this->tabPage4->Controls->Add(this->button10);
-			this->tabPage4->Controls->Add(this->button11);
+			this->tabPage4->Controls->Add(this->dataGridViewStock);
 			this->tabPage4->Controls->Add(this->ID_Produit);
 			this->tabPage4->Controls->Add(this->textBox8);
 			this->tabPage4->Controls->Add(this->textBox9);
-			this->tabPage4->Controls->Add(this->button12);
-			this->tabPage4->Controls->Add(this->button13);
 			this->tabPage4->Location = System::Drawing::Point(4, 22);
 			this->tabPage4->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage4->Name = L"tabPage4";
@@ -527,33 +520,15 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox16->Size = System::Drawing::Size(140, 20);
 			this->textBox16->TabIndex = 18;
 			// 
-			// dataGridView3
+			// dataGridViewStock
 			// 
-			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView3->Location = System::Drawing::Point(8, 3);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView3->Name = L"dataGridView3";
-			this->dataGridView3->Size = System::Drawing::Size(480, 160);
-			this->dataGridView3->TabIndex = 17;
-			this->dataGridView3->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView3_CellContentClick);
-			// 
-			// button10
-			// 
-			this->button10->Location = System::Drawing::Point(16, 168);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(75, 129);
-			this->button10->TabIndex = 16;
-			this->button10->Text = L"Load DB";
-			this->button10->UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this->button11->Location = System::Drawing::Point(93, 260);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(75, 37);
-			this->button11->TabIndex = 10;
-			this->button11->Text = L"INS";
-			this->button11->UseVisualStyleBackColor = true;
+			this->dataGridViewStock->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridViewStock->Location = System::Drawing::Point(8, 3);
+			this->dataGridViewStock->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewStock->Name = L"dataGridViewStock";
+			this->dataGridViewStock->Size = System::Drawing::Size(480, 160);
+			this->dataGridViewStock->TabIndex = 17;
+			this->dataGridViewStock->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView3_CellContentClick);
 			// 
 			// ID_Produit
 			// 
@@ -576,37 +551,19 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox9->Size = System::Drawing::Size(140, 20);
 			this->textBox9->TabIndex = 13;
 			// 
-			// button12
-			// 
-			this->button12->Location = System::Drawing::Point(93, 214);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(75, 37);
-			this->button12->TabIndex = 12;
-			this->button12->Text = L"UPD";
-			this->button12->UseVisualStyleBackColor = true;
-			// 
-			// button13
-			// 
-			this->button13->Location = System::Drawing::Point(93, 168);
-			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(75, 37);
-			this->button13->TabIndex = 11;
-			this->button13->Text = L"DEL";
-			this->button13->UseVisualStyleBackColor = true;
-			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->DELETE_Commande);
+			this->tabPage3->Controls->Add(this->Update_Commande);
+			this->tabPage3->Controls->Add(this->Insert_Commande);
+			this->tabPage3->Controls->Add(this->Load_Bdd_Commande);
 			this->tabPage3->Controls->Add(this->label11);
 			this->tabPage3->Controls->Add(this->label10);
 			this->tabPage3->Controls->Add(this->label9);
-			this->tabPage3->Controls->Add(this->dataGridView2);
-			this->tabPage3->Controls->Add(this->button6);
-			this->tabPage3->Controls->Add(this->button7);
+			this->tabPage3->Controls->Add(this->dataGridViewCommande);
 			this->tabPage3->Controls->Add(this->textBox4);
 			this->tabPage3->Controls->Add(this->textBox5);
 			this->tabPage3->Controls->Add(this->textBox6);
-			this->tabPage3->Controls->Add(this->button8);
-			this->tabPage3->Controls->Add(this->button9);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage3->Name = L"tabPage3";
@@ -645,32 +602,14 @@ private: System::Windows::Forms::Button^ button21;
 			this->label9->Text = L"Date Livraison";
 			this->label9->Click += gcnew System::EventHandler(this, &MyForm::label9_Click);
 			// 
-			// dataGridView2
+			// dataGridViewCommande
 			// 
-			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(4, 6);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView2->Name = L"dataGridView2";
-			this->dataGridView2->Size = System::Drawing::Size(475, 157);
-			this->dataGridView2->TabIndex = 17;
-			// 
-			// button6
-			// 
-			this->button6->Location = System::Drawing::Point(7, 168);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(75, 129);
-			this->button6->TabIndex = 16;
-			this->button6->Text = L"Load DB";
-			this->button6->UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this->button7->Location = System::Drawing::Point(84, 261);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(75, 37);
-			this->button7->TabIndex = 10;
-			this->button7->Text = L"INS";
-			this->button7->UseVisualStyleBackColor = true;
+			this->dataGridViewCommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridViewCommande->Location = System::Drawing::Point(4, 6);
+			this->dataGridViewCommande->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewCommande->Name = L"dataGridViewCommande";
+			this->dataGridViewCommande->Size = System::Drawing::Size(475, 157);
+			this->dataGridViewCommande->TabIndex = 17;
 			// 
 			// textBox4
 			// 
@@ -693,39 +632,21 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox6->Size = System::Drawing::Size(138, 20);
 			this->textBox6->TabIndex = 13;
 			// 
-			// button8
-			// 
-			this->button8->Location = System::Drawing::Point(84, 214);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(75, 37);
-			this->button8->TabIndex = 12;
-			this->button8->Text = L"UPD";
-			this->button8->UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this->button9->Location = System::Drawing::Point(84, 168);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(75, 37);
-			this->button9->TabIndex = 11;
-			this->button9->Text = L"DEL";
-			this->button9->UseVisualStyleBackColor = true;
-			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->DELETE_Personnel);
+			this->tabPage2->Controls->Add(this->Update_Personnel);
+			this->tabPage2->Controls->Add(this->Insert_Personnel);
+			this->tabPage2->Controls->Add(this->Load_BDD_Personnel);
 			this->tabPage2->Controls->Add(this->label8);
 			this->tabPage2->Controls->Add(this->label7);
 			this->tabPage2->Controls->Add(this->label6);
 			this->tabPage2->Controls->Add(this->label5);
 			this->tabPage2->Controls->Add(this->textBox15);
-			this->tabPage2->Controls->Add(this->button1);
-			this->tabPage2->Controls->Add(this->dataGridView1);
-			this->tabPage2->Controls->Add(this->btn_insert);
+			this->tabPage2->Controls->Add(this->dataGridViewPersonnel);
 			this->tabPage2->Controls->Add(this->txt_prenom);
 			this->tabPage2->Controls->Add(this->txt_nom);
 			this->tabPage2->Controls->Add(this->txt_id);
-			this->tabPage2->Controls->Add(this->btn_update);
-			this->tabPage2->Controls->Add(this->btn_delete);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage2->Name = L"tabPage2";
@@ -780,36 +701,15 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox15->Size = System::Drawing::Size(181, 20);
 			this->textBox15->TabIndex = 10;
 			// 
-			// button1
+			// dataGridViewPersonnel
 			// 
-			this->button1->Location = System::Drawing::Point(6, 162);
-			this->button1->Margin = System::Windows::Forms::Padding(2);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(63, 113);
-			this->button1->TabIndex = 9;
-			this->button1->Text = L"Load DB";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(6, 4);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(473, 153);
-			this->dataGridView1->TabIndex = 8;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
-			// 
-			// btn_insert
-			// 
-			this->btn_insert->Location = System::Drawing::Point(84, 254);
-			this->btn_insert->Name = L"btn_insert";
-			this->btn_insert->Size = System::Drawing::Size(75, 37);
-			this->btn_insert->TabIndex = 2;
-			this->btn_insert->Text = L"INS";
-			this->btn_insert->UseVisualStyleBackColor = true;
-			this->btn_insert->Click += gcnew System::EventHandler(this, &MyForm::btn_insert_Click);
+			this->dataGridViewPersonnel->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridViewPersonnel->Location = System::Drawing::Point(6, 4);
+			this->dataGridViewPersonnel->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewPersonnel->Name = L"dataGridViewPersonnel";
+			this->dataGridViewPersonnel->Size = System::Drawing::Size(473, 153);
+			this->dataGridViewPersonnel->TabIndex = 8;
+			this->dataGridViewPersonnel->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
 			// 
 			// txt_prenom
 			// 
@@ -832,25 +732,6 @@ private: System::Windows::Forms::Button^ button21;
 			this->txt_id->Size = System::Drawing::Size(181, 20);
 			this->txt_id->TabIndex = 5;
 			// 
-			// btn_update
-			// 
-			this->btn_update->Location = System::Drawing::Point(84, 208);
-			this->btn_update->Name = L"btn_update";
-			this->btn_update->Size = System::Drawing::Size(75, 37);
-			this->btn_update->TabIndex = 4;
-			this->btn_update->Text = L"UPD";
-			this->btn_update->UseVisualStyleBackColor = true;
-			this->btn_update->Click += gcnew System::EventHandler(this, &MyForm::btn_update_Click);
-			// 
-			// btn_delete
-			// 
-			this->btn_delete->Location = System::Drawing::Point(84, 162);
-			this->btn_delete->Name = L"btn_delete";
-			this->btn_delete->Size = System::Drawing::Size(75, 37);
-			this->btn_delete->TabIndex = 3;
-			this->btn_delete->Text = L"DEL";
-			this->btn_delete->UseVisualStyleBackColor = true;
-			// 
 			// tabPage1
 			// 
 			this->tabPage1->Controls->Add(this->label4);
@@ -865,7 +746,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->tabPage1->Controls->Add(this->button3);
 			this->tabPage1->Controls->Add(this->button4);
 			this->tabPage1->Controls->Add(this->button5);
-			this->tabPage1->Controls->Add(this->dgv_enr);
+			this->tabPage1->Controls->Add(this->DataGrindViewClient);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
@@ -978,15 +859,15 @@ private: System::Windows::Forms::Button^ button21;
 			this->button5->Text = L"DEL";
 			this->button5->UseVisualStyleBackColor = true;
 			// 
-			// dgv_enr
+			// DataGrindViewClient
 			// 
-			this->dgv_enr->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dgv_enr->Location = System::Drawing::Point(7, 7);
-			this->dgv_enr->Name = L"dgv_enr";
-			this->dgv_enr->RowHeadersWidth = 82;
-			this->dgv_enr->Size = System::Drawing::Size(472, 150);
-			this->dgv_enr->TabIndex = 0;
-			this->dgv_enr->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dgv_enr_CellContentClick);
+			this->DataGrindViewClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->DataGrindViewClient->Location = System::Drawing::Point(7, 7);
+			this->DataGrindViewClient->Name = L"DataGrindViewClient";
+			this->DataGrindViewClient->RowHeadersWidth = 82;
+			this->DataGrindViewClient->Size = System::Drawing::Size(472, 150);
+			this->DataGrindViewClient->TabIndex = 0;
+			this->DataGrindViewClient->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dgv_enr_CellContentClick);
 			// 
 			// tabControl1
 			// 
@@ -1006,6 +887,10 @@ private: System::Windows::Forms::Button^ button21;
 			// 
 			// tabPage8
 			// 
+			this->tabPage8->Controls->Add(this->Delete_Paiement);
+			this->tabPage8->Controls->Add(this->UPDATE_Paiement);
+			this->tabPage8->Controls->Add(this->Insert_Paiement);
+			this->tabPage8->Controls->Add(this->Load_BDD_Paiement);
 			this->tabPage8->Controls->Add(this->label23);
 			this->tabPage8->Controls->Add(this->label22);
 			this->tabPage8->Controls->Add(this->label21);
@@ -1014,11 +899,7 @@ private: System::Windows::Forms::Button^ button21;
 			this->tabPage8->Controls->Add(this->textBox18);
 			this->tabPage8->Controls->Add(this->textBox19);
 			this->tabPage8->Controls->Add(this->textBox20);
-			this->tabPage8->Controls->Add(this->dataGridView5);
-			this->tabPage8->Controls->Add(this->button18);
-			this->tabPage8->Controls->Add(this->button19);
-			this->tabPage8->Controls->Add(this->button20);
-			this->tabPage8->Controls->Add(this->button21);
+			this->tabPage8->Controls->Add(this->dataGridViewPaiement);
 			this->tabPage8->Location = System::Drawing::Point(4, 22);
 			this->tabPage8->Name = L"tabPage8";
 			this->tabPage8->Padding = System::Windows::Forms::Padding(3);
@@ -1091,50 +972,197 @@ private: System::Windows::Forms::Button^ button21;
 			this->textBox20->Size = System::Drawing::Size(149, 20);
 			this->textBox20->TabIndex = 23;
 			// 
-			// dataGridView5
+			// dataGridViewPaiement
 			// 
-			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView5->Location = System::Drawing::Point(15, 2);
-			this->dataGridView5->Margin = System::Windows::Forms::Padding(2);
-			this->dataGridView5->Name = L"dataGridView5";
-			this->dataGridView5->Size = System::Drawing::Size(471, 163);
-			this->dataGridView5->TabIndex = 22;
+			this->dataGridViewPaiement->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridViewPaiement->Location = System::Drawing::Point(15, 2);
+			this->dataGridViewPaiement->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridViewPaiement->Name = L"dataGridViewPaiement";
+			this->dataGridViewPaiement->Size = System::Drawing::Size(471, 163);
+			this->dataGridViewPaiement->TabIndex = 22;
 			// 
-			// button18
+			// Load_BDD_Personnel
 			// 
-			this->button18->Location = System::Drawing::Point(15, 170);
-			this->button18->Name = L"button18";
-			this->button18->Size = System::Drawing::Size(75, 129);
-			this->button18->TabIndex = 21;
-			this->button18->Text = L"Load DB";
-			this->button18->UseVisualStyleBackColor = true;
+			this->Load_BDD_Personnel->Location = System::Drawing::Point(7, 162);
+			this->Load_BDD_Personnel->Name = L"Load_BDD_Personnel";
+			this->Load_BDD_Personnel->Size = System::Drawing::Size(76, 122);
+			this->Load_BDD_Personnel->TabIndex = 15;
+			this->Load_BDD_Personnel->Text = L"Load BDD";
+			this->Load_BDD_Personnel->UseVisualStyleBackColor = true;
+			this->Load_BDD_Personnel->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
 			// 
-			// button19
+			// Insert_Personnel
 			// 
-			this->button19->Location = System::Drawing::Point(92, 263);
-			this->button19->Name = L"button19";
-			this->button19->Size = System::Drawing::Size(75, 37);
-			this->button19->TabIndex = 18;
-			this->button19->Text = L"INS";
-			this->button19->UseVisualStyleBackColor = true;
+			this->Insert_Personnel->Location = System::Drawing::Point(101, 164);
+			this->Insert_Personnel->Name = L"Insert_Personnel";
+			this->Insert_Personnel->Size = System::Drawing::Size(89, 36);
+			this->Insert_Personnel->TabIndex = 16;
+			this->Insert_Personnel->Text = L"INSERT";
+			this->Insert_Personnel->UseVisualStyleBackColor = true;
+			this->Insert_Personnel->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_2);
 			// 
-			// button20
+			// Update_Personnel
 			// 
-			this->button20->Location = System::Drawing::Point(92, 216);
-			this->button20->Name = L"button20";
-			this->button20->Size = System::Drawing::Size(75, 37);
-			this->button20->TabIndex = 20;
-			this->button20->Text = L"UPD";
-			this->button20->UseVisualStyleBackColor = true;
+			this->Update_Personnel->Location = System::Drawing::Point(101, 210);
+			this->Update_Personnel->Name = L"Update_Personnel";
+			this->Update_Personnel->Size = System::Drawing::Size(89, 35);
+			this->Update_Personnel->TabIndex = 17;
+			this->Update_Personnel->Text = L"UPDATE";
+			this->Update_Personnel->UseVisualStyleBackColor = true;
+			this->Update_Personnel->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_3);
 			// 
-			// button21
+			// DELETE_Personnel
 			// 
-			this->button21->Location = System::Drawing::Point(92, 170);
-			this->button21->Name = L"button21";
-			this->button21->Size = System::Drawing::Size(75, 37);
-			this->button21->TabIndex = 19;
-			this->button21->Text = L"DEL";
-			this->button21->UseVisualStyleBackColor = true;
+			this->DELETE_Personnel->Location = System::Drawing::Point(101, 254);
+			this->DELETE_Personnel->Name = L"DELETE_Personnel";
+			this->DELETE_Personnel->Size = System::Drawing::Size(89, 30);
+			this->DELETE_Personnel->TabIndex = 18;
+			this->DELETE_Personnel->Text = L"DELETE";
+			this->DELETE_Personnel->UseVisualStyleBackColor = true;
+			// 
+			// Load_Bdd_Commande
+			// 
+			this->Load_Bdd_Commande->Location = System::Drawing::Point(7, 178);
+			this->Load_Bdd_Commande->Name = L"Load_Bdd_Commande";
+			this->Load_Bdd_Commande->Size = System::Drawing::Size(81, 119);
+			this->Load_Bdd_Commande->TabIndex = 21;
+			this->Load_Bdd_Commande->Text = L"Load BDD";
+			this->Load_Bdd_Commande->UseVisualStyleBackColor = true;
+			// 
+			// Insert_Commande
+			// 
+			this->Insert_Commande->Location = System::Drawing::Point(118, 178);
+			this->Insert_Commande->Name = L"Insert_Commande";
+			this->Insert_Commande->Size = System::Drawing::Size(81, 39);
+			this->Insert_Commande->TabIndex = 22;
+			this->Insert_Commande->Text = L"INSERT";
+			this->Insert_Commande->UseVisualStyleBackColor = true;
+			// 
+			// Update_Commande
+			// 
+			this->Update_Commande->Location = System::Drawing::Point(118, 223);
+			this->Update_Commande->Name = L"Update_Commande";
+			this->Update_Commande->Size = System::Drawing::Size(81, 37);
+			this->Update_Commande->TabIndex = 23;
+			this->Update_Commande->Text = L"UPDATE";
+			this->Update_Commande->UseVisualStyleBackColor = true;
+			// 
+			// DELETE_Commande
+			// 
+			this->DELETE_Commande->Location = System::Drawing::Point(118, 267);
+			this->DELETE_Commande->Name = L"DELETE_Commande";
+			this->DELETE_Commande->Size = System::Drawing::Size(81, 34);
+			this->DELETE_Commande->TabIndex = 24;
+			this->DELETE_Commande->Text = L"DELETE";
+			this->DELETE_Commande->UseVisualStyleBackColor = true;
+			// 
+			// Load_Bdd_Stock
+			// 
+			this->Load_Bdd_Stock->Location = System::Drawing::Point(8, 178);
+			this->Load_Bdd_Stock->Name = L"Load_Bdd_Stock";
+			this->Load_Bdd_Stock->Size = System::Drawing::Size(71, 117);
+			this->Load_Bdd_Stock->TabIndex = 25;
+			this->Load_Bdd_Stock->Text = L"LOAD BDD";
+			this->Load_Bdd_Stock->UseVisualStyleBackColor = true;
+			// 
+			// Insert_Stock
+			// 
+			this->Insert_Stock->Location = System::Drawing::Point(97, 175);
+			this->Insert_Stock->Name = L"Insert_Stock";
+			this->Insert_Stock->Size = System::Drawing::Size(85, 39);
+			this->Insert_Stock->TabIndex = 26;
+			this->Insert_Stock->Text = L"INSERT";
+			this->Insert_Stock->UseVisualStyleBackColor = true;
+			// 
+			// Update_Stock
+			// 
+			this->Update_Stock->Location = System::Drawing::Point(97, 215);
+			this->Update_Stock->Name = L"Update_Stock";
+			this->Update_Stock->Size = System::Drawing::Size(85, 42);
+			this->Update_Stock->TabIndex = 27;
+			this->Update_Stock->Text = L"UPDATE";
+			this->Update_Stock->UseVisualStyleBackColor = true;
+			// 
+			// Delete_Stock
+			// 
+			this->Delete_Stock->Location = System::Drawing::Point(97, 263);
+			this->Delete_Stock->Name = L"Delete_Stock";
+			this->Delete_Stock->Size = System::Drawing::Size(85, 36);
+			this->Delete_Stock->TabIndex = 28;
+			this->Delete_Stock->Text = L"DELETE";
+			this->Delete_Stock->UseVisualStyleBackColor = true;
+			// 
+			// Load_Bdd_Stat
+			// 
+			this->Load_Bdd_Stat->Location = System::Drawing::Point(8, 171);
+			this->Load_Bdd_Stat->Name = L"Load_Bdd_Stat";
+			this->Load_Bdd_Stat->Size = System::Drawing::Size(76, 126);
+			this->Load_Bdd_Stat->TabIndex = 21;
+			this->Load_Bdd_Stat->Text = L"LOAD BDD";
+			this->Load_Bdd_Stat->UseVisualStyleBackColor = true;
+			// 
+			// Insert_Stat
+			// 
+			this->Insert_Stat->Location = System::Drawing::Point(109, 171);
+			this->Insert_Stat->Name = L"Insert_Stat";
+			this->Insert_Stat->Size = System::Drawing::Size(82, 39);
+			this->Insert_Stat->TabIndex = 22;
+			this->Insert_Stat->Text = L"INSERT";
+			this->Insert_Stat->UseVisualStyleBackColor = true;
+			// 
+			// Update_Stat
+			// 
+			this->Update_Stat->Location = System::Drawing::Point(109, 215);
+			this->Update_Stat->Name = L"Update_Stat";
+			this->Update_Stat->Size = System::Drawing::Size(82, 37);
+			this->Update_Stat->TabIndex = 23;
+			this->Update_Stat->Text = L"UPDATE";
+			this->Update_Stat->UseVisualStyleBackColor = true;
+			// 
+			// Delete_Stat
+			// 
+			this->Delete_Stat->Location = System::Drawing::Point(109, 259);
+			this->Delete_Stat->Name = L"Delete_Stat";
+			this->Delete_Stat->Size = System::Drawing::Size(82, 38);
+			this->Delete_Stat->TabIndex = 24;
+			this->Delete_Stat->Text = L"DELETE";
+			this->Delete_Stat->UseVisualStyleBackColor = true;
+			// 
+			// Load_BDD_Paiement
+			// 
+			this->Load_BDD_Paiement->Location = System::Drawing::Point(15, 170);
+			this->Load_BDD_Paiement->Name = L"Load_BDD_Paiement";
+			this->Load_BDD_Paiement->Size = System::Drawing::Size(72, 127);
+			this->Load_BDD_Paiement->TabIndex = 31;
+			this->Load_BDD_Paiement->Text = L"LOAD BDD";
+			this->Load_BDD_Paiement->UseVisualStyleBackColor = true;
+			// 
+			// Insert_Paiement
+			// 
+			this->Insert_Paiement->Location = System::Drawing::Point(94, 170);
+			this->Insert_Paiement->Name = L"Insert_Paiement";
+			this->Insert_Paiement->Size = System::Drawing::Size(89, 38);
+			this->Insert_Paiement->TabIndex = 32;
+			this->Insert_Paiement->Text = L"INSERT";
+			this->Insert_Paiement->UseVisualStyleBackColor = true;
+			// 
+			// UPDATE_Paiement
+			// 
+			this->UPDATE_Paiement->Location = System::Drawing::Point(94, 215);
+			this->UPDATE_Paiement->Name = L"UPDATE_Paiement";
+			this->UPDATE_Paiement->Size = System::Drawing::Size(89, 38);
+			this->UPDATE_Paiement->TabIndex = 33;
+			this->UPDATE_Paiement->Text = L"UPDATE";
+			this->UPDATE_Paiement->UseVisualStyleBackColor = true;
+			// 
+			// Delete_Paiement
+			// 
+			this->Delete_Paiement->Location = System::Drawing::Point(94, 259);
+			this->Delete_Paiement->Name = L"Delete_Paiement";
+			this->Delete_Paiement->Size = System::Drawing::Size(89, 38);
+			this->Delete_Paiement->TabIndex = 34;
+			this->Delete_Paiement->Text = L"DELETE";
+			this->Delete_Paiement->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
@@ -1147,23 +1175,23 @@ private: System::Windows::Forms::Button^ button21;
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabPage5->ResumeLayout(false);
 			this->tabPage5->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewStat))->EndInit();
 			this->tabPage4->ResumeLayout(false);
 			this->tabPage4->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewStock))->EndInit();
 			this->tabPage3->ResumeLayout(false);
 			this->tabPage3->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewCommande))->EndInit();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPersonnel))->EndInit();
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->DataGrindViewClient))->EndInit();
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage8->ResumeLayout(false);
 			this->tabPage8->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1179,8 +1207,8 @@ private: System::Windows::Forms::Button^ button21;
 	{
 		this->Refresh();
 		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
-		this->dgv_enr->DataSource = this->oDs;
-		this->dgv_enr->DataMember = "Rsl";
+		this->DataGrindViewClient->DataSource = this->oDs;
+		this->DataGrindViewClient->DataMember = "Rsl";
 	}
 
 
@@ -1242,6 +1270,12 @@ private: System::Windows::Forms::Button^ button21;
 	}
 	private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click_2(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button1_Click_3(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 
 
