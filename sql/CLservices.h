@@ -29,8 +29,8 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Client^ Mapp_client;
 		NS_Comp_Mappage::CL_Mapping_Employer^ Mapp_employer;
 		NS_Comp_Mappage::CL_Mapping_Adresse^ Mapp_adresse;
-		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise;
-		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe;
+		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise; // a faire 
+		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe; //     a faire 
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
 	
@@ -70,6 +70,8 @@ namespace NS_Comp_Svc
 		void upd_un_article(int id , System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
 		void ins_un_article(System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
 		void del_un_article(int);
+
+
 
 
 
