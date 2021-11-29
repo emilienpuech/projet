@@ -2,19 +2,21 @@
 using  namespace System;
 namespace NS_Comp_Mappage
 {
-	ref class CL_Mapping_Remise
-	{
-	private:
-		System::String^ nomRemise;
-		float pourcentageRemise;
-	public:
-		/*
-		void setnomRemise(System::String^ nomRemise);
-		void setpourcentageRemise(float pourcentageRemise);
-		String^ SELECT(void);
-		String^ INSERT(void);
-		String^ DELETE(void);
-		String^ UPDATE(void);
-		*/
-	};
+    ref class CL_Mapping_Remise
+    {
+    private:
+        System::String^ nomRemise;
+        int pourcentageRemise;
+        int Id_paiement;
+        int ref_Commande;
+
+
+    public:
+        System::String^ Select(void);
+        System::String^ Insert(void);
+        System::String^ Delete(void);
+        System::String^ Update(void);
+        void setID_paiement(int id);
+
+    };
 }

@@ -24,22 +24,18 @@ Client
 Employer
 Mode de paiement
 Article
+Adresse (ajouter les villes)
 
 
 A faire
 
-Adresse (ajouter les villes)
+
 
 Remise
 Taxe
 
 Commande
 Satistique
-
-
-
-
-
 
 
 */

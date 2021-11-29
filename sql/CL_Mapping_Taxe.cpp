@@ -1,19 +1,23 @@
-
-/*
-#include "pch.h" 
+#include "pch.h"
 #include "CL_Mapping_Taxe.h"
-namespace NS_Comp_Mappage
-	CL_Maping_Taxe::CL_Mapping_Taxe(void)
+
+System::String^ NS_Comp_Mappage::CL_Mapping_Taxe::Select(void)
 {
-	this->nomTaxe = "nomTaxe";
-	this->pourcentageTaxe = "RIEN;
+    return "SELECT [IDTaxe],[NomTaxe],[PourcentageTaxe] FROM [projetpoo].[dbo].[Taxe]";
 }
-String^ CL_Mapping_Taxe::SELECT(void)
+System::String^ NS_Comp_Mappage::CL_Mapping_Taxe::Insert(void)
 {
-	return "SELECT * FROM `projet`.`article`;";
+    return "INSERT INTO [projetpoo].[dbo].[Taxe] ([NomTaxe], [PourcentageTaxe]) VALUES('" + this->nom_Taxe + "','" + this->pourcentageTaxe + "');";
 }
-String^ CL_Mapping_Taxe::DELETE(void)
+System::String^ NS_Comp_Mappage::CL_Mapping_Taxe::Delete(void)
 {
-	return "DELETE FROM `projet`.`article` WHERE (``
+    return "DELETE FROM [projetpoo].[dbo].[Taxe] WHERE IDTaxe = '" + this->id + "';";
 }
-*/
+System::String^ NS_Comp_Mappage::CL_Mapping_Taxe::Update(void)
+{
+    return "UPDATE [projetpoo].[dbo].[Taxe] SET NomTaxe ='" + this->nom_Taxe + "',PourcentageTaxe = '" + this->pourcentageTaxe +"' WHERE IDTaxe = '" + this->id + "'; ";
+}
+
+void NS_Comp_Mappage::CL_Mapping_Taxe::setid(int id) { this->id = id; }
+void NS_Comp_Mappage::CL_Mapping_Taxe::setNom_Taxe(System::String^ nom_Taxe) { this->nom_Taxe = nom_Taxe; }
+void NS_Comp_Mappage::CL_Mapping_Taxe::setPourcentageTaxe(float pourcentageTaxe) { this->pourcentageTaxe = pourcentageTaxe; }
