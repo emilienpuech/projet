@@ -71,8 +71,11 @@ namespace NS_Comp_Svc
 		void ins_un_article(System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
 		void del_un_article(int);
 
-
-
+		// Remise.h
+		System::Data::DataSet^ select_tout_nos_remises(System::String^);
+		void upd_une_remise(int id, System::String^, float pourcentageRemise);
+		void ins_une_remise(System::String^nomremise, int id,float pourcentageRemise);
+		void del_une_remise(int, float);
 
 
 

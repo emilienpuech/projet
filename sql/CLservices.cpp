@@ -306,3 +306,50 @@ void NS_Comp_Svc::CLservices::del_un_article(int id)
 
 	this->oCad->actionRows(sql);
 }// Article
+
+
+
+
+//Remise 
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_remises(System::String^ dataTableName) {
+	System::String^ sql;
+	sql = this->Mapp_remise->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+
+void NS_Comp_Svc::CLservices::ins_une_remise(System::String^nomremise, int id, float pourcentageRemise)
+{
+	System::String^ sql;
+	this->Mapp_remise->setid(id);
+	this->Mapp_remise->setnomremise(nomremise);
+	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
+
+	sql = this->Mapp_remise->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_une_remise(int id, System::String^ nomremise, float pourcentageRemise)
+{
+	System::String^ sql;
+	this->Mapp_remise->setid(id);
+	this->Mapp_remise->setnomremise(nomremise);
+	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
+	sql = this->Mapp_remise->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_une_remise(int id,float)
+{
+	System::String^ sql;
+
+	this->Mapp_remise->setid(id);
+	sql = this->Mapp_remise->Delete();
+
+	this->oCad->actionRows(sql);
