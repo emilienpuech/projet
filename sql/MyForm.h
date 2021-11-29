@@ -23,9 +23,9 @@ namespace P6new {
 			//
 			//TODO: ajoutez ici le code du constructeur
 			//
-			
 
-			
+
+
 
 		}
 
@@ -42,7 +42,7 @@ namespace P6new {
 			}
 		}
 
-		   //dgv_enr_CellContentClick
+		//dgv_enr_CellContentClick
 	protected:
 
 
@@ -150,24 +150,38 @@ namespace P6new {
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::DataGridView^ dgv_enr;
 	private: System::Windows::Forms::TabControl^ tabControl1;
-private: System::Windows::Forms::Label^ label8;
-private: System::Windows::Forms::Label^ label7;
-private: System::Windows::Forms::Label^ label6;
-private: System::Windows::Forms::Label^ label5;
-private: System::Windows::Forms::TextBox^ textBox15;
-private: System::Windows::Forms::Label^ label11;
-private: System::Windows::Forms::Label^ label10;
-private: System::Windows::Forms::Label^ label9;
-private: System::Windows::Forms::Label^ label16;
-private: System::Windows::Forms::Label^ label15;
-private: System::Windows::Forms::Label^ label14;
-private: System::Windows::Forms::Label^ label13;
-private: System::Windows::Forms::Label^ label12;
-private: System::Windows::Forms::TextBox^ textBox17;
-private: System::Windows::Forms::TextBox^ textBox16;
-private: System::Windows::Forms::Label^ label19;
-private: System::Windows::Forms::Label^ label18;
-private: System::Windows::Forms::Label^ label17;
+	private: System::Windows::Forms::Label^ label8;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::TextBox^ textBox15;
+	private: System::Windows::Forms::Label^ label11;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Label^ label16;
+	private: System::Windows::Forms::Label^ label15;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::TextBox^ textBox17;
+	private: System::Windows::Forms::TextBox^ textBox16;
+	private: System::Windows::Forms::Label^ label19;
+	private: System::Windows::Forms::Label^ label18;
+	private: System::Windows::Forms::Label^ label17;
+private: System::Windows::Forms::TabPage^ tabPage8;
+private: System::Windows::Forms::Label^ label23;
+private: System::Windows::Forms::Label^ label22;
+private: System::Windows::Forms::Label^ label21;
+private: System::Windows::Forms::Label^ label20;
+private: System::Windows::Forms::TextBox^ textBox21;
+private: System::Windows::Forms::TextBox^ textBox18;
+private: System::Windows::Forms::TextBox^ textBox19;
+private: System::Windows::Forms::TextBox^ textBox20;
+private: System::Windows::Forms::DataGridView^ dataGridView5;
+private: System::Windows::Forms::Button^ button18;
+private: System::Windows::Forms::Button^ button19;
+private: System::Windows::Forms::Button^ button20;
+private: System::Windows::Forms::Button^ button21;
 
 
 
@@ -266,6 +280,20 @@ private: System::Windows::Forms::Label^ label17;
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->dgv_enr = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage8 = (gcnew System::Windows::Forms::TabPage());
+			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->textBox21 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox18 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox19 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox20 = (gcnew System::Windows::Forms::TextBox());
+			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
+			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button21 = (gcnew System::Windows::Forms::Button());
 			this->tabPage5->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->tabPage4->SuspendLayout();
@@ -277,6 +305,8 @@ private: System::Windows::Forms::Label^ label17;
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->BeginInit();
 			this->tabControl1->SuspendLayout();
+			this->tabPage8->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabPage7
@@ -965,11 +995,144 @@ private: System::Windows::Forms::Label^ label17;
 			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Controls->Add(this->tabPage6);
 			this->tabControl1->Controls->Add(this->tabPage7);
+			this->tabControl1->Controls->Add(this->tabPage8);
 			this->tabControl1->Location = System::Drawing::Point(1, 1);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(507, 330);
 			this->tabControl1->TabIndex = 8;
+			// 
+			// tabPage8
+			// 
+			this->tabPage8->Controls->Add(this->label23);
+			this->tabPage8->Controls->Add(this->label22);
+			this->tabPage8->Controls->Add(this->label21);
+			this->tabPage8->Controls->Add(this->label20);
+			this->tabPage8->Controls->Add(this->textBox21);
+			this->tabPage8->Controls->Add(this->textBox18);
+			this->tabPage8->Controls->Add(this->textBox19);
+			this->tabPage8->Controls->Add(this->textBox20);
+			this->tabPage8->Controls->Add(this->dataGridView5);
+			this->tabPage8->Controls->Add(this->button18);
+			this->tabPage8->Controls->Add(this->button19);
+			this->tabPage8->Controls->Add(this->button20);
+			this->tabPage8->Controls->Add(this->button21);
+			this->tabPage8->Location = System::Drawing::Point(4, 22);
+			this->tabPage8->Name = L"tabPage8";
+			this->tabPage8->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage8->Size = System::Drawing::Size(499, 304);
+			this->tabPage8->TabIndex = 7;
+			this->tabPage8->Text = L"Paiement";
+			this->tabPage8->UseVisualStyleBackColor = true;
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Location = System::Drawing::Point(288, 258);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(46, 13);
+			this->label23->TabIndex = 30;
+			this->label23->Text = L"Montant";
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->Location = System::Drawing::Point(257, 228);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(77, 13);
+			this->label22->TabIndex = 29;
+			this->label22->Text = L"Date Paiement";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Location = System::Drawing::Point(237, 199);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(97, 13);
+			this->label21->TabIndex = 28;
+			this->label21->Text = L"Moyen Paiement";
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->Location = System::Drawing::Point(269, 170);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(65, 13);
+			this->label20->TabIndex = 27;
+			this->label20->Text = L"ID Paiement";
+			// 
+			// textBox21
+			// 
+			this->textBox21->Location = System::Drawing::Point(340, 251);
+			this->textBox21->Name = L"textBox21";
+			this->textBox21->Size = System::Drawing::Size(149, 20);
+			this->textBox21->TabIndex = 26;
+			// 
+			// textBox18
+			// 
+			this->textBox18->Location = System::Drawing::Point(340, 170);
+			this->textBox18->Name = L"textBox18";
+			this->textBox18->Size = System::Drawing::Size(149, 20);
+			this->textBox18->TabIndex = 25;
+			// 
+			// textBox19
+			// 
+			this->textBox19->Location = System::Drawing::Point(340, 196);
+			this->textBox19->Name = L"textBox19";
+			this->textBox19->Size = System::Drawing::Size(149, 20);
+			this->textBox19->TabIndex = 24;
+			// 
+			// textBox20
+			// 
+			this->textBox20->Location = System::Drawing::Point(340, 225);
+			this->textBox20->Name = L"textBox20";
+			this->textBox20->Size = System::Drawing::Size(149, 20);
+			this->textBox20->TabIndex = 23;
+			// 
+			// dataGridView5
+			// 
+			this->dataGridView5->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView5->Location = System::Drawing::Point(6, 2);
+			this->dataGridView5->Margin = System::Windows::Forms::Padding(2);
+			this->dataGridView5->Name = L"dataGridView5";
+			this->dataGridView5->Size = System::Drawing::Size(236, 78);
+			this->dataGridView5->TabIndex = 22;
+			// 
+			// button18
+			// 
+			this->button18->Location = System::Drawing::Point(15, 170);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(75, 129);
+			this->button18->TabIndex = 21;
+			this->button18->Text = L"Load DB";
+			this->button18->UseVisualStyleBackColor = true;
+			// 
+			// button19
+			// 
+			this->button19->Location = System::Drawing::Point(92, 263);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(75, 37);
+			this->button19->TabIndex = 18;
+			this->button19->Text = L"INS";
+			this->button19->UseVisualStyleBackColor = true;
+			// 
+			// button20
+			// 
+			this->button20->Location = System::Drawing::Point(92, 216);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(75, 37);
+			this->button20->TabIndex = 20;
+			this->button20->Text = L"UPD";
+			this->button20->UseVisualStyleBackColor = true;
+			// 
+			// button21
+			// 
+			this->button21->Location = System::Drawing::Point(92, 170);
+			this->button21->Name = L"button21";
+			this->button21->Size = System::Drawing::Size(75, 37);
+			this->button21->TabIndex = 19;
+			this->button21->Text = L"DEL";
+			this->button21->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
@@ -996,6 +1159,9 @@ private: System::Windows::Forms::Label^ label17;
 			this->tabPage1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_enr))->EndInit();
 			this->tabControl1->ResumeLayout(false);
+			this->tabPage8->ResumeLayout(false);
+			this->tabPage8->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -1035,7 +1201,7 @@ private: System::Windows::Forms::Label^ label17;
 	}
 
 
-		   
+
 
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 		//this->oSvc = ;
@@ -1045,7 +1211,7 @@ private: System::Windows::Forms::Label^ label17;
 	private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-		
+
 	}
 	private: System::Void dgv_enr_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
@@ -1054,23 +1220,23 @@ private: System::Windows::Forms::Label^ label17;
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	}
-private: System::Void dataGridView3_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-}
-private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-};
+	private: System::Void dataGridView3_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label6_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label9_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	};
 
 
 
