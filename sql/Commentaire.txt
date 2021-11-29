@@ -53,8 +53,7 @@ Select * from Ville
 
 
 
-// Microsoft SQL Server Data structure + data
-/*------------------------------------------------------------
+// Microsoft SQL Server Data structure + data/*------------------------------------------------------------
 *        Script SQLSERVER 
 ------------------------------------------------------------*/
 
