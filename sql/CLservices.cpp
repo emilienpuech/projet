@@ -345,11 +345,11 @@ void NS_Comp_Svc::CLservices::upd_une_remise(int id, System::String^ nomremise, 
 }
 
 
-void NS_Comp_Svc::CLservices::del_une_remise(int id,float)
-{
+void NS_Comp_Svc::CLservices::del_une_remise(int id){
 	System::String^ sql;
 
 	this->Mapp_remise->setid(id);
 	sql = this->Mapp_remise->Delete();
 
 	this->oCad->actionRows(sql);
+}

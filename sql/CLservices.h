@@ -75,7 +75,7 @@ namespace NS_Comp_Svc
 		System::Data::DataSet^ select_tout_nos_remises(System::String^);
 		void upd_une_remise(int id, System::String^, float pourcentageRemise);
 		void ins_une_remise(System::String^nomremise, int id,float pourcentageRemise);
-		void del_une_remise(int, float);
+		void del_une_remise(int);
 
 
 
