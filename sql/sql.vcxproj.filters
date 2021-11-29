@@ -72,9 +72,6 @@
     <ClCompile Include="CL_Mapping_Taxe.cpp">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClCompile>
-    <ClCompile Include="CL_Mapping_Taxer.cpp">
-      <Filter>Fichiers sources\MAP cpp</Filter>
-    </ClCompile>
     <ClCompile Include="CL_Mapping_Ville.cpp">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClCompile>
@@ -122,14 +119,11 @@
     <ClInclude Include="CL_Mapping_Remise.h">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
-    <ClInclude Include="CL_Mapping_Taxer.h">
-      <Filter>Fichiers sources\MAP cpp</Filter>
-    </ClInclude>
     <ClInclude Include="CL_Mapping_Ville.h">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
     <ClInclude Include="CL_Mapping_Taxe.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

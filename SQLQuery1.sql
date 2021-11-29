@@ -1,44 +1,4 @@
-
-Ma data connection string ne pas supprimer
-this->sCnx = "Data Source=DESKTOP-B8TDUS7\\SQLSERVER;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
-
-
-
-
-// Onglet Client 
-
-   // LOAD
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Refresh();
-		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
-		this->dgv_enr->DataSource = this->oDs;
-		this->dgv_enr->DataMember = "Rsl";
-
-	}
-		   // UPD      this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-
-
-	}
-		   // INS
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->ins_un_client(this->textBox1->Text, this->textBox2->Text, this->textBox3->Text);
-	}
-
-		   // DEL
-	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-
-	}
-
-
-
-
-
-// Microsoft SQL Server Data structure
-
-
-/*------------------------------------------------------------
+﻿/*------------------------------------------------------------
 *        Script SQLSERVER 
 ------------------------------------------------------------*/
 /*CREATE DATABASE projetpoo;
@@ -51,7 +11,7 @@ CREATE TABLE Client(
 	numeroClient    INT IDENTITY (1,1) NOT NULL ,
 	Nom             CHAR (20)  NOT NULL ,
 	Prenom          CHAR (20)  NOT NULL ,
-	DateNaissance   DATE NOT NULL  ,
+	DateNaissance   DATETIME NOT NULL  ,
 	CONSTRAINT Client_PK PRIMARY KEY (numeroClient)
 );
 
@@ -61,8 +21,8 @@ CREATE TABLE Client(
 ------------------------------------------------------------*/
 CREATE TABLE Commande(
 	RefCommande     VARCHAR (20) NOT NULL ,
-	DateLivraison   DATE NOT NULL ,
-	DateEmission    DATE NOT NULL ,
+	DateLivraison   DATETIME NOT NULL ,
+	DateEmission    DATETIME NOT NULL ,
 	numeroClient    INT  NOT NULL  ,
 	CONSTRAINT Commande_PK PRIMARY KEY (RefCommande)
 );
@@ -131,7 +91,7 @@ CREATE TABLE Taxe(
 ------------------------------------------------------------*/
 CREATE TABLE Paiement(
 	IDPaiement        INT IDENTITY (1,1) NOT NULL ,
-	DatePaiement      DATE NOT NULL ,
+	DatePaiement      DATETIME NOT NULL ,
 	montantPaiement   INT  NOT NULL ,
 	RefCommande       VARCHAR (20) NOT NULL ,
 	IDMoyenPaiement   INT  NOT NULL  ,
@@ -185,13 +145,13 @@ CREATE TABLE Beneficier(
 
 
 /*------------------------------------------------------------
--- Table: Employ�
+-- Table: Employé
 ------------------------------------------------------------*/
 CREATE TABLE Employe(
 	IDEmploye           INT IDENTITY (1,1) NOT NULL ,
 	Nom                 CHAR (10)  NOT NULL ,
 	Prenom              CHAR (20)  NOT NULL ,
-	DateEmbauche        DATE NOT NULL ,
+	DateEmbauche        DATETIME NOT NULL ,
 	IDAdresse           INT  NOT NULL ,
 	IDEmploye_Employe   INT    ,
 	CONSTRAINT Employe_PK PRIMARY KEY (IDEmploye)
