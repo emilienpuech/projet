@@ -23,7 +23,7 @@ int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
 Client 
 Employer
 Mode de paiement
-
+Article
 
 
 A faire
@@ -33,7 +33,6 @@ Adresse (ajouter les villes)
 Remise
 Taxe
 
-Article
 Commande
 Satistique
 

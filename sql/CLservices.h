@@ -29,8 +29,8 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Client^ Mapp_client;
 		NS_Comp_Mappage::CL_Mapping_Employer^ Mapp_employer;
 		NS_Comp_Mappage::CL_Mapping_Adresse^ Mapp_adresse;
-		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise;
-		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe;
+		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise; // a faire 
+		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe; //     a faire 
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
 	
