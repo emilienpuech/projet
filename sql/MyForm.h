@@ -1,4 +1,3 @@
-
 //MyForm.H*********************************************************************************************
 #pragma once
 #include "CLservices.h"
@@ -691,17 +690,17 @@ namespace P6new {
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 		//this->oSvc = ;
 	}
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-}
-private: System::Void dgv_enr_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-}
-private: System::Void dataGridView4_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
-}
-};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	private: System::Void dgv_enr_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	private: System::Void dataGridView4_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+	}
+	};
 
 
 
