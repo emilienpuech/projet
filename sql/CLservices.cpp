@@ -255,3 +255,58 @@ void NS_Comp_Svc::CLservices::del_un_mode_de_paiement(int id)
 
 	this->oCad->actionRows(sql);
 }// PAIEMENT
+
+
+
+
+
+
+// Article
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_articles(System::String^ dataTableName) {
+	System::String^ sql;
+	sql = this->Mapp_article->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+
+void NS_Comp_Svc::CLservices::ins_un_article(System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement)
+{
+	System::String^ sql;
+
+	this->Mapp_article->setnom(nom);
+	this->Mapp_article->setquantite_de_stock(quantite_de_stock);
+	this->Mapp_article->setprix_produit(prix_produit);
+	this->Mapp_article->setseuilreapprovisionnement(seuil_reapprovisionnement);
+
+	sql = this->Mapp_article->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_un_article(int id, System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement)
+{
+	System::String^ sql;
+
+	this->Mapp_article->setid(id);
+	this->Mapp_article->setnom(nom);
+	this->Mapp_article->setquantite_de_stock(quantite_de_stock);
+	this->Mapp_article->setprix_produit(prix_produit);
+	this->Mapp_article->setseuilreapprovisionnement(seuil_reapprovisionnement);
+
+	sql = this->Mapp_article->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_un_article(int id)
+{
+	System::String^ sql;
+
+	this->Mapp_article->setid(id);
+	sql = this->Mapp_article->Delete();
+
+	this->oCad->actionRows(sql);
+}// Article

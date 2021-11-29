@@ -32,6 +32,7 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Remise^ Mapp_remise;
 		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe;
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
+		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
 	
 	
 	public:
@@ -63,6 +64,13 @@ namespace NS_Comp_Svc
 		void upd_un_mode_de_paiement(int, System::String^);
 		void ins_un_mode_de_paiement(System::String^);
 		void del_un_mode_de_paiement(int);
+
+		// Article
+		System::Data::DataSet^ select_tout_nos_articles(System::String^);
+		void upd_un_article(int id , System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
+		void ins_un_article(System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
+		void del_un_article(int);
+
 
 
 
