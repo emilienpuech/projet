@@ -5,7 +5,7 @@ namespace NS_Comp_Mappage
 	{
 	private:
 		System::String^ sSql;
-		int Id;
+		int id;
 		System::String^ nom;
 		int quantite_de_stock;
 		int prix_produit;
@@ -17,7 +17,7 @@ namespace NS_Comp_Mappage
 		System::String^ Update(void);
 
 
-
+		void setid(int id);
 		void setnom(System::String^ nom);
 		void setquantite_de_stock(int quantite_de_stock);
 		void setprix_produit(int prix_produit);
