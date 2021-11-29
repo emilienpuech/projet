@@ -149,6 +149,7 @@ CREATE TABLE Paiement(
 ------------------------------------------------------------*/
 CREATE TABLE Remise(
 	idPaiement          INT IDENTITY (1,1) NOT NULL ,
+	nomremise           CHAR (20)  NOT NULL ,
 	pourcentageRemise   FLOAT  NOT NULL  ,
 	CONSTRAINT Remise_PK PRIMARY KEY (idPaiement)
 );
