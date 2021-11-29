@@ -23,7 +23,12 @@ namespace P6new {
 			//
 			//TODO: ajoutez ici le code du constructeur
 			//
+			
+
+			
+
 		}
+
 
 	protected:
 		/// <summary>
@@ -92,6 +97,8 @@ namespace P6new {
 	private: System::Windows::Forms::DataGridView^ dataGridView3;
 	private: System::Windows::Forms::DataGridView^ dataGridView4;
 	private: System::Windows::Forms::TextBox^ textBox13;
+
+
 
 
 
@@ -254,7 +261,7 @@ namespace P6new {
 			this->tabPage1->Controls->Add(this->dgv_enr);
 			this->tabPage1->Location = System::Drawing::Point(4, 22);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3, 3, 3, 3);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage1->Size = System::Drawing::Size(499, 304);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Client";
@@ -278,7 +285,6 @@ namespace P6new {
 			this->button3->TabIndex = 10;
 			this->button3->Text = L"INS";
 			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// textBox1
 			// 
@@ -286,7 +292,6 @@ namespace P6new {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(307, 20);
 			this->textBox1->TabIndex = 15;
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged);
 			// 
 			// button4
 			// 
@@ -296,7 +301,6 @@ namespace P6new {
 			this->button4->TabIndex = 12;
 			this->button4->Text = L"UPD";
 			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// textBox2
 			// 
@@ -304,7 +308,6 @@ namespace P6new {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(307, 20);
 			this->textBox2->TabIndex = 14;
-			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// button5
 			// 
@@ -314,7 +317,6 @@ namespace P6new {
 			this->button5->TabIndex = 11;
 			this->button5->Text = L"DEL";
 			this->button5->UseVisualStyleBackColor = true;
-			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// textBox3
 			// 
@@ -322,7 +324,6 @@ namespace P6new {
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(307, 20);
 			this->textBox3->TabIndex = 13;
-			this->textBox3->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox3_TextChanged);
 			// 
 			// tabPage2
 			// 
@@ -335,9 +336,9 @@ namespace P6new {
 			this->tabPage2->Controls->Add(this->btn_delete);
 			this->tabPage2->Controls->Add(this->txt_id);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
-			this->tabPage2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage2->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(2);
 			this->tabPage2->Size = System::Drawing::Size(499, 304);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Personnel";
@@ -346,7 +347,7 @@ namespace P6new {
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(6, 162);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(63, 113);
 			this->button1->TabIndex = 9;
@@ -358,9 +359,9 @@ namespace P6new {
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(6, 4);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(236, 78);
+			this->dataGridView1->Size = System::Drawing::Size(473, 153);
 			this->dataGridView1->TabIndex = 8;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
 			// 
@@ -375,9 +376,9 @@ namespace P6new {
 			this->tabPage3->Controls->Add(this->button9);
 			this->tabPage3->Controls->Add(this->textBox6);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
-			this->tabPage3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage3->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage3->Padding = System::Windows::Forms::Padding(2);
 			this->tabPage3->Size = System::Drawing::Size(499, 304);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Commande";
@@ -387,9 +388,9 @@ namespace P6new {
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Location = System::Drawing::Point(4, 6);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView2->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView2->Name = L"dataGridView2";
-			this->dataGridView2->Size = System::Drawing::Size(236, 78);
+			this->dataGridView2->Size = System::Drawing::Size(475, 157);
 			this->dataGridView2->TabIndex = 17;
 			// 
 			// button6
@@ -460,9 +461,9 @@ namespace P6new {
 			this->tabPage4->Controls->Add(this->button13);
 			this->tabPage4->Controls->Add(this->textBox9);
 			this->tabPage4->Location = System::Drawing::Point(4, 22);
-			this->tabPage4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage4->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage4->Padding = System::Windows::Forms::Padding(2);
 			this->tabPage4->Size = System::Drawing::Size(499, 304);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Stock";
@@ -473,9 +474,9 @@ namespace P6new {
 			// 
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView3->Location = System::Drawing::Point(8, 3);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView3->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView3->Name = L"dataGridView3";
-			this->dataGridView3->Size = System::Drawing::Size(236, 78);
+			this->dataGridView3->Size = System::Drawing::Size(480, 160);
 			this->dataGridView3->TabIndex = 17;
 			// 
 			// button10
@@ -546,9 +547,9 @@ namespace P6new {
 			this->tabPage5->Controls->Add(this->button17);
 			this->tabPage5->Controls->Add(this->textBox12);
 			this->tabPage5->Location = System::Drawing::Point(4, 22);
-			this->tabPage5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage5->Margin = System::Windows::Forms::Padding(2);
 			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->tabPage5->Padding = System::Windows::Forms::Padding(2);
 			this->tabPage5->Size = System::Drawing::Size(499, 304);
 			this->tabPage5->TabIndex = 4;
 			this->tabPage5->Text = L"Stats";
@@ -558,7 +559,7 @@ namespace P6new {
 			// 
 			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView4->Location = System::Drawing::Point(8, 0);
-			this->dataGridView4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView4->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView4->Name = L"dataGridView4";
 			this->dataGridView4->Size = System::Drawing::Size(236, 78);
 			this->dataGridView4->TabIndex = 17;
@@ -685,7 +686,7 @@ namespace P6new {
 	}
 
 
-
+		   
 
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 		//this->oSvc = ;
@@ -695,12 +696,16 @@ namespace P6new {
 	private: System::Void tabPage4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+		
 	}
 	private: System::Void dgv_enr_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
 	private: System::Void dataGridView4_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
-	};
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	}
+};
 
 
 
