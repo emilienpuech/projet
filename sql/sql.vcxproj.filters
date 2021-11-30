@@ -75,6 +75,9 @@
     <ClCompile Include="CL_Mapping_Ville.cpp">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClCompile>
+    <ClCompile Include="CL_Mapping_Mode_De_Paiement.cpp">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -123,6 +126,9 @@
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
     <ClInclude Include="CL_Mapping_Taxe.h">
+      <Filter>Fichiers sources\MAP cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="CL_Mapping_Mode_De_Paiement.h">
       <Filter>Fichiers sources\MAP cpp</Filter>
     </ClInclude>
   </ItemGroup>
