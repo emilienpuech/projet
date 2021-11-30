@@ -5,11 +5,13 @@ namespace NS_Comp_Mappage
     ref class CL_Mapping_Remise
     {
     private:
-       
-        int id;
+
+        int ID_Paiement;
         System::String^ nomRemise;
         float pourcentageRemise;
-        
+        int RefCommande;
+       
+
 
     public:
         System::String^ Select(void);
@@ -17,9 +19,9 @@ namespace NS_Comp_Mappage
         System::String^ Delete(void);
         System::String^ Update(void);
         void setid(int id);
-        void setnomremise(System::String^ nomRemise);
-        void setpourcentageRemise(float pourcentageRemise);
-
+        void setnomRemise(System::String^ nomRemise);
+        void setPourcentageRemise(float pourcentageRemise);
+       
 
     };
 }

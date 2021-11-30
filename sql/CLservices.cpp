@@ -1,6 +1,8 @@
 //CLservice.CPP***************************************************************************************
 #include "pch.h"
 #include "CLservices.h"
+#include "CL_Mapping_Taxe.h"
+#include "CL_Mapping_Commande.h"
 
 NS_Comp_Svc::CLservices::CLservices(void)
 {
@@ -26,16 +28,16 @@ Employer
 Mode de paiement
 Article
 Adresse (ajouter les villes)
-
+Commande
+Taxe
 
 A faire
 
 
 
 Remise
-Taxe
 
-Commande
+
 Satistique
 
 
@@ -306,3 +308,81 @@ void NS_Comp_Svc::CLservices::del_un_article(int id)
 
 	this->oCad->actionRows(sql);
 }// Article
+
+
+
+
+//TAXE
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_taxe(System::String^ dataTableName)
+{
+
+	System::String^ sql;
+	sql = this->Mapp_taxe->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+void NS_Comp_Svc::CLservices::ins_une_Taxe( System::String^ NomTaxe)
+{
+	System::String^ sql;
+
+	
+	this->Mapp_taxe->setnom_taxe(NomTaxe);
+	
+
+	sql = this->Mapp_taxe->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_une_Taxe(int id, System::String^ NomTaxe)
+{
+	System::String^ sql;
+	this->Mapp_taxe->setid(id);
+	this->Mapp_taxe->setnom_taxe(NomTaxe);
+	
+
+	sql = this->Mapp_taxe->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_une_Taxe(int id)
+{
+	System::String^ sql;
+
+	this->Mapp_taxe->setid(id);
+	sql = this->Mapp_taxe->Delete();
+
+	this->oCad->actionRows(sql);
+}//TAXE
+
+
+//COMMANDE 
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_Commandes(System::String ^ dataTableName)
+{
+	System::String^ sql;
+	sql = this->Mapp_taxe->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+void NS_Comp_Svc::CLservices::ins_une_commande(System::String^ ); {
+
+	System::String^ sql;
+
+
+	this->Mapp_commande->setRefCommande(int RefCommande);
+
+
+	sql = this->Mapp_commande->Insert();
+
+	this->oCad->actionRows(sql);
+
+}
+
+
+
