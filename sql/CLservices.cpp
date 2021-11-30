@@ -27,15 +27,14 @@ Employer
 Mode de paiement
 Article
 Adresse (ajouter les villes)
-
+Remise
 
 A faire
 
 
 
-Remise
-Taxe
 
+Taxe
 Commande
 Satistique
 
