@@ -82,10 +82,10 @@ namespace NS_Comp_Svc
 		// Commande
 
 		System::Data::DataSet^ select_toutes_nos_commandes(System::String^);
-		void upd_une_commande(int RefCommande, System::String^);
+		void upd_une_commande(int RefCommande, System::String^ DateEmission, System::String^ DateLivraison);
 		void ins_une_commande(System::String^, int RefCommande);
 		void del_une_commande(int);
-
+			
 
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage
 		//System::Data::DataSet^ sel (System::String^);

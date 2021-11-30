@@ -370,16 +370,31 @@ void NS_Comp_Svc::CLservices::ins_une_commande(System::String^, int RefCommande)
 
 	this->Mapp_commande->setRefCommande(RefCommande);
 
+	sql = this->Mapp_commande->Insert();
+
 	this->oCad->actionRows(sql);
 }
 
-void NS_Comp_Svc::CLservices::upd_une_commande(int RefCommande, System::String^) {
+void NS_Comp_Svc::CLservices::upd_une_commande(int RefCommande, System::String^ DateEmission, System::String^ DateLivraison ) {
 
 	System::String^ sql;
 	this->Mapp_commande->setRefCommande(RefCommande);
 	this->Mapp_commande->setDateEmission(DateEmission);
 	this->Mapp_commande->setDateLivraison(DateLivraison);
 
+	sql = this->Mapp_commande->Update();
+
 	this->oCad->actionRows(sql);
 }
+
+void NS_Comp_Svc::CLservices::del_une_commande(int RefCommande) {
+
+	System::String^ sql;
+	this->Mapp_commande->setRefCommande(RefCommande);
+
+	sql = this->Mapp_commande->Delete();
+
+	this->oCad->actionRows(sql);
+}
+
 
