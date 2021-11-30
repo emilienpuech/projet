@@ -15,9 +15,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Ville::Delete(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Ville::Update(void)
 {
-    return "UPDATE [projetpoo].[dbo].[Ville] SET NomVille ='" + this->nom_Ville + "',PourcentageTaxe = '"  WHERE IDVille = '" + this->id + "'; ";
+    return "UPDATE [projetpoo].[dbo].[Ville] SET NomVille ='" + this->nom_ville + "'  WHERE IDVille = '" + this->id + "'; ";
 }
-
-void NS_Comp_Mappage::CL_Mapping_Taxe::setid(int id) { this->id = id; }
-void NS_Comp_Mappage::CL_Mapping_Taxe::setnom_taxe(System::String^ nom_taxe) { this->nom_taxe = nom_taxe; }
-void NS_Comp_Mappage::CL_Mapping_Taxe::setpourcentagetaxe(float pourcentagetaxe) { this->pourcentagetaxe = pourcentagetaxe; }
+void NS_Comp_Mappage::CL_Mapping_Ville::setid(int id) { this->id = id; }
+void NS_Comp_Mappage::CL_Mapping_Ville::setnom_ville(System::String^ nom_ville) { this->nom_ville = nom_ville; }

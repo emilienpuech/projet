@@ -17,8 +17,8 @@ namespace NS_Comp_Mappage
         System::String^ Insert(void);
         System::String^ Delete(void);
         System::String^ Update(void);
-        void setid(int id);
-        void setnom_taxe(System::String^ nom_ville);
+        void setid(int idville);
+        void setnom_ville(System::String^ nom_ville);
 
 
     };

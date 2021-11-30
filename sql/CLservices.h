@@ -34,6 +34,8 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
 		NS_Comp_Mappage::CL_Mapping_Commande^ Mapp_commande;
+		NS_Comp_Mappage::CL_Mapping_Ville^ Mapp_ville;
+
 
 
 	public:
@@ -86,6 +88,13 @@ namespace NS_Comp_Svc
 		void ins_une_commande(System::String^, int RefCommande);
 		void del_une_commande(int);
 			
+
+		//Ville
+
+		System::Data::DataSet^ select_toutes_nos_villes(System::String^);
+		void upd_une_ville(int idville, System::String^ nom_ville);
+		void ins_une_ville(System::String^nom_ville, int idville);
+		void del_une_ville(int idville, System::String^ nom_ville);
 
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage
 		//System::Data::DataSet^ sel (System::String^);
