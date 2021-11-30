@@ -10,6 +10,7 @@ NS_Comp_Svc::CLservices::CLservices(void)
 	this->Mapp_employer = gcnew NS_Comp_Mappage::CL_Mapping_Employer();
 	this->Mapp_remise = gcnew NS_Comp_Mappage::CL_Mapping_Remise();
 	this->Mapp_taxe = gcnew NS_Comp_Mappage::CL_Mapping_Taxe();
+	this->Mapp_commande = gcnew NS_Comp_Mappage::CL_Mapping_Commande();
 	
 }
 int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
@@ -324,8 +325,8 @@ void NS_Comp_Svc::CLservices::ins_une_remise(System::String^nomremise, int id, f
 {
 	System::String^ sql;
 	this->Mapp_remise->setid(id);
-	this->Mapp_remise->setnomremise(nomremise);
-	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
+	this->Mapp_remise->setnomRemise(nomremise);
+	this->Mapp_remise->setPourcentageRemise(pourcentageRemise);
 
 	sql = this->Mapp_remise->Insert();
 
@@ -337,8 +338,8 @@ void NS_Comp_Svc::CLservices::upd_une_remise(int id, System::String^ nomremise, 
 {
 	System::String^ sql;
 	this->Mapp_remise->setid(id);
-	this->Mapp_remise->setnomremise(nomremise);
-	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
+	this->Mapp_remise->setnomRemise(nomremise);
+	this->Mapp_remise->setPourcentageRemise(pourcentageRemise);
 	sql = this->Mapp_remise->Update();
 
 	this->oCad->actionRows(sql);
@@ -352,4 +353,14 @@ void NS_Comp_Svc::CLservices::del_une_remise(int id){
 	sql = this->Mapp_remise->Delete();
 
 	this->oCad->actionRows(sql);
+}
+
+
+//Commande
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(System::String^) {
+
+	System::String^ sql;
+	sql = this->Mapp_commande->Select();
+	return this->oCad->getRows(sql, dataTableName);
 }

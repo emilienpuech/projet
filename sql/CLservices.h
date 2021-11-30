@@ -33,6 +33,7 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Taxe^ Mapp_taxe; //     a faire 
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
+		NS_Comp_Mappage::CL_Mapping_Commande^ Mapp_commande;
 	
 	
 	public:
@@ -76,7 +77,14 @@ namespace NS_Comp_Svc
 		void upd_une_remise(int id, System::String^, float pourcentageRemise);
 		void ins_une_remise(System::String^nomremise, int id,float pourcentageRemise);
 		void del_une_remise(int);
+		
 
+		// Commande
+
+		System::Data::DataSet^ select_toutes_nos_commandes(System::String^);
+		void upd_une_commande(int RefCommande, System::String^);
+		void ins_une_commande(System::String^, int RefCommande);
+		void del_une_commande(int);
 
 
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage
