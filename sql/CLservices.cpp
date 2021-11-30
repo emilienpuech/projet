@@ -31,18 +31,19 @@ Client
 Employer
 Mode de paiement
 Article
-Adresse (ajouter les villes)
+Adresse (ajouter les villes) fait
 Remise
 Mode Paiement
 Commande
 Taxer
+Taxe
 
 A faire
 
 
 
 
-Taxe
+
 Satistique
 
 
