@@ -182,6 +182,7 @@ namespace P6new {
 	private: System::Windows::Forms::Button^ button5;
 	private: System::Windows::Forms::DataGridView^ DataGrindViewClient;
 	private: System::Windows::Forms::TabControl^ tabControl1;
+private: System::Windows::Forms::TabPage^ tabPage9;
 
 
 
@@ -409,6 +410,7 @@ namespace P6new {
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->DataGrindViewClient = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->tabPage5->SuspendLayout();
@@ -1247,11 +1249,22 @@ namespace P6new {
 			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Controls->Add(this->tabPage8);
+			this->tabControl1->Controls->Add(this->tabPage9);
 			this->tabControl1->Location = System::Drawing::Point(1, 1);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(507, 330);
 			this->tabControl1->TabIndex = 8;
+			// 
+			// tabPage9
+			// 
+			this->tabPage9->Location = System::Drawing::Point(4, 22);
+			this->tabPage9->Name = L"tabPage9";
+			this->tabPage9->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage9->Size = System::Drawing::Size(499, 304);
+			this->tabPage9->TabIndex = 8;
+			this->tabPage9->Text = L"tabPage9";
+			this->tabPage9->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 

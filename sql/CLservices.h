@@ -40,6 +40,7 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Mode_De_Paiement^ Mapp_modepaiement;
 		NS_Comp_Mappage::CL_Mapping_Composer^ Mapp_composer;
 		NS_Comp_Mappage::CL_Mapping_Taxer^ Mapp_taxer;
+		
 
 
 
@@ -122,6 +123,12 @@ namespace NS_Comp_Svc
 		void upd_taxer(int reference, int idTaxe);
 		void ins_taxer(int reference, int idTaxe);
 		void del_taxer(int reference, int idTaxe);
+
+		//Taxe
+		System::Data::DataSet^ select_taxe(System::String^);
+		void upd_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe);
+		void ins_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe);
+		void del_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe);
 
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage
 		//System::Data::DataSet^ sel (System::String^);

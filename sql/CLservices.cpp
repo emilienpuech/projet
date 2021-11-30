@@ -14,6 +14,7 @@ NS_Comp_Svc::CLservices::CLservices(void)
 	this->Mapp_composer = gcnew NS_Comp_Mappage::CL_Mapping_Composer();
 
 
+
 	
 	
 }
@@ -33,6 +34,8 @@ Article
 Adresse (ajouter les villes)
 Remise
 Mode Paiement
+Commande
+Taxer
 
 A faire
 
@@ -40,7 +43,6 @@ A faire
 
 
 Taxe
-Commande
 Satistique
 
 
@@ -580,6 +582,54 @@ void NS_Comp_Svc::CLservices::del_taxer(int reference, int idTaxe) {
 	System::String^ sql;
 	this->Mapp_taxer->setReference(reference);
 	this->Mapp_taxer->setid(idTaxe);
+
+	sql = this->Mapp_taxer->Delete();
+
+	this->oCad->actionRows(sql);
+}
+
+//Taxe
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_taxe(System::String^ dataTableName) {
+
+	System::String^ sql;
+	sql = this->Mapp_taxe->Select();
+	return this->oCad->getRows(sql, dataTableName);
+}
+
+void NS_Comp_Svc::CLservices::ins_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe) {
+
+	System::String^ sql;
+
+	this->Mapp_taxe->setid(idTaxe);
+	this->Mapp_taxe->setnom_taxe(nomtaxe);
+	this->Mapp_taxe->setpourcentagetaxe(pourcentageTaxe);
+
+
+	sql = this->Mapp_taxe->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::upd_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe) {
+
+	System::String^ sql;
+
+	this->Mapp_taxe->setid(idTaxe);
+	this->Mapp_taxe->setnom_taxe(nomtaxe);
+	this->Mapp_taxe->setpourcentagetaxe(pourcentageTaxe);
+
+	sql = this->Mapp_taxer->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::del_taxe(System::String^ nomtaxe, int idTaxe, float pourcentageTaxe) {
+
+	System::String^ sql;
+	this->Mapp_taxe->setnom_taxe(nomtaxe);
+	this->Mapp_taxe->setid(idTaxe);
+	this->Mapp_taxe->setpourcentagetaxe(pourcentageTaxe);
 
 	sql = this->Mapp_taxer->Delete();
 
