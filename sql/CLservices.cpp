@@ -541,3 +541,47 @@ void NS_Comp_Svc::CLservices::del_composer(int reference) {
 
 	this->oCad->actionRows(sql);
 } // Composer
+
+//Taxer
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_taxer(System::String^ dataTableName) {
+
+	System::String^ sql;
+	sql = this->Mapp_taxer->Select();
+	return this->oCad->getRows(sql, dataTableName);
+}
+
+void NS_Comp_Svc::CLservices::ins_taxer(int reference, int idTaxe) {
+
+	System::String^ sql;
+
+	this->Mapp_taxer->setReference(reference);
+	this->Mapp_taxer->setid(idTaxe);
+	
+
+	sql = this->Mapp_taxer->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::upd_taxer(int reference, int idTaxe) {
+
+	System::String^ sql;
+
+	this->Mapp_taxer->setReference(reference);
+	this->Mapp_taxer->setid(idTaxe);
+
+	sql = this->Mapp_taxer->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::del_taxer(int reference, int idTaxe) {
+
+	System::String^ sql;
+	this->Mapp_taxer->setReference(reference);
+	this->Mapp_taxer->setid(idTaxe);
+
+	sql = this->Mapp_taxer->Delete();
+
+	this->oCad->actionRows(sql);
+}
