@@ -28,6 +28,7 @@ Mode de paiement
 Article
 Adresse (ajouter les villes)
 Remise
+Mode Paiement
 
 A faire
 

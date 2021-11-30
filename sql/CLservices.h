@@ -106,6 +106,8 @@ namespace NS_Comp_Svc
 		void del_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
 
 
+
+
 		// Nous ajoutons nous fonctions de service qui utilisera nous méthode du CAD et de nos classe de mappage
 		//System::Data::DataSet^ sel (System::String^);
 

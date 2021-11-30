@@ -122,6 +122,7 @@
     <ClCompile Include="CAD.cpp" />
     <ClCompile Include="CL_Mapping_Client.cpp" />
     <ClCompile Include="CL_Mapping_Mode_De_Paiement.cpp" />
+    <ClCompile Include="CL_Mapping_Taxer.cpp" />
     <ClCompile Include="exempleCLmap.cpp" />
     <ClCompile Include="CLservices.cpp" />
     <ClCompile Include="CL_Mapping_Commande.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="CL_Mapping_Paiement.h" />
     <ClInclude Include="CL_Mapping_Remise.h" />
     <ClInclude Include="CL_Mapping_Taxe.h" />
+    <ClInclude Include="CL_Mapping_Taxer.h" />
     <ClInclude Include="CL_Mapping_Ville.h" />
     <ClInclude Include="exemplemap.h" />
     <ClInclude Include="CLservices.h" />
