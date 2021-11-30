@@ -397,4 +397,47 @@ void NS_Comp_Svc::CLservices::del_une_commande(int RefCommande) {
 	this->oCad->actionRows(sql);
 }
 
+//Ville
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_villes(System::String^ dataTableName) {
+
+	System::String^ sql;
+	sql = this->Mapp_ville->Select();
+	return this->oCad->getRows(sql, dataTableName);
+}
+
+void NS_Comp_Svc::CLservices::ins_une_ville(System::String^ nom_ville , int idville ) {
+
+	System::String^ sql;
+
+	this->Mapp_ville->setid(idville);
+	this->Mapp_ville->setnom_ville(nom_ville); 
+
+	sql = this->Mapp_ville->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::upd_une_ville(int idville, System::String^ nom_ville) {
+
+	System::String^ sql;
+	this->Mapp_ville->setid(idville);
+	this->Mapp_ville->setnom_ville(nom_ville);
+	
+	sql = this->Mapp_ville->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::del_une_ville(int idville, System::String^ nom_ville) {
+
+	System::String^ sql;
+	this->Mapp_ville->setid(idville);
+	this->Mapp_ville->setnom_ville(nom_ville);
+
+	sql = this->Mapp_ville->Delete();
+
+	this->oCad->actionRows(sql);
+}
+
 
