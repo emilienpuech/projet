@@ -183,6 +183,11 @@ namespace P6new {
 	private: System::Windows::Forms::DataGridView^ DataGrindViewClient;
 	private: System::Windows::Forms::TabControl^ tabControl1;
 private: System::Windows::Forms::TabPage^ tabPage9;
+private: System::Windows::Forms::TabPage^ tabPage10;
+private: System::Windows::Forms::TabPage^ tabPage11;
+private: System::Windows::Forms::TabPage^ tabPage12;
+private: System::Windows::Forms::TabPage^ tabPage13;
+private: System::Windows::Forms::TabPage^ tabPage14;
 
 
 
@@ -411,6 +416,11 @@ private: System::Windows::Forms::TabPage^ tabPage9;
 			this->DataGrindViewClient = (gcnew System::Windows::Forms::DataGridView());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage10 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage11 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->tabPage5->SuspendLayout();
@@ -1250,6 +1260,11 @@ private: System::Windows::Forms::TabPage^ tabPage9;
 			this->tabControl1->Controls->Add(this->tabPage5);
 			this->tabControl1->Controls->Add(this->tabPage8);
 			this->tabControl1->Controls->Add(this->tabPage9);
+			this->tabControl1->Controls->Add(this->tabPage10);
+			this->tabControl1->Controls->Add(this->tabPage11);
+			this->tabControl1->Controls->Add(this->tabPage12);
+			this->tabControl1->Controls->Add(this->tabPage13);
+			this->tabControl1->Controls->Add(this->tabPage14);
 			this->tabControl1->Location = System::Drawing::Point(1, 1);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -1263,8 +1278,58 @@ private: System::Windows::Forms::TabPage^ tabPage9;
 			this->tabPage9->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage9->Size = System::Drawing::Size(499, 304);
 			this->tabPage9->TabIndex = 8;
-			this->tabPage9->Text = L"tabPage9";
+			this->tabPage9->Text = L"Taxe";
 			this->tabPage9->UseVisualStyleBackColor = true;
+			// 
+			// tabPage10
+			// 
+			this->tabPage10->Location = System::Drawing::Point(4, 22);
+			this->tabPage10->Name = L"tabPage10";
+			this->tabPage10->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage10->Size = System::Drawing::Size(499, 304);
+			this->tabPage10->TabIndex = 9;
+			this->tabPage10->Text = L"Adresse";
+			this->tabPage10->UseVisualStyleBackColor = true;
+			// 
+			// tabPage11
+			// 
+			this->tabPage11->Location = System::Drawing::Point(4, 22);
+			this->tabPage11->Name = L"tabPage11";
+			this->tabPage11->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage11->Size = System::Drawing::Size(499, 304);
+			this->tabPage11->TabIndex = 10;
+			this->tabPage11->Text = L"Paiement";
+			this->tabPage11->UseVisualStyleBackColor = true;
+			// 
+			// tabPage12
+			// 
+			this->tabPage12->Location = System::Drawing::Point(4, 22);
+			this->tabPage12->Name = L"tabPage12";
+			this->tabPage12->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage12->Size = System::Drawing::Size(499, 304);
+			this->tabPage12->TabIndex = 11;
+			this->tabPage12->Text = L"Mode Paiement";
+			this->tabPage12->UseVisualStyleBackColor = true;
+			// 
+			// tabPage13
+			// 
+			this->tabPage13->Location = System::Drawing::Point(4, 22);
+			this->tabPage13->Name = L"tabPage13";
+			this->tabPage13->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage13->Size = System::Drawing::Size(499, 304);
+			this->tabPage13->TabIndex = 12;
+			this->tabPage13->Text = L"Ville";
+			this->tabPage13->UseVisualStyleBackColor = true;
+			// 
+			// tabPage14
+			// 
+			this->tabPage14->Location = System::Drawing::Point(4, 22);
+			this->tabPage14->Name = L"tabPage14";
+			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage14->Size = System::Drawing::Size(499, 304);
+			this->tabPage14->TabIndex = 13;
+			this->tabPage14->Text = L"Composer";
+			this->tabPage14->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
