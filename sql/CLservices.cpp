@@ -363,3 +363,18 @@ System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(Syst
 	sql = this->Mapp_commande->Select();
 	return this->oCad->getRows(sql, dataTableName);
 }
+
+void NS_Comp_Svc::CLservices::ins_une_commande(System::String^, int RefCommande) {
+
+	System::String^ sql;
+
+	this->Mapp_commande->setRefCommande(RefCommande);
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::upd_une_commande(int RefCommande, System::String^) {
+
+	System::String^ sql;
+
+}
