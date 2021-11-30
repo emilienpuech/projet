@@ -1,8 +1,6 @@
 //CLservice.CPP***************************************************************************************
 #include "pch.h"
 #include "CLservices.h"
-#include "CL_Mapping_Taxe.h"
-#include "CL_Mapping_Commande.h"
 
 NS_Comp_Svc::CLservices::CLservices(void)
 {
@@ -28,16 +26,16 @@ Employer
 Mode de paiement
 Article
 Adresse (ajouter les villes)
-Commande
-Taxe
+
 
 A faire
 
 
 
 Remise
+Taxe
 
-
+Commande
 Satistique
 
 
@@ -312,77 +310,46 @@ void NS_Comp_Svc::CLservices::del_un_article(int id)
 
 
 
-//TAXE
-System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_taxe(System::String^ dataTableName)
-{
+//Remise 
 
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_remises(System::String^ dataTableName) {
 	System::String^ sql;
-	sql = this->Mapp_taxe->Select();
+	sql = this->Mapp_remise->Select();
 	return this->oCad->getRows(sql, dataTableName);
 
 }
 
-void NS_Comp_Svc::CLservices::ins_une_Taxe( System::String^ NomTaxe)
+
+void NS_Comp_Svc::CLservices::ins_une_remise(System::String^nomremise, int id, float pourcentageRemise)
 {
 	System::String^ sql;
+	this->Mapp_remise->setid(id);
+	this->Mapp_remise->setnomremise(nomremise);
+	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
 
-	
-	this->Mapp_taxe->setnom_taxe(NomTaxe);
-	
-
-	sql = this->Mapp_taxe->Insert();
+	sql = this->Mapp_remise->Insert();
 
 	this->oCad->actionRows(sql);
 }
 
 
-void NS_Comp_Svc::CLservices::upd_une_Taxe(int id, System::String^ NomTaxe)
+void NS_Comp_Svc::CLservices::upd_une_remise(int id, System::String^ nomremise, float pourcentageRemise)
 {
 	System::String^ sql;
-	this->Mapp_taxe->setid(id);
-	this->Mapp_taxe->setnom_taxe(NomTaxe);
-	
-
-	sql = this->Mapp_taxe->Update();
+	this->Mapp_remise->setid(id);
+	this->Mapp_remise->setnomremise(nomremise);
+	this->Mapp_remise->setpourcentageRemise(pourcentageRemise);
+	sql = this->Mapp_remise->Update();
 
 	this->oCad->actionRows(sql);
 }
 
 
-void NS_Comp_Svc::CLservices::del_une_Taxe(int id)
-{
+void NS_Comp_Svc::CLservices::del_une_remise(int id){
 	System::String^ sql;
 
-	this->Mapp_taxe->setid(id);
-	sql = this->Mapp_taxe->Delete();
+	this->Mapp_remise->setid(id);
+	sql = this->Mapp_remise->Delete();
 
 	this->oCad->actionRows(sql);
-}//TAXE
-
-
-//COMMANDE 
-
-System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_Commandes(System::String ^ dataTableName)
-{
-	System::String^ sql;
-	sql = this->Mapp_taxe->Select();
-	return this->oCad->getRows(sql, dataTableName);
-
 }
-
-void NS_Comp_Svc::CLservices::ins_une_commande(System::String^ ); {
-
-	System::String^ sql;
-
-
-	this->Mapp_commande->setRefCommande(int RefCommande);
-
-
-	sql = this->Mapp_commande->Insert();
-
-	this->oCad->actionRows(sql);
-
-}
-
-
-

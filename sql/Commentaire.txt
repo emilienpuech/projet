@@ -34,9 +34,26 @@ this->sCnx = "Data Source=DESKTOP-B8TDUS7\\SQLSERVER;Integrated Security=True;Co
 
 
 
+	Sql query -->
 
-// Microsoft SQL Server Data structure
-/*------------------------------------------------------------
+Select * from Adresse
+Select * from Article
+Select * from Beneficier
+Select * from Client
+Select * from Commande
+Select * from Composer
+Select * from Employe
+Select * from ModePaiement
+Select * from Paiement
+Select * from Posseder
+Select * from Remise
+Select * from Taxe
+Select * from Taxer
+Select * from Ville
+
+
+
+// Microsoft SQL Server Data structure + data/*------------------------------------------------------------
 *        Script SQLSERVER 
 ------------------------------------------------------------*/
 
@@ -62,8 +79,6 @@ CREATE TABLE Commande(
 	DateEmission    DATE NOT NULL ,
 	numeroClient    INT  NOT NULL  ,
 	CONSTRAINT Commande_PK PRIMARY KEY (RefCommande)
-
-	,CONSTRAINT Commande_Client_FK FOREIGN KEY (numeroClient) REFERENCES Client(numeroClient)
 );
 
 
@@ -81,16 +96,11 @@ CREATE TABLE Ville(
 -- Table: Adresse
 ------------------------------------------------------------*/
 CREATE TABLE Adresse(
-	IDAdresse      INT IDENTITY (1,1) NOT NULL ,
-	Numero         INT  NOT NULL ,
-	Rue            CHAR (20)  NOT NULL ,
-	TypeAdresse    CHAR (20)  NOT NULL ,
-	numeroClient   INT   ,
-	IDVille        INT  NOT NULL  ,
+	IDAdresse   INT IDENTITY (1,1) NOT NULL ,
+	Numero      INT  NOT NULL ,
+	Rue         CHAR (20)  NOT NULL ,
+	IDVille     INT  NOT NULL  ,
 	CONSTRAINT Adresse_PK PRIMARY KEY (IDAdresse)
-
-	,CONSTRAINT Adresse_Client_FK FOREIGN KEY (numeroClient) REFERENCES Client(numeroClient)
-	,CONSTRAINT Adresse_Ville0_FK FOREIGN KEY (IDVille) REFERENCES Ville(IDVille)
 );
 
 
@@ -138,9 +148,6 @@ CREATE TABLE Paiement(
 	RefCommande       VARCHAR (20) NOT NULL ,
 	IDMoyenPaiement   INT  NOT NULL  ,
 	CONSTRAINT Paiement_PK PRIMARY KEY (IDPaiement)
-
-	,CONSTRAINT Paiement_Commande_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
-	,CONSTRAINT Paiement_ModePaiement0_FK FOREIGN KEY (IDMoyenPaiement) REFERENCES ModePaiement(IDMoyenPaiement)
 );
 
 
@@ -148,9 +155,10 @@ CREATE TABLE Paiement(
 -- Table: Remise
 ------------------------------------------------------------*/
 CREATE TABLE Remise(
-	idPaiement          INT IDENTITY (1,1) NOT NULL ,
+	idremise            INT IDENTITY (1,1) NOT NULL ,
+	Nomremise           CHAR (20)  NOT NULL ,
 	pourcentageRemise   FLOAT  NOT NULL  ,
-	CONSTRAINT Remise_PK PRIMARY KEY (idPaiement)
+	CONSTRAINT Remise_PK PRIMARY KEY (idremise)
 );
 
 
@@ -165,9 +173,17 @@ CREATE TABLE Composer(
 	pourcentageTVA   FLOAT  NOT NULL ,
 	Couleur          CHAR (20)  NOT NULL  ,
 	CONSTRAINT Composer_PK PRIMARY KEY (Reference,RefCommande)
+);
 
-	,CONSTRAINT Composer_Article_FK FOREIGN KEY (Reference) REFERENCES Article(Reference)
-	,CONSTRAINT Composer_Commande0_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
+
+/*------------------------------------------------------------
+-- Table: Posseder
+------------------------------------------------------------*/
+CREATE TABLE Posseder(
+	numeroClient   INT  NOT NULL ,
+	IDAdresse      INT  NOT NULL ,
+	TypeAdresse    CHAR (20)  NOT NULL  ,
+	CONSTRAINT Posseder_PK PRIMARY KEY (numeroClient,IDAdresse)
 );
 
 
@@ -178,9 +194,6 @@ CREATE TABLE Taxer(
 	IDTaxe      INT  NOT NULL ,
 	Reference   INT  NOT NULL  ,
 	CONSTRAINT Taxer_PK PRIMARY KEY (IDTaxe,Reference)
-
-	,CONSTRAINT Taxer_Taxe_FK FOREIGN KEY (IDTaxe) REFERENCES Taxe(IDTaxe)
-	,CONSTRAINT Taxer_Article0_FK FOREIGN KEY (Reference) REFERENCES Article(Reference)
 );
 
 
@@ -188,12 +201,9 @@ CREATE TABLE Taxer(
 -- Table: Beneficier
 ------------------------------------------------------------*/
 CREATE TABLE Beneficier(
-	idPaiement    INT  NOT NULL ,
+	idremise      INT  NOT NULL ,
 	RefCommande   VARCHAR (20) NOT NULL  ,
-	CONSTRAINT Beneficier_PK PRIMARY KEY (idPaiement,RefCommande)
-
-	,CONSTRAINT Beneficier_Remise_FK FOREIGN KEY (idPaiement) REFERENCES Remise(idPaiement)
-	,CONSTRAINT Beneficier_Commande0_FK FOREIGN KEY (RefCommande) REFERENCES Commande(RefCommande)
+	CONSTRAINT Beneficier_PK PRIMARY KEY (idremise,RefCommande)
 );
 
 
@@ -208,10 +218,212 @@ CREATE TABLE Employe(
 	IDAdresse           INT  NOT NULL ,
 	IDEmploye_Employe   INT    ,
 	CONSTRAINT Employe_PK PRIMARY KEY (IDEmploye)
-
-	,CONSTRAINT Employe_Adresse_FK FOREIGN KEY (IDAdresse) REFERENCES Adresse(IDAdresse)
-	,CONSTRAINT Employe_Employe0_FK FOREIGN KEY (IDEmploye_Employe) REFERENCES Employe(IDEmploye)
 );
 
+
+
+
+ALTER TABLE Commande
+	ADD CONSTRAINT Commande_Client0_FK
+	FOREIGN KEY (numeroClient)
+	REFERENCES Client(numeroClient);
+
+ALTER TABLE Adresse
+	ADD CONSTRAINT Adresse_Ville0_FK
+	FOREIGN KEY (IDVille)
+	REFERENCES Ville(IDVille);
+
+ALTER TABLE Paiement
+	ADD CONSTRAINT Paiement_Commande0_FK
+	FOREIGN KEY (RefCommande)
+	REFERENCES Commande(RefCommande);
+
+ALTER TABLE Paiement
+	ADD CONSTRAINT Paiement_ModePaiement1_FK
+	FOREIGN KEY (IDMoyenPaiement)
+	REFERENCES ModePaiement(IDMoyenPaiement);
+
+ALTER TABLE Composer
+	ADD CONSTRAINT Composer_Article0_FK
+	FOREIGN KEY (Reference)
+	REFERENCES Article(Reference);
+
+ALTER TABLE Composer
+	ADD CONSTRAINT Composer_Commande1_FK
+	FOREIGN KEY (RefCommande)
+	REFERENCES Commande(RefCommande);
+
+ALTER TABLE Posseder
+	ADD CONSTRAINT Posseder_Client0_FK
+	FOREIGN KEY (numeroClient)
+	REFERENCES Client(numeroClient);
+
+ALTER TABLE Posseder
+	ADD CONSTRAINT Posseder_Adresse1_FK
+	FOREIGN KEY (IDAdresse)
+	REFERENCES Adresse(IDAdresse);
+
+ALTER TABLE Taxer
+	ADD CONSTRAINT Taxer_Taxe0_FK
+	FOREIGN KEY (IDTaxe)
+	REFERENCES Taxe(IDTaxe);
+
+ALTER TABLE Taxer
+	ADD CONSTRAINT Taxer_Article1_FK
+	FOREIGN KEY (Reference)
+	REFERENCES Article(Reference);
+
+ALTER TABLE Beneficier
+	ADD CONSTRAINT Beneficier_Remise0_FK
+	FOREIGN KEY (idremise)
+	REFERENCES Remise(idremise);
+
+ALTER TABLE Beneficier
+	ADD CONSTRAINT Beneficier_Commande1_FK
+	FOREIGN KEY (RefCommande)
+	REFERENCES Commande(RefCommande);
+
+ALTER TABLE Employe
+	ADD CONSTRAINT Employe_Adresse0_FK
+	FOREIGN KEY (IDAdresse)
+	REFERENCES Adresse(IDAdresse);
+
+ALTER TABLE Employe
+	ADD CONSTRAINT Employe_Employe1_FK
+	FOREIGN KEY (IDEmploye_Employe)
+	REFERENCES Employe(IDEmploye);
+
+
+INSERT INTO Ville( NomVille) VALUES('Saint nazaire')
+INSERT INTO Ville( NomVille) VALUES('Marignant')
+INSERT INTO Ville( NomVille) VALUES('Pornichet')
+INSERT INTO Ville( NomVille) VALUES('Marseille')
+INSERT INTO Ville( NomVille) VALUES('Aix en Provence')
+INSERT INTO Ville( NomVille) VALUES('Clermont ferrand')
+INSERT INTO Ville( NomVille) VALUES('Lille')
+INSERT INTO Ville( NomVille) VALUES('Bordeaux')
+INSERT INTO Ville( NomVille) VALUES('Dijon')
+INSERT INTO Ville( NomVille) VALUES('Rouans')
+INSERT INTO Ville( NomVille) VALUES('Rouen')
+
+
+INSERT INTO Adresse(Numero, Rue,  IDVille) VALUES(2, 'Avenue du maréchal',  2)
+INSERT INTO Adresse(Numero, Rue,  IDVille) VALUES(84, 'Avenue Jeanne d Arc',  7)
+INSERT INTO Adresse(Numero, Rue,  IDVille) VALUES(52, 'Boulvard saint laur',  1)
+INSERT INTO Adresse(Numero, Rue,  IDVille) VALUES(6, 'rue du pilier',  7)
+INSERT INTO Adresse(Numero, Rue,  IDVille) VALUES(11, 'rue des mimosas',  1)
+
+
+
+
+
+INSERT INTO Employe(Nom, Prenom, DateEmbauche, IDAdresse, IDEmploye_Employe) VALUES('LeGris','Gandalf','2019-10-01',1,NULL)
+INSERT INTO Employe(Nom, Prenom, DateEmbauche, IDAdresse, IDEmploye_Employe) VALUES('Skywalker','Anakin','2020-02-02',2,1)
+INSERT INTO Employe(Nom, Prenom, DateEmbauche, IDAdresse, IDEmploye_Employe) VALUES('Kenobi','Obi-wan','2020-03-21',3,2)
+INSERT INTO Employe(Nom, Prenom, DateEmbauche, IDAdresse, IDEmploye_Employe) VALUES('Oakenshiel','Thorin','2020-09-01',3,3)
+INSERT INTO Employe(Nom, Prenom, DateEmbauche, IDAdresse, IDEmploye_Employe) VALUES('Tolkien','Jhon Renald','2020-11-01',3,3)
+
+
+INSERT INTO Client( Nom, Prenom, DateNaissance) VALUES('Jambon ','Kévin','2001-03-09')
+INSERT INTO Client( Nom, Prenom, DateNaissance) VALUES('De la Fontaine ','Louis','2003-03-10')
+INSERT INTO Client( Nom, Prenom, DateNaissance) VALUES('Castellano','Jean-Eude','1990-03-11')
+INSERT INTO Client( Nom, Prenom, DateNaissance) VALUES('Von Belt','Kristof','2005-03-12')
+INSERT INTO Client( Nom, Prenom, DateNaissance) VALUES('Delonghi','Constance','1986-03-13')
+
+
+
+INSERT INTO Posseder(numeroClient, IDAdresse,TypeAdresse) VALUES(1,4,'bureau')
+INSERT INTO Posseder(numeroClient, IDAdresse,TypeAdresse) VALUES(2,5,'usine')
+INSERT INTO Posseder(numeroClient, IDAdresse,TypeAdresse) VALUES(3,4,'bureau')
+INSERT INTO Posseder(numeroClient, IDAdresse,TypeAdresse) VALUES(4,4,'bureau')
+INSERT INTO Posseder(numeroClient, IDAdresse,TypeAdresse) VALUES(5,4,'bureau')
+
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('margecommerciale1',5)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('margecommerciale2',10)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('margecommerciale3',15)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('remisecommerciale1',5)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('remisecommerciale2',6)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('demarqueinconnue1',2)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('demarqueinconnue2',3)
+INSERT INTO Remise(nomremise, pourcentageRemise) VALUES('demarqueinconnue3',5)
+
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('1','2021-01-02','2021-01-05',1)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('2','2021-01-10','2021-01-13',2)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('3','2021-01-07','2021-01-10',3)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('4','2021-02-02','2021-02-05',4)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('5','2021-04-02','2021-04-05',1)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('6','2021-06-02','2021-06-05',5)
+INSERT INTO Commande(RefCommande, DateLivraison, DateEmission, numeroClient) VALUES('7','2021-06-02','2021-06-05',2)
+
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(1, '1')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(2, '2')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(3, '3')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(4, '4')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(5, '5')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(1, '6')
+INSERT INTO Beneficier(idremise , RefCommande) VALUES(1, '7')
+
+INSERT INTO ModePaiement(MoyenPaiement) VALUES('CB')
+INSERT INTO ModePaiement(MoyenPaiement) VALUES('Paypal')
+INSERT INTO ModePaiement(MoyenPaiement) VALUES('Bitcoins')
+INSERT INTO ModePaiement(MoyenPaiement) VALUES('Dogcoin')
+INSERT INTO ModePaiement(MoyenPaiement) VALUES('Etherum')
+
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-02',0,1,4)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-03',0,2,4)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-04',0,3,4)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-05',0,4,1)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-06',0,5,2)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-07',0,6,4)
+INSERT INTO Paiement(DatePaiement, montantPaiement, RefCommande, IDMoyenPaiement) VALUES('2021-01-08',0,7,5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('Patates', 50, 2, 20)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('Carottes', 100, 2, 50)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('Choux', 60, 1, 25)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('pavé de boeuf', 20, 15, 10)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('poulet', 30, 8, 15)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('friture', 200, 10, 50)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('frites', 1000, 3, 200)
+INSERT INTO Article( Nom, QuantiteStock, PrixProduit,SeuilReapprovisionnement) VALUES('huile d olives', 75, 20, 30)
+
+
+
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(3,'1',3,2,0.2,'Vert')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(4,'2',10,2,0.2,'Rouge')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(7,'3',28,1,0.3,'Bleu')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(3,'4',4,15,0.4,'Jaune')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(5,'5',65,8,0.5,'Violet')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(6,'6',30,10,0.6,'Orange')
+INSERT INTO Composer(Reference , RefCommande, nombreArticle, PrixUHT, pourcentageTVA, Couleur) VALUES(3,'7',10,3,0.7,'Marron')
+
+
+
+INSERT INTO Taxe(NomTaxe, Pourcentagetaxe) VALUES('TVA1',20)
+INSERT INTO Taxe(NomTaxe, Pourcentagetaxe) VALUES('TVA2',10)
+INSERT INTO Taxe(NomTaxe, Pourcentagetaxe) VALUES('TVA3',5.5)
+
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 1)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 2)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 3)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 4)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 5)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 6)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(2, 7)
+INSERT INTO Taxer(IDTAXE, Reference) VALUES(3, 8)
 
 
