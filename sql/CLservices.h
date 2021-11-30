@@ -37,6 +37,7 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Commande^ Mapp_commande;
 		NS_Comp_Mappage::CL_Mapping_Ville^ Mapp_ville;
 		NS_Comp_Mappage::CL_Mapping_Mode_De_Paiement^ Mapp_modepaiement;
+		NS_Comp_Mappage::CL_Mapping_Composer^ Mapp_composer;
 
 
 
@@ -105,6 +106,13 @@ namespace NS_Comp_Svc
 		void ins_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
 		void del_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
 
+
+
+		//composer
+		System::Data::DataSet^ select_tout_composer(System::String^);
+		void upd_composer(int reference, System::String^ refcommande, int nombrearticle, int prixuht, float pourcentagetva, System::String^ couleur);
+		void ins_composer(System::String^ refcommande, int nombrearticle, int prixuht, float pourcentagetva, System::String^ couleur);
+		void del_composer(int reference);
 
 
 

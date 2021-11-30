@@ -11,6 +11,10 @@ NS_Comp_Svc::CLservices::CLservices(void)
 	this->Mapp_remise = gcnew NS_Comp_Mappage::CL_Mapping_Remise();
 	this->Mapp_taxe = gcnew NS_Comp_Mappage::CL_Mapping_Taxe();
 	this->Mapp_commande = gcnew NS_Comp_Mappage::CL_Mapping_Commande();
+	this->Mapp_composer = gcnew NS_Comp_Mappage::CL_Mapping_Composer();
+
+
+	
 	
 }
 int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)
@@ -482,5 +486,58 @@ void NS_Comp_Svc::CLservices::del_un_mode_paiement(int idmodepaiement, System::S
 	sql = this->Mapp_modepaiement->Delete();
 
 	this->oCad->actionRows(sql);
+} // mode de paiement
+
+
+
+
+
+// Composer
+
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_composer(System::String^ dataTableName) {
+
+	System::String^ sql;
+	sql = this->Mapp_composer->Select();
+	return this->oCad->getRows(sql, dataTableName);
 }
 
+void NS_Comp_Svc::CLservices::ins_composer(System::String^ refcommande, int nombrearticle, int prixuht, float pourcentagetva, System::String^ couleur) {
+
+	System::String^ sql;
+
+	this->Mapp_composer->setrefcommande(refcommande);
+	this->Mapp_composer->setnombrearticle(nombrearticle);
+	this->Mapp_composer->setprixuht(prixuht);
+	this->Mapp_composer->setpourcentagetva(pourcentagetva);
+	this->Mapp_composer->setcouleur(couleur);
+
+	sql = this->Mapp_composer->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::upd_composer(int reference, System::String^ refcommande, int nombrearticle, int prixuht, float pourcentagetva, System::String^ couleur) {
+
+	System::String^ sql;
+
+	this->Mapp_composer->setreference(reference);
+	this->Mapp_composer->setrefcommande(refcommande);
+	this->Mapp_composer->setnombrearticle(nombrearticle);
+	this->Mapp_composer->setprixuht(prixuht);
+	this->Mapp_composer->setpourcentagetva(pourcentagetva);
+	this->Mapp_composer->setcouleur(couleur);
+
+	sql = this->Mapp_composer->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+void NS_Comp_Svc::CLservices::del_composer(int reference) {
+
+	System::String^ sql;
+	this->Mapp_composer->setreference(reference);
+
+	sql = this->Mapp_composer->Delete();
+
+	this->oCad->actionRows(sql);
+} // Composer
