@@ -23,8 +23,8 @@ namespace NS_Comp_Svc
 	{
 	private:
 		NS_Comp_Data::CLcad^ oCad; // CAD
-								   
-		
+
+
 		// Classe de mappage 
 		NS_Comp_Mappage::CL_Mapping_Client^ Mapp_client;
 		NS_Comp_Mappage::CL_Mapping_Employer^ Mapp_employer;
@@ -34,11 +34,11 @@ namespace NS_Comp_Svc
 		NS_Comp_Mappage::CL_Mapping_Paiement^ Mapp_paiement;
 		NS_Comp_Mappage::CL_Mapping_Article^ Mapp_article;
 		NS_Comp_Mappage::CL_Mapping_Commande^ Mapp_commande;
-	
-	
+
+
 	public:
 		CLservices(void);
-		
+
 		int convert_string_to_int(System::String^);
 
 		// CLIENT
@@ -46,7 +46,7 @@ namespace NS_Comp_Svc
 		void upd_un_client(int, System::String^, System::String^, System::String^);
 		void ins_un_client(System::String^, System::String^, System::String^);
 		void del_un_client(int);
-		
+
 
 		// Employer
 		System::Data::DataSet^ select_tout_nos_employer(System::String^);
@@ -56,7 +56,7 @@ namespace NS_Comp_Svc
 
 		// Adresse
 		System::Data::DataSet^ select_tout_nos_adresse(System::String^);
-		void upd_une_adresse(int, int, System::String^, System::String^, int , int );
+		void upd_une_adresse(int, int, System::String^, System::String^, int, int);
 		void ins_une_adresse(int, System::String^, System::String^, int, int);
 		void del_une_adresse(int);
 
@@ -68,16 +68,16 @@ namespace NS_Comp_Svc
 
 		// Article
 		System::Data::DataSet^ select_tout_nos_articles(System::String^);
-		void upd_un_article(int id , System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
+		void upd_un_article(int id, System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
 		void ins_un_article(System::String^ nom, int quantite_de_stock, int prix_produit, int seuil_reapprovisionnement);
 		void del_un_article(int);
 
 		// Remise.h
 		System::Data::DataSet^ select_tout_nos_remises(System::String^);
 		void upd_une_remise(int id, System::String^, float pourcentageRemise);
-		void ins_une_remise(System::String^nomremise, int id,float pourcentageRemise);
+		void ins_une_remise(System::String^ nomremise, int id, float pourcentageRemise);
 		void del_une_remise(int);
-		
+
 
 		// Commande
 

@@ -358,7 +358,7 @@ void NS_Comp_Svc::CLservices::del_une_remise(int id){
 
 //Commande
 
-System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(System::String^) {
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(System::String^ dataTableName) {
 
 	System::String^ sql;
 	sql = this->Mapp_commande->Select();
@@ -377,5 +377,10 @@ void NS_Comp_Svc::CLservices::ins_une_commande(System::String^, int RefCommande)
 void NS_Comp_Svc::CLservices::upd_une_commande(int RefCommande, System::String^) {
 
 	System::String^ sql;
+	this->Mapp_commande->setRefCommande(RefCommande);
+	this->Mapp_commande->setDateEmission(DateEmission);
+	this->Mapp_commande->setDateLivraison(DateLivraison);
 
+	this->oCad->actionRows(sql);
 }
+
