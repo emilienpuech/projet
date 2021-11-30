@@ -21,5 +21,5 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Remise::Update(void)
 }
 
 void NS_Comp_Mappage::CL_Mapping_Remise::setid(int id) { this->id = id; }
-void NS_Comp_Mappage::CL_Mapping_Remise::setnomremise(System::String^ nomRemise) { this->nomRemise = nomRemise; }
-void NS_Comp_Mappage::CL_Mapping_Remise::setpourcentageRemise(float pourcentageRemise) { this->pourcentageRemise = pourcentageRemise; }
+void NS_Comp_Mappage::CL_Mapping_Remise::setnomRemise(System::String^ nomRemise) { this->nomRemise = nomRemise; }
+void NS_Comp_Mappage::CL_Mapping_Remise::setPourcentageRemise(float pourcentageRemise) { this->pourcentageRemise = pourcentageRemise; }

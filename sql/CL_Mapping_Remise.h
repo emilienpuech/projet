@@ -6,7 +6,7 @@ namespace NS_Comp_Mappage
     {
     private:
 
-        int ID_Paiement;
+        int id;
         System::String^ nomRemise;
         float pourcentageRemise;
         int RefCommande;
