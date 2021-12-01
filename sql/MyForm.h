@@ -252,9 +252,7 @@ private: System::Windows::Forms::Label^ label40;
 private: System::Windows::Forms::TextBox^ textBox38;
 private: System::Windows::Forms::TextBox^ textBox37;
 private: System::Windows::Forms::DataGridView^ dataGridView6;
-private: System::Windows::Forms::Label^ label40;
-private: System::Windows::Forms::Label^ label39;
-private: System::Windows::Forms::Label^ label38;
+
 
 
 
@@ -266,14 +264,12 @@ private: System::Windows::Forms::Button^ Load_BDD_Composer;
 private: System::Windows::Forms::DataGridView^ dataGridView5;
 private: System::Windows::Forms::Label^ label43;
 private: System::Windows::Forms::Label^ label42;
-private: System::Windows::Forms::Label^ label41;
 private: System::Windows::Forms::TextBox^ textBox41;
 private: System::Windows::Forms::TextBox^ textBox40;
 private: System::Windows::Forms::TextBox^ textBox39;
-private: System::Windows::Forms::TextBox^ textBox38;
-private: System::Windows::Forms::TextBox^ textBox37;
 
-private: System::Windows::Forms::TextBox^ textBox35;
+
+
 private: System::Windows::Forms::DataGridView^ dataGridViewVille;
 private: System::Windows::Forms::Label^ label45;
 private: System::Windows::Forms::Label^ label44;

@@ -17,7 +17,7 @@ namespace NS_Comp_Mappage
         System::String^ Update(void);
         void setid(int idAdresse);
         void settypeAdresse(System::String^ Type_Adresse);
-        void setnumeroClient(float numeroClient);
+        void setnumeroClient(int numeroClient);
 
     };
 }
