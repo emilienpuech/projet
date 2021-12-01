@@ -11,7 +11,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Select(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Insert(void)
 {
-	return"INSERT INTO [projetpoo].[dbo].[Employer],([Nom], [Prenom], [DateEmbauche], [IDAdresse], [IDEmploye_Employe]) VALUES('" + this->nom + "','" + this->prenom + "','" + this->date_Embauche + "','" + this->id_adresse + "','" + this->id_superieur + "');";
+	return"INSERT INTO [projetpoo].[dbo].[Employe] ([Nom], [Prenom], [DateEmbauche], [IDAdresse], [IDEmploye_Employe]) VALUES('" + this->nom + "', '" + this->prenom + "', '" + this->date_Embauche + "', " + this->id_adresse + ", " + this->id_superieur + " );";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Delete(void)
@@ -20,7 +20,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Delete(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Update(void)
 {
-	return "UPDATE [projetpoo].[dbo].[Employer] SET Nom = '" + this->nom + "', Prenom = '" + this->prenom + "', DateEmbauche = '"+ this->date_Embauche +"',IDAdresse = '" + this->id_adresse + "',IDEmploye_Employe = '"+ this->id_superieur + "'  WHERE IDEmploye = " + this->id + ";";
+	return "UPDATE [projetpoo].[dbo].[Employe] SET Nom = '" + this->nom + "', Prenom = '" + this->prenom + "', DateEmbauche = '"+ this->date_Embauche +"',IDAdresse = " + this->id_adresse + ",IDEmploye_Employe = "+ this->id_superieur + "  WHERE IDEmploye = " + this->id + ";";
 }
 // tout nos Setter NOM PRENOM DATE D'Embauche
 
