@@ -623,7 +623,6 @@ private: System::Windows::Forms::TextBox^ textBox44;
 			this->tabPage11->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
 			this->tabPage12->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
 			this->tabPage13->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewVille))->BeginInit();
 			this->tabPage14->SuspendLayout();
@@ -2263,6 +2262,48 @@ private: System::Windows::Forms::TextBox^ textBox44;
 			this->tabPage15->Text = L"Remise";
 			this->tabPage15->UseVisualStyleBackColor = true;
 			// 
+			// textBox44
+			// 
+			this->textBox44->Location = System::Drawing::Point(388, 278);
+			this->textBox44->Name = L"textBox44";
+			this->textBox44->Size = System::Drawing::Size(100, 31);
+			this->textBox44->TabIndex = 17;
+			// 
+			// textBox43
+			// 
+			this->textBox43->Location = System::Drawing::Point(388, 255);
+			this->textBox43->Name = L"textBox43";
+			this->textBox43->Size = System::Drawing::Size(100, 31);
+			this->textBox43->TabIndex = 16;
+			// 
+			// textBox42
+			// 
+			this->textBox42->Location = System::Drawing::Point(388, 226);
+			this->textBox42->Name = L"textBox42";
+			this->textBox42->Size = System::Drawing::Size(100, 31);
+			this->textBox42->TabIndex = 15;
+			// 
+			// textBox41
+			// 
+			this->textBox41->Location = System::Drawing::Point(388, 196);
+			this->textBox41->Name = L"textBox41";
+			this->textBox41->Size = System::Drawing::Size(100, 31);
+			this->textBox41->TabIndex = 14;
+			// 
+			// textBox40
+			// 
+			this->textBox40->Location = System::Drawing::Point(388, 159);
+			this->textBox40->Name = L"textBox40";
+			this->textBox40->Size = System::Drawing::Size(100, 31);
+			this->textBox40->TabIndex = 13;
+			// 
+			// textBox39
+			// 
+			this->textBox39->Location = System::Drawing::Point(388, 134);
+			this->textBox39->Name = L"textBox39";
+			this->textBox39->Size = System::Drawing::Size(100, 31);
+			this->textBox39->TabIndex = 12;
+			// 
 			// label47
 			// 
 			this->label47->AutoSize = true;
@@ -2378,7 +2419,6 @@ private: System::Windows::Forms::TextBox^ textBox44;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
 			this->tabPage12->ResumeLayout(false);
 			this->tabPage12->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
 			this->tabPage13->ResumeLayout(false);
 			this->tabPage13->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewVille))->EndInit();
