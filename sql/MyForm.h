@@ -250,6 +250,7 @@ private: System::Windows::Forms::Label^ label41;
 private: System::Windows::Forms::Label^ label40;
 private: System::Windows::Forms::TextBox^ textBox38;
 private: System::Windows::Forms::TextBox^ textBox37;
+private: System::Windows::Forms::DataGridView^ dataGridView6;
 
 
 
@@ -534,6 +535,10 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
+			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->textBox38 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox37 = (gcnew System::Windows::Forms::TextBox());
 			this->button24 = (gcnew System::Windows::Forms::Button());
 			this->button23 = (gcnew System::Windows::Forms::Button());
 			this->button22 = (gcnew System::Windows::Forms::Button());
@@ -541,10 +546,7 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->button21 = (gcnew System::Windows::Forms::Button());
 			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
-			this->textBox37 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox38 = (gcnew System::Windows::Forms::TextBox());
-			this->label40 = (gcnew System::Windows::Forms::Label());
-			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->tabPage5->SuspendLayout();
@@ -568,6 +570,8 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->tabPage13->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
+			this->tabPage15->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabPage8
@@ -1851,6 +1855,7 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			// 
 			// tabPage12
 			// 
+			this->tabPage12->Controls->Add(this->dataGridView6);
 			this->tabPage12->Controls->Add(this->label39);
 			this->tabPage12->Controls->Add(this->label38);
 			this->tabPage12->Controls->Add(this->textBox36);
@@ -1859,7 +1864,6 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage12->Controls->Add(this->button19);
 			this->tabPage12->Controls->Add(this->button18);
 			this->tabPage12->Controls->Add(this->button17);
-			this->tabPage12->Controls->Add(this->dataGridView4);
 			this->tabPage12->Location = System::Drawing::Point(4, 22);
 			this->tabPage12->Name = L"tabPage12";
 			this->tabPage12->Padding = System::Windows::Forms::Padding(3);
@@ -1963,6 +1967,38 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage13->Text = L"Ville";
 			this->tabPage13->UseVisualStyleBackColor = true;
 			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Location = System::Drawing::Point(317, 212);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(51, 13);
+			this->label41->TabIndex = 8;
+			this->label41->Text = L"Nom Ville";
+			// 
+			// label40
+			// 
+			this->label40->AutoSize = true;
+			this->label40->Location = System::Drawing::Point(314, 182);
+			this->label40->Name = L"label40";
+			this->label40->Size = System::Drawing::Size(40, 13);
+			this->label40->TabIndex = 7;
+			this->label40->Text = L"ID Ville";
+			// 
+			// textBox38
+			// 
+			this->textBox38->Location = System::Drawing::Point(379, 205);
+			this->textBox38->Name = L"textBox38";
+			this->textBox38->Size = System::Drawing::Size(100, 20);
+			this->textBox38->TabIndex = 6;
+			// 
+			// textBox37
+			// 
+			this->textBox37->Location = System::Drawing::Point(379, 175);
+			this->textBox37->Name = L"textBox37";
+			this->textBox37->Size = System::Drawing::Size(100, 20);
+			this->textBox37->TabIndex = 5;
+			// 
 			// button24
 			// 
 			this->button24->Location = System::Drawing::Point(8, 263);
@@ -2028,37 +2064,13 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage15->Text = L"Remise";
 			this->tabPage15->UseVisualStyleBackColor = true;
 			// 
-			// textBox37
+			// dataGridView6
 			// 
-			this->textBox37->Location = System::Drawing::Point(379, 175);
-			this->textBox37->Name = L"textBox37";
-			this->textBox37->Size = System::Drawing::Size(100, 20);
-			this->textBox37->TabIndex = 5;
-			// 
-			// textBox38
-			// 
-			this->textBox38->Location = System::Drawing::Point(379, 205);
-			this->textBox38->Name = L"textBox38";
-			this->textBox38->Size = System::Drawing::Size(100, 20);
-			this->textBox38->TabIndex = 6;
-			// 
-			// ID Ville
-			// 
-			this->label40->AutoSize = true;
-			this->label40->Location = System::Drawing::Point(314, 182);
-			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(41, 13);
-			this->label40->TabIndex = 7;
-			this->label40->Text = L"ID Ville";
-			// 
-			// Nom_Ville
-			// 
-			this->label41->AutoSize = true;
-			this->label41->Location = System::Drawing::Point(317, 212);
-			this->label41->Name = L"label41";
-			this->label41->Size = System::Drawing::Size(41, 13);
-			this->label41->TabIndex = 8;
-			this->label41->Text = L"Nom Ville";
+			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView6->Location = System::Drawing::Point(24, 0);
+			this->dataGridView6->Name = L"dataGridView6";
+			this->dataGridView6->Size = System::Drawing::Size(445, 159);
+			this->dataGridView6->TabIndex = 9;
 			// 
 			// MyForm
 			// 
@@ -2103,6 +2115,8 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage13->ResumeLayout(false);
 			this->tabPage13->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
+			this->tabPage15->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
 			this->ResumeLayout(false);
 
 		}
