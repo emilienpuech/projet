@@ -232,6 +232,7 @@ private: System::Windows::Forms::TextBox^ textBox32;
 private: System::Windows::Forms::TextBox^ textBox31;
 private: System::Windows::Forms::TextBox^ textBox30;
 private: System::Windows::Forms::TabPage^ tabPage15;
+private: System::Windows::Forms::DataGridView^ dataGridView4;
 
 
 
@@ -509,6 +510,7 @@ private: System::Windows::Forms::TabPage^ tabPage15;
 			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
+			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->tabPage5->SuspendLayout();
@@ -528,6 +530,8 @@ private: System::Windows::Forms::TabPage^ tabPage15;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
 			this->tabPage11->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
+			this->tabPage15->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabPage8
@@ -1839,8 +1843,9 @@ private: System::Windows::Forms::TabPage^ tabPage15;
 			this->tabPage14->Text = L"Composer";
 			this->tabPage14->UseVisualStyleBackColor = true;
 			// 
-			// Remise
+			// tabPage15
 			// 
+			this->tabPage15->Controls->Add(this->dataGridView4);
 			this->tabPage15->Location = System::Drawing::Point(4, 22);
 			this->tabPage15->Name = L"tabPage15";
 			this->tabPage15->Padding = System::Windows::Forms::Padding(3);
@@ -1848,6 +1853,14 @@ private: System::Windows::Forms::TabPage^ tabPage15;
 			this->tabPage15->TabIndex = 14;
 			this->tabPage15->Text = L"Remise";
 			this->tabPage15->UseVisualStyleBackColor = true;
+			// 
+			// dataGridView4
+			// 
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->Location = System::Drawing::Point(-84, 0);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->Size = System::Drawing::Size(503, 150);
+			this->dataGridView4->TabIndex = 0;
 			// 
 			// MyForm
 			// 
@@ -1886,6 +1899,8 @@ private: System::Windows::Forms::TabPage^ tabPage15;
 			this->tabPage11->ResumeLayout(false);
 			this->tabPage11->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
+			this->tabPage15->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->ResumeLayout(false);
 
 		}
