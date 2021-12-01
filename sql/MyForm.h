@@ -2019,6 +2019,7 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			// 
 			// tabPage15
 			// 
+			this->tabPage15->Controls->Add(this->dataGridView4);
 			this->tabPage15->Location = System::Drawing::Point(4, 22);
 			this->tabPage15->Name = L"tabPage15";
 			this->tabPage15->Padding = System::Windows::Forms::Padding(3);
