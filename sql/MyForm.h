@@ -187,7 +187,7 @@ namespace P6new {
 	private: System::Windows::Forms::TabPage^ tabPage11;
 	private: System::Windows::Forms::TabPage^ tabPage12;
 	private: System::Windows::Forms::TabPage^ tabPage13;
-	private: System::Windows::Forms::TabPage^ tabPage14;
+
 private: System::Windows::Forms::Label^ label24;
 private: System::Windows::Forms::TextBox^ textBox22;
 private: System::Windows::Forms::TextBox^ textBox7;
@@ -250,6 +250,35 @@ private: System::Windows::Forms::Label^ label41;
 private: System::Windows::Forms::Label^ label40;
 private: System::Windows::Forms::TextBox^ textBox38;
 private: System::Windows::Forms::TextBox^ textBox37;
+private: System::Windows::Forms::TabPage^ tabPage14;
+private: System::Windows::Forms::TextBox^ textBox44;
+private: System::Windows::Forms::TextBox^ textBox43;
+private: System::Windows::Forms::TextBox^ textBox42;
+private: System::Windows::Forms::TextBox^ textBox41;
+private: System::Windows::Forms::TextBox^ textBox40;
+private: System::Windows::Forms::TextBox^ textBox39;
+private: System::Windows::Forms::Label^ label47;
+private: System::Windows::Forms::DataGridView^ dataGridView6;
+private: System::Windows::Forms::Label^ label46;
+private: System::Windows::Forms::Label^ label45;
+private: System::Windows::Forms::Label^ label44;
+private: System::Windows::Forms::Label^ label43;
+private: System::Windows::Forms::Label^ label42;
+private: System::Windows::Forms::Button^ button26;
+private: System::Windows::Forms::Button^ button28;
+private: System::Windows::Forms::Button^ button27;
+private: System::Windows::Forms::Button^ button25;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -534,17 +563,34 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
+			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->textBox38 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox37 = (gcnew System::Windows::Forms::TextBox());
 			this->button24 = (gcnew System::Windows::Forms::Button());
 			this->button23 = (gcnew System::Windows::Forms::Button());
 			this->button22 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
 			this->button21 = (gcnew System::Windows::Forms::Button());
-			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
 			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
-			this->textBox37 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox38 = (gcnew System::Windows::Forms::TextBox());
-			this->label40 = (gcnew System::Windows::Forms::Label());
-			this->label41 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
+			this->button25 = (gcnew System::Windows::Forms::Button());
+			this->button27 = (gcnew System::Windows::Forms::Button());
+			this->button28 = (gcnew System::Windows::Forms::Button());
+			this->button26 = (gcnew System::Windows::Forms::Button());
+			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->label43 = (gcnew System::Windows::Forms::Label());
+			this->label44 = (gcnew System::Windows::Forms::Label());
+			this->label45 = (gcnew System::Windows::Forms::Label());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
+			this->label47 = (gcnew System::Windows::Forms::Label());
+			this->textBox39 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox40 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox41 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox42 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox43 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox44 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
 			this->tabPage5->SuspendLayout();
@@ -568,6 +614,9 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->tabPage13->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
+			this->tabPage15->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
+			this->tabPage14->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabPage8
@@ -1859,7 +1908,6 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage12->Controls->Add(this->button19);
 			this->tabPage12->Controls->Add(this->button18);
 			this->tabPage12->Controls->Add(this->button17);
-			this->tabPage12->Controls->Add(this->dataGridView4);
 			this->tabPage12->Location = System::Drawing::Point(4, 22);
 			this->tabPage12->Name = L"tabPage12";
 			this->tabPage12->Padding = System::Windows::Forms::Padding(3);
@@ -1963,6 +2011,38 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage13->Text = L"Ville";
 			this->tabPage13->UseVisualStyleBackColor = true;
 			// 
+			// label41
+			// 
+			this->label41->AutoSize = true;
+			this->label41->Location = System::Drawing::Point(317, 212);
+			this->label41->Name = L"label41";
+			this->label41->Size = System::Drawing::Size(51, 13);
+			this->label41->TabIndex = 8;
+			this->label41->Text = L"Nom Ville";
+			// 
+			// label40
+			// 
+			this->label40->AutoSize = true;
+			this->label40->Location = System::Drawing::Point(314, 182);
+			this->label40->Name = L"label40";
+			this->label40->Size = System::Drawing::Size(40, 13);
+			this->label40->TabIndex = 7;
+			this->label40->Text = L"ID Ville";
+			// 
+			// textBox38
+			// 
+			this->textBox38->Location = System::Drawing::Point(379, 205);
+			this->textBox38->Name = L"textBox38";
+			this->textBox38->Size = System::Drawing::Size(100, 20);
+			this->textBox38->TabIndex = 6;
+			// 
+			// textBox37
+			// 
+			this->textBox37->Location = System::Drawing::Point(379, 175);
+			this->textBox37->Name = L"textBox37";
+			this->textBox37->Size = System::Drawing::Size(100, 20);
+			this->textBox37->TabIndex = 5;
+			// 
 			// button24
 			// 
 			this->button24->Location = System::Drawing::Point(8, 263);
@@ -2007,16 +2087,6 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->button21->Text = L"Loas BDD";
 			this->button21->UseVisualStyleBackColor = true;
 			// 
-			// tabPage14
-			// 
-			this->tabPage14->Location = System::Drawing::Point(4, 22);
-			this->tabPage14->Name = L"tabPage14";
-			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage14->Size = System::Drawing::Size(499, 304);
-			this->tabPage14->TabIndex = 13;
-			this->tabPage14->Text = L"Composer";
-			this->tabPage14->UseVisualStyleBackColor = true;
-			// 
 			// tabPage15
 			// 
 			this->tabPage15->Controls->Add(this->dataGridView4);
@@ -2028,43 +2098,182 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage15->Text = L"Remise";
 			this->tabPage15->UseVisualStyleBackColor = true;
 			// 
-			// textBox37
+			// dataGridView6
 			// 
-			this->textBox37->Location = System::Drawing::Point(379, 175);
-			this->textBox37->Name = L"textBox37";
-			this->textBox37->Size = System::Drawing::Size(100, 20);
-			this->textBox37->TabIndex = 5;
+			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView6->Location = System::Drawing::Point(-118, -11);
+			this->dataGridView6->Name = L"dataGridView6";
+			this->dataGridView6->Size = System::Drawing::Size(673, 130);
+			this->dataGridView6->TabIndex = 0;
 			// 
-			// textBox38
+			// button25
 			// 
-			this->textBox38->Location = System::Drawing::Point(379, 205);
-			this->textBox38->Name = L"textBox38";
-			this->textBox38->Size = System::Drawing::Size(100, 20);
-			this->textBox38->TabIndex = 6;
+			this->button25->Location = System::Drawing::Point(3, 134);
+			this->button25->Name = L"button25";
+			this->button25->Size = System::Drawing::Size(75, 29);
+			this->button25->TabIndex = 1;
+			this->button25->Text = L"Load_BDD_Composer";
+			this->button25->UseVisualStyleBackColor = true;
+			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
 			// 
-			// ID Ville
+			// button27
 			// 
-			this->label40->AutoSize = true;
-			this->label40->Location = System::Drawing::Point(314, 182);
-			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(41, 13);
-			this->label40->TabIndex = 7;
-			this->label40->Text = L"ID Ville";
+			this->button27->Location = System::Drawing::Point(100, 167);
+			this->button27->Name = L"button27";
+			this->button27->Size = System::Drawing::Size(75, 23);
+			this->button27->TabIndex = 3;
+			this->button27->Text = L"INSERT";
+			this->button27->UseVisualStyleBackColor = true;
+			this->button27->Click += gcnew System::EventHandler(this, &MyForm::button27_Click);
 			// 
-			// Nom_Ville
+			// button28
 			// 
-			this->label41->AutoSize = true;
-			this->label41->Location = System::Drawing::Point(317, 212);
-			this->label41->Name = L"label41";
-			this->label41->Size = System::Drawing::Size(41, 13);
-			this->label41->TabIndex = 8;
-			this->label41->Text = L"Nom Ville";
+			this->button28->Location = System::Drawing::Point(100, 208);
+			this->button28->Name = L"button28";
+			this->button28->Size = System::Drawing::Size(75, 23);
+			this->button28->TabIndex = 4;
+			this->button28->Text = L"UPDATE";
+			this->button28->UseVisualStyleBackColor = true;
+			// 
+			// button26
+			// 
+			this->button26->Location = System::Drawing::Point(100, 252);
+			this->button26->Name = L"button26";
+			this->button26->Size = System::Drawing::Size(75, 23);
+			this->button26->TabIndex = 5;
+			this->button26->Text = L"DELETE";
+			this->button26->UseVisualStyleBackColor = true;
+			this->button26->Click += gcnew System::EventHandler(this, &MyForm::button26_Click);
+			// 
+			// label42
+			// 
+			this->label42->AutoSize = true;
+			this->label42->Location = System::Drawing::Point(232, 137);
+			this->label42->Name = L"label42";
+			this->label42->Size = System::Drawing::Size(57, 13);
+			this->label42->TabIndex = 6;
+			this->label42->Text = L"Reference";
+			// 
+			// label43
+			// 
+			this->label43->AutoSize = true;
+			this->label43->Location = System::Drawing::Point(232, 167);
+			this->label43->Name = L"label43";
+			this->label43->Size = System::Drawing::Size(80, 13);
+			this->label43->TabIndex = 7;
+			this->label43->Text = L"Ref Commande";
+			// 
+			// label44
+			// 
+			this->label44->AutoSize = true;
+			this->label44->Location = System::Drawing::Point(232, 196);
+			this->label44->Name = L"label44";
+			this->label44->Size = System::Drawing::Size(92, 13);
+			this->label44->TabIndex = 8;
+			this->label44->Text = L"Pourcentage TVA";
+			// 
+			// label45
+			// 
+			this->label45->AutoSize = true;
+			this->label45->Location = System::Drawing::Point(232, 233);
+			this->label45->Name = L"label45";
+			this->label45->Size = System::Drawing::Size(50, 13);
+			this->label45->TabIndex = 9;
+			this->label45->Text = L"Prix UHT";
+			// 
+			// label46
+			// 
+			this->label46->AutoSize = true;
+			this->label46->Location = System::Drawing::Point(232, 257);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(76, 13);
+			this->label46->TabIndex = 10;
+			this->label46->Text = L"Nombre Article";
+			this->label46->Click += gcnew System::EventHandler(this, &MyForm::label46_Click);
+			// 
+			// tabPage14
+			// 
+			this->tabPage14->Controls->Add(this->textBox44);
+			this->tabPage14->Controls->Add(this->textBox43);
+			this->tabPage14->Controls->Add(this->textBox42);
+			this->tabPage14->Controls->Add(this->textBox41);
+			this->tabPage14->Controls->Add(this->textBox40);
+			this->tabPage14->Controls->Add(this->textBox39);
+			this->tabPage14->Controls->Add(this->label47);
+			this->tabPage14->Controls->Add(this->dataGridView6);
+			this->tabPage14->Controls->Add(this->label46);
+			this->tabPage14->Controls->Add(this->label45);
+			this->tabPage14->Controls->Add(this->label44);
+			this->tabPage14->Controls->Add(this->label43);
+			this->tabPage14->Controls->Add(this->label42);
+			this->tabPage14->Controls->Add(this->button26);
+			this->tabPage14->Controls->Add(this->button28);
+			this->tabPage14->Controls->Add(this->button27);
+			this->tabPage14->Controls->Add(this->button25);
+			this->tabPage14->Location = System::Drawing::Point(4, 22);
+			this->tabPage14->Name = L"tabPage14";
+			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage14->Size = System::Drawing::Size(499, 304);
+			this->tabPage14->TabIndex = 13;
+			this->tabPage14->Text = L"Composer";
+			this->tabPage14->UseVisualStyleBackColor = true;
+			// 
+			// label47
+			// 
+			this->label47->AutoSize = true;
+			this->label47->Location = System::Drawing::Point(232, 288);
+			this->label47->Name = L"label47";
+			this->label47->Size = System::Drawing::Size(43, 13);
+			this->label47->TabIndex = 11;
+			this->label47->Text = L"Couleur";
+			// 
+			// textBox39
+			// 
+			this->textBox39->Location = System::Drawing::Point(388, 134);
+			this->textBox39->Name = L"textBox39";
+			this->textBox39->Size = System::Drawing::Size(100, 20);
+			this->textBox39->TabIndex = 12;
+			// 
+			// textBox40
+			// 
+			this->textBox40->Location = System::Drawing::Point(388, 159);
+			this->textBox40->Name = L"textBox40";
+			this->textBox40->Size = System::Drawing::Size(100, 20);
+			this->textBox40->TabIndex = 13;
+			// 
+			// textBox41
+			// 
+			this->textBox41->Location = System::Drawing::Point(388, 196);
+			this->textBox41->Name = L"textBox41";
+			this->textBox41->Size = System::Drawing::Size(100, 20);
+			this->textBox41->TabIndex = 14;
+			// 
+			// textBox42
+			// 
+			this->textBox42->Location = System::Drawing::Point(388, 226);
+			this->textBox42->Name = L"textBox42";
+			this->textBox42->Size = System::Drawing::Size(100, 20);
+			this->textBox42->TabIndex = 15;
+			// 
+			// textBox43
+			// 
+			this->textBox43->Location = System::Drawing::Point(388, 255);
+			this->textBox43->Name = L"textBox43";
+			this->textBox43->Size = System::Drawing::Size(100, 20);
+			this->textBox43->TabIndex = 16;
+			// 
+			// textBox44
+			// 
+			this->textBox44->Location = System::Drawing::Point(388, 278);
+			this->textBox44->Name = L"textBox44";
+			this->textBox44->Size = System::Drawing::Size(100, 20);
+			this->textBox44->TabIndex = 17;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(506, 332);
+			this->ClientSize = System::Drawing::Size(508, 324);
 			this->Controls->Add(this->tabControl1);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
@@ -2103,6 +2312,10 @@ private: System::Windows::Forms::TextBox^ textBox37;
 			this->tabPage13->ResumeLayout(false);
 			this->tabPage13->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
+			this->tabPage15->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
+			this->tabPage14->ResumeLayout(false);
+			this->tabPage14->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -2291,6 +2504,14 @@ private: System::Void textBox2_TextChanged(System::Object^ sender, System::Event
 private: System::Void label24_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label25_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button26_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label46_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button27_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
