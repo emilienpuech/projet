@@ -104,7 +104,7 @@ namespace NS_Comp_Svc
 		void ins_une_ville(System::String^nom_ville, int idville);
 		void del_une_ville(int idville, System::String^ nom_ville);
 
-		//ModePaiement
+		//Paiement
 		System::Data::DataSet^ select_tout_nos_ModePaiement(System::String^);
 		void upd_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
 		void ins_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);

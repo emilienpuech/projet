@@ -218,47 +218,6 @@ void NS_Comp_Svc::CLservices::del_une_adresse(int id)
 
 
 
-// PAIEMENT
-System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_mode_de_paiement(System::String^ dataTableName){
-	System::String^ sql;
-	sql = this->Mapp_paiement->Select();
-	return this->oCad->getRows(sql, dataTableName);
-
-}
-
-
-void NS_Comp_Svc::CLservices::ins_un_mode_de_paiement(System::String^ mode_de_paiement)
-{
-	System::String^ sql;
-
-	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
-
-	sql = this->Mapp_paiement->Insert();
-
-	this->oCad->actionRows(sql);
-}
-
-
-void NS_Comp_Svc::CLservices::upd_un_mode_de_paiement(int id,System::String^ mode_de_paiement)
-{
-	System::String^ sql;
-	this->Mapp_paiement->setid(id);
-	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
-	sql = this->Mapp_paiement->Update();
-
-	this->oCad->actionRows(sql);
-}
-
-
-void NS_Comp_Svc::CLservices::del_un_mode_de_paiement(int id)
-{
-	System::String^ sql;
-
-	this->Mapp_paiement->setid(id);
-	sql = this->Mapp_paiement->Delete();
-
-	this->oCad->actionRows(sql);
-}// PAIEMENT
 
 
 
@@ -490,6 +449,54 @@ void NS_Comp_Svc::CLservices::del_un_mode_paiement(int idmodepaiement, System::S
 
 	this->oCad->actionRows(sql);
 } // mode de paiement
+
+
+
+// PAIEMENT
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_mode_de_paiement(System::String^ dataTableName) {
+	System::String^ sql;
+	sql = this->Mapp_paiement->Select();
+	return this->oCad->getRows(sql, dataTableName);
+
+}
+
+
+void NS_Comp_Svc::CLservices::ins_un_mode_de_paiement(System::String^ mode_de_paiement)
+{
+	System::String^ sql;
+
+	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
+
+	sql = this->Mapp_paiement->Insert();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::upd_un_mode_de_paiement(int id, System::String^ mode_de_paiement)
+{
+	System::String^ sql;
+	this->Mapp_paiement->setid(id);
+	this->Mapp_paiement->setmoyen_de_paiment(mode_de_paiement);
+	sql = this->Mapp_paiement->Update();
+
+	this->oCad->actionRows(sql);
+}
+
+
+void NS_Comp_Svc::CLservices::del_un_mode_de_paiement(int id)
+{
+	System::String^ sql;
+
+	this->Mapp_paiement->setid(id);
+	sql = this->Mapp_paiement->Delete();
+
+	this->oCad->actionRows(sql);
+}// PAIEMENT
+
+
+
+
 
 
 
