@@ -5,10 +5,9 @@ namespace NS_Comp_Mappage
     ref class CL_Mapping_Posseder
     {
     private:
-        int id;
-        System::String^ nom_taxe;
-        float pourcentagetaxe;
-
+        int idAdresse;
+        System::String^ Type_Adresse;
+        int numeroClient;
 
 
     public:
@@ -16,9 +15,9 @@ namespace NS_Comp_Mappage
         System::String^ Insert(void);
         System::String^ Delete(void);
         System::String^ Update(void);
-        void setid(int id);
-        void setnom_taxe(System::String^ nom_taxe);
-        void setpourcentagetaxe(float pourcentageremise);
+        void setid(int idAdresse);
+        void settypeAdresse(System::String^ Type_Adresse);
+        void setnumeroClient(float numeroClient);
 
     };
 }
