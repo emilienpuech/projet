@@ -1,6 +1,6 @@
 #include "CL_Mapping_Posseder.h"
 
-System::String^ NS_Comp_Mappage::CL_Mapping_Paiement::Select(void)
+System::String^ NS_Comp_Mappage::CL_Mapping_Posseder::Select(void)
 {
 	return"SELECT [idAdresse],[[typeAdresse]],[numeroClient] FROM [projetpoo].[dbo].[Posseder];";
 }
