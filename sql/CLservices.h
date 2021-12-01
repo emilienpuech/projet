@@ -71,10 +71,10 @@ namespace NS_Comp_Svc
 		void del_une_adresse(int);
 
 		// Mode de Paiement
-		System::Data::DataSet^ select_tout_nos_mode_de_paiement(System::String^);
-		void upd_un_mode_de_paiement(int, System::String^);
-		void ins_un_mode_de_paiement(System::String^);
-		void del_un_mode_de_paiement(int);
+		System::Data::DataSet^ select_tout_nos_paiement(System::String^);
+		void upd_un_paiement(int, System::String^);
+		void ins_un_paiement(System::String^);
+		void del_un_paiement(int);
 
 		// Article
 		System::Data::DataSet^ select_tout_nos_articles(System::String^);

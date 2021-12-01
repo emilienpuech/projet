@@ -453,7 +453,7 @@ void NS_Comp_Svc::CLservices::del_un_mode_paiement(int idmodepaiement, System::S
 
 
 // PAIEMENT
-System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_mode_de_paiement(System::String^ dataTableName) {
+System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_paiement(System::String^ dataTableName) {
 	System::String^ sql;
 	sql = this->Mapp_paiement->Select();
 	return this->oCad->getRows(sql, dataTableName);
@@ -461,7 +461,7 @@ System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_mode_de_paiement
 }
 
 
-void NS_Comp_Svc::CLservices::ins_un_mode_de_paiement(System::String^ mode_de_paiement)
+void NS_Comp_Svc::CLservices::ins_un_paiement(System::String^ mode_de_paiement)
 {
 	System::String^ sql;
 
@@ -473,7 +473,7 @@ void NS_Comp_Svc::CLservices::ins_un_mode_de_paiement(System::String^ mode_de_pa
 }
 
 
-void NS_Comp_Svc::CLservices::upd_un_mode_de_paiement(int id, System::String^ mode_de_paiement)
+void NS_Comp_Svc::CLservices::upd_un_paiement(int id, System::String^ mode_de_paiement)
 {
 	System::String^ sql;
 	this->Mapp_paiement->setid(id);
@@ -484,7 +484,7 @@ void NS_Comp_Svc::CLservices::upd_un_mode_de_paiement(int id, System::String^ mo
 }
 
 
-void NS_Comp_Svc::CLservices::del_un_mode_de_paiement(int id)
+void NS_Comp_Svc::CLservices::del_un_paiement(int id)
 {
 	System::String^ sql;
 

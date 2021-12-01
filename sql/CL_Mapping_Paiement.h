@@ -5,7 +5,10 @@ namespace NS_Comp_Mappage
 	{
 	private:
 		int id;
-		System::String^ moyen_de_paiment;
+		System::String^ date_de_paiment;
+		int montantpaiement;
+		System::String^ refcommande;
+		int idmoyenpaiement;
 
 
 	public:
@@ -15,6 +18,9 @@ namespace NS_Comp_Mappage
 		System::String^ Update(void);
 
 		void setid(int id);
-		void setmoyen_de_paiment(System::String^ moyen_de_paiment);
+		void setmoyen_de_paiment(System::String^ date_de_paiment);
+		void setmontantpaiement(int montantpaiement);
+		void setrefcommande(System::String^ refcommande);
+		void setidmoyenpaiement(int idmoyenpaiement);
 	};
 }

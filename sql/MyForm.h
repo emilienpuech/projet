@@ -553,7 +553,6 @@ private: System::Windows::Forms::Button^ button25;
 			this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
-			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->textBox36 = (gcnew System::Windows::Forms::TextBox());
@@ -572,25 +571,25 @@ private: System::Windows::Forms::Button^ button25;
 			this->button22 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView5 = (gcnew System::Windows::Forms::DataGridView());
 			this->button21 = (gcnew System::Windows::Forms::Button());
-			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
-			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
-			this->button25 = (gcnew System::Windows::Forms::Button());
-			this->button27 = (gcnew System::Windows::Forms::Button());
-			this->button28 = (gcnew System::Windows::Forms::Button());
-			this->button26 = (gcnew System::Windows::Forms::Button());
-			this->label42 = (gcnew System::Windows::Forms::Label());
-			this->label43 = (gcnew System::Windows::Forms::Label());
-			this->label44 = (gcnew System::Windows::Forms::Label());
-			this->label45 = (gcnew System::Windows::Forms::Label());
-			this->label46 = (gcnew System::Windows::Forms::Label());
 			this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
-			this->label47 = (gcnew System::Windows::Forms::Label());
-			this->textBox39 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox40 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox41 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox42 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox43 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox44 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox43 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox42 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox41 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox40 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox39 = (gcnew System::Windows::Forms::TextBox());
+			this->label47 = (gcnew System::Windows::Forms::Label());
+			this->dataGridView6 = (gcnew System::Windows::Forms::DataGridView());
+			this->label46 = (gcnew System::Windows::Forms::Label());
+			this->label45 = (gcnew System::Windows::Forms::Label());
+			this->label44 = (gcnew System::Windows::Forms::Label());
+			this->label43 = (gcnew System::Windows::Forms::Label());
+			this->label42 = (gcnew System::Windows::Forms::Label());
+			this->button26 = (gcnew System::Windows::Forms::Button());
+			this->button28 = (gcnew System::Windows::Forms::Button());
+			this->button27 = (gcnew System::Windows::Forms::Button());
+			this->button25 = (gcnew System::Windows::Forms::Button());
+			this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
 			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridViewPaiement))->BeginInit();
@@ -612,12 +611,12 @@ private: System::Windows::Forms::Button^ button25;
 			this->tabPage11->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
 			this->tabPage12->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
 			this->tabPage13->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->BeginInit();
-			this->tabPage15->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
 			this->tabPage14->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->BeginInit();
+			this->tabPage15->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabPage8
@@ -2044,16 +2043,6 @@ private: System::Windows::Forms::Button^ button25;
 			this->tabPage12->Text = L"Mode Paiement";
 			this->tabPage12->UseVisualStyleBackColor = true;
 			// 
-			// dataGridView6
-			// 
-			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView6->Location = System::Drawing::Point(48, 0);
-			this->dataGridView6->Margin = System::Windows::Forms::Padding(6);
-			this->dataGridView6->Name = L"dataGridView6";
-			this->dataGridView6->RowHeadersWidth = 82;
-			this->dataGridView6->Size = System::Drawing::Size(890, 306);
-			this->dataGridView6->TabIndex = 9;
-			// 
 			// label39
 			// 
 			this->label39->AutoSize = true;
@@ -2242,111 +2231,6 @@ private: System::Windows::Forms::Button^ button25;
 			this->button21->Text = L"Loas BDD";
 			this->button21->UseVisualStyleBackColor = true;
 			// 
-			// tabPage15
-			// 
-			this->tabPage15->Controls->Add(this->dataGridView4);
-			this->tabPage15->Location = System::Drawing::Point(8, 39);
-			this->tabPage15->Margin = System::Windows::Forms::Padding(6);
-			this->tabPage15->Name = L"tabPage15";
-			this->tabPage15->Padding = System::Windows::Forms::Padding(6);
-			this->tabPage15->Size = System::Drawing::Size(998, 588);
-			this->tabPage15->TabIndex = 14;
-			this->tabPage15->Text = L"Remise";
-			this->tabPage15->UseVisualStyleBackColor = true;
-			// 
-			// dataGridView4
-			// 
-			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView6->Location = System::Drawing::Point(-118, -11);
-			this->dataGridView6->Name = L"dataGridView6";
-			this->dataGridView6->Size = System::Drawing::Size(673, 130);
-			this->dataGridView6->TabIndex = 0;
-			// 
-			// button25
-			// 
-			this->button25->Location = System::Drawing::Point(3, 134);
-			this->button25->Name = L"button25";
-			this->button25->Size = System::Drawing::Size(75, 29);
-			this->button25->TabIndex = 1;
-			this->button25->Text = L"Load_BDD_Composer";
-			this->button25->UseVisualStyleBackColor = true;
-			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
-			// 
-			// button27
-			// 
-			this->button27->Location = System::Drawing::Point(100, 167);
-			this->button27->Name = L"button27";
-			this->button27->Size = System::Drawing::Size(75, 23);
-			this->button27->TabIndex = 3;
-			this->button27->Text = L"INSERT";
-			this->button27->UseVisualStyleBackColor = true;
-			this->button27->Click += gcnew System::EventHandler(this, &MyForm::button27_Click);
-			// 
-			// button28
-			// 
-			this->button28->Location = System::Drawing::Point(100, 208);
-			this->button28->Name = L"button28";
-			this->button28->Size = System::Drawing::Size(75, 23);
-			this->button28->TabIndex = 4;
-			this->button28->Text = L"UPDATE";
-			this->button28->UseVisualStyleBackColor = true;
-			// 
-			// button26
-			// 
-			this->button26->Location = System::Drawing::Point(100, 252);
-			this->button26->Name = L"button26";
-			this->button26->Size = System::Drawing::Size(75, 23);
-			this->button26->TabIndex = 5;
-			this->button26->Text = L"DELETE";
-			this->button26->UseVisualStyleBackColor = true;
-			this->button26->Click += gcnew System::EventHandler(this, &MyForm::button26_Click);
-			// 
-			// label42
-			// 
-			this->label42->AutoSize = true;
-			this->label42->Location = System::Drawing::Point(232, 137);
-			this->label42->Name = L"label42";
-			this->label42->Size = System::Drawing::Size(57, 13);
-			this->label42->TabIndex = 6;
-			this->label42->Text = L"Reference";
-			// 
-			// label43
-			// 
-			this->label43->AutoSize = true;
-			this->label43->Location = System::Drawing::Point(232, 167);
-			this->label43->Name = L"label43";
-			this->label43->Size = System::Drawing::Size(80, 13);
-			this->label43->TabIndex = 7;
-			this->label43->Text = L"Ref Commande";
-			// 
-			// label44
-			// 
-			this->label44->AutoSize = true;
-			this->label44->Location = System::Drawing::Point(232, 196);
-			this->label44->Name = L"label44";
-			this->label44->Size = System::Drawing::Size(92, 13);
-			this->label44->TabIndex = 8;
-			this->label44->Text = L"Pourcentage TVA";
-			// 
-			// label45
-			// 
-			this->label45->AutoSize = true;
-			this->label45->Location = System::Drawing::Point(232, 233);
-			this->label45->Name = L"label45";
-			this->label45->Size = System::Drawing::Size(50, 13);
-			this->label45->TabIndex = 9;
-			this->label45->Text = L"Prix UHT";
-			// 
-			// label46
-			// 
-			this->label46->AutoSize = true;
-			this->label46->Location = System::Drawing::Point(232, 257);
-			this->label46->Name = L"label46";
-			this->label46->Size = System::Drawing::Size(76, 13);
-			this->label46->TabIndex = 10;
-			this->label46->Text = L"Nombre Article";
-			this->label46->Click += gcnew System::EventHandler(this, &MyForm::label46_Click);
-			// 
 			// tabPage14
 			// 
 			this->tabPage14->Controls->Add(this->textBox44);
@@ -2366,70 +2250,186 @@ private: System::Windows::Forms::Button^ button25;
 			this->tabPage14->Controls->Add(this->button28);
 			this->tabPage14->Controls->Add(this->button27);
 			this->tabPage14->Controls->Add(this->button25);
-			this->tabPage14->Location = System::Drawing::Point(4, 22);
+			this->tabPage14->Location = System::Drawing::Point(8, 39);
 			this->tabPage14->Name = L"tabPage14";
 			this->tabPage14->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage14->Size = System::Drawing::Size(499, 304);
+			this->tabPage14->Size = System::Drawing::Size(998, 588);
 			this->tabPage14->TabIndex = 13;
 			this->tabPage14->Text = L"Composer";
 			this->tabPage14->UseVisualStyleBackColor = true;
+			// 
+			// textBox44
+			// 
+			this->textBox44->Location = System::Drawing::Point(388, 278);
+			this->textBox44->Name = L"textBox44";
+			this->textBox44->Size = System::Drawing::Size(100, 31);
+			this->textBox44->TabIndex = 17;
+			// 
+			// textBox43
+			// 
+			this->textBox43->Location = System::Drawing::Point(388, 255);
+			this->textBox43->Name = L"textBox43";
+			this->textBox43->Size = System::Drawing::Size(100, 31);
+			this->textBox43->TabIndex = 16;
+			// 
+			// textBox42
+			// 
+			this->textBox42->Location = System::Drawing::Point(388, 226);
+			this->textBox42->Name = L"textBox42";
+			this->textBox42->Size = System::Drawing::Size(100, 31);
+			this->textBox42->TabIndex = 15;
+			// 
+			// textBox41
+			// 
+			this->textBox41->Location = System::Drawing::Point(388, 196);
+			this->textBox41->Name = L"textBox41";
+			this->textBox41->Size = System::Drawing::Size(100, 31);
+			this->textBox41->TabIndex = 14;
+			// 
+			// textBox40
+			// 
+			this->textBox40->Location = System::Drawing::Point(388, 159);
+			this->textBox40->Name = L"textBox40";
+			this->textBox40->Size = System::Drawing::Size(100, 31);
+			this->textBox40->TabIndex = 13;
+			// 
+			// textBox39
+			// 
+			this->textBox39->Location = System::Drawing::Point(388, 134);
+			this->textBox39->Name = L"textBox39";
+			this->textBox39->Size = System::Drawing::Size(100, 31);
+			this->textBox39->TabIndex = 12;
 			// 
 			// label47
 			// 
 			this->label47->AutoSize = true;
 			this->label47->Location = System::Drawing::Point(232, 288);
 			this->label47->Name = L"label47";
-			this->label47->Size = System::Drawing::Size(43, 13);
+			this->label47->Size = System::Drawing::Size(87, 25);
 			this->label47->TabIndex = 11;
 			this->label47->Text = L"Couleur";
 			// 
-			// textBox39
+			// dataGridView6
 			// 
-			this->textBox39->Location = System::Drawing::Point(388, 134);
-			this->textBox39->Name = L"textBox39";
-			this->textBox39->Size = System::Drawing::Size(100, 20);
-			this->textBox39->TabIndex = 12;
+			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView6->Location = System::Drawing::Point(48, 0);
+			this->dataGridView6->Margin = System::Windows::Forms::Padding(6);
+			this->dataGridView6->Name = L"dataGridView6";
+			this->dataGridView6->RowHeadersWidth = 82;
+			this->dataGridView6->Size = System::Drawing::Size(890, 306);
+			this->dataGridView6->TabIndex = 9;
 			// 
-			// textBox40
+			// label46
 			// 
-			this->textBox40->Location = System::Drawing::Point(388, 159);
-			this->textBox40->Name = L"textBox40";
-			this->textBox40->Size = System::Drawing::Size(100, 20);
-			this->textBox40->TabIndex = 13;
+			this->label46->AutoSize = true;
+			this->label46->Location = System::Drawing::Point(232, 257);
+			this->label46->Name = L"label46";
+			this->label46->Size = System::Drawing::Size(153, 25);
+			this->label46->TabIndex = 10;
+			this->label46->Text = L"Nombre Article";
+			this->label46->Click += gcnew System::EventHandler(this, &MyForm::label46_Click);
 			// 
-			// textBox41
+			// label45
 			// 
-			this->textBox41->Location = System::Drawing::Point(388, 196);
-			this->textBox41->Name = L"textBox41";
-			this->textBox41->Size = System::Drawing::Size(100, 20);
-			this->textBox41->TabIndex = 14;
+			this->label45->AutoSize = true;
+			this->label45->Location = System::Drawing::Point(232, 233);
+			this->label45->Name = L"label45";
+			this->label45->Size = System::Drawing::Size(98, 25);
+			this->label45->TabIndex = 9;
+			this->label45->Text = L"Prix UHT";
 			// 
-			// textBox42
+			// label44
 			// 
-			this->textBox42->Location = System::Drawing::Point(388, 226);
-			this->textBox42->Name = L"textBox42";
-			this->textBox42->Size = System::Drawing::Size(100, 20);
-			this->textBox42->TabIndex = 15;
+			this->label44->AutoSize = true;
+			this->label44->Location = System::Drawing::Point(232, 196);
+			this->label44->Name = L"label44";
+			this->label44->Size = System::Drawing::Size(181, 25);
+			this->label44->TabIndex = 8;
+			this->label44->Text = L"Pourcentage TVA";
 			// 
-			// textBox43
+			// label43
 			// 
-			this->textBox43->Location = System::Drawing::Point(388, 255);
-			this->textBox43->Name = L"textBox43";
-			this->textBox43->Size = System::Drawing::Size(100, 20);
-			this->textBox43->TabIndex = 16;
+			this->label43->AutoSize = true;
+			this->label43->Location = System::Drawing::Point(232, 167);
+			this->label43->Name = L"label43";
+			this->label43->Size = System::Drawing::Size(160, 25);
+			this->label43->TabIndex = 7;
+			this->label43->Text = L"Ref Commande";
 			// 
-			// textBox44
+			// label42
 			// 
-			this->textBox44->Location = System::Drawing::Point(388, 278);
-			this->textBox44->Name = L"textBox44";
-			this->textBox44->Size = System::Drawing::Size(100, 20);
-			this->textBox44->TabIndex = 17;
+			this->label42->AutoSize = true;
+			this->label42->Location = System::Drawing::Point(232, 137);
+			this->label42->Name = L"label42";
+			this->label42->Size = System::Drawing::Size(111, 25);
+			this->label42->TabIndex = 6;
+			this->label42->Text = L"Reference";
+			// 
+			// button26
+			// 
+			this->button26->Location = System::Drawing::Point(100, 252);
+			this->button26->Name = L"button26";
+			this->button26->Size = System::Drawing::Size(75, 23);
+			this->button26->TabIndex = 5;
+			this->button26->Text = L"DELETE";
+			this->button26->UseVisualStyleBackColor = true;
+			this->button26->Click += gcnew System::EventHandler(this, &MyForm::button26_Click);
+			// 
+			// button28
+			// 
+			this->button28->Location = System::Drawing::Point(100, 208);
+			this->button28->Name = L"button28";
+			this->button28->Size = System::Drawing::Size(75, 23);
+			this->button28->TabIndex = 4;
+			this->button28->Text = L"UPDATE";
+			this->button28->UseVisualStyleBackColor = true;
+			// 
+			// button27
+			// 
+			this->button27->Location = System::Drawing::Point(100, 167);
+			this->button27->Name = L"button27";
+			this->button27->Size = System::Drawing::Size(75, 23);
+			this->button27->TabIndex = 3;
+			this->button27->Text = L"INSERT";
+			this->button27->UseVisualStyleBackColor = true;
+			this->button27->Click += gcnew System::EventHandler(this, &MyForm::button27_Click);
+			// 
+			// button25
+			// 
+			this->button25->Location = System::Drawing::Point(3, 134);
+			this->button25->Name = L"button25";
+			this->button25->Size = System::Drawing::Size(75, 29);
+			this->button25->TabIndex = 1;
+			this->button25->Text = L"Load_BDD_Composer";
+			this->button25->UseVisualStyleBackColor = true;
+			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
+			// 
+			// tabPage15
+			// 
+			this->tabPage15->Controls->Add(this->dataGridView4);
+			this->tabPage15->Location = System::Drawing::Point(8, 39);
+			this->tabPage15->Margin = System::Windows::Forms::Padding(6);
+			this->tabPage15->Name = L"tabPage15";
+			this->tabPage15->Padding = System::Windows::Forms::Padding(6);
+			this->tabPage15->Size = System::Drawing::Size(998, 588);
+			this->tabPage15->TabIndex = 14;
+			this->tabPage15->Text = L"Remise";
+			this->tabPage15->UseVisualStyleBackColor = true;
+			// 
+			// dataGridView4
+			// 
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->Location = System::Drawing::Point(-118, -11);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->RowHeadersWidth = 82;
+			this->dataGridView4->Size = System::Drawing::Size(673, 130);
+			this->dataGridView4->TabIndex = 0;
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(12, 25);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(508, 324);
+			this->ClientSize = System::Drawing::Size(1116, 643);
 			this->Controls->Add(this->tabControl1);
 			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"MyForm";
@@ -2465,14 +2465,14 @@ private: System::Windows::Forms::Button^ button25;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
 			this->tabPage12->ResumeLayout(false);
 			this->tabPage12->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
 			this->tabPage13->ResumeLayout(false);
 			this->tabPage13->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView5))->EndInit();
-			this->tabPage15->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
 			this->tabPage14->ResumeLayout(false);
 			this->tabPage14->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView6))->EndInit();
+			this->tabPage15->ResumeLayout(false);
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -2646,23 +2646,23 @@ private: System::Windows::Forms::Button^ button25;
 			   // select
 	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Refresh();
-		this->oDs = this->oSvc->select_tout_nos_mode_de_paiement("Rsl");
+		this->oDs = this->oSvc->select_tout_nos_paiement("Rsl");
 		this->dataGridView6->DataSource = this->oDs;
 		this->dataGridView6->DataMember = "Rsl";
 
 	}
 		   // del
 	private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->del_un_mode_de_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text));
+		this->oSvc->del_un_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text));
 
 	}
 		   // ins 
 	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->ins_un_mode_de_paiement(this->textBox36->Text);
+		this->oSvc->ins_un_paiement(this->textBox36->Text);
 	}
 		   //upd
 	private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->upd_un_mode_de_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text),this->textBox36->Text);
+		this->oSvc->upd_un_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text),this->textBox36->Text);
 	}// end mode de paiement 
 
 
