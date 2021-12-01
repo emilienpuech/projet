@@ -247,15 +247,11 @@ private: System::Windows::Forms::Button^ button22;
 private: System::Windows::Forms::DataGridView^ dataGridViewComposer;
 
 private: System::Windows::Forms::Button^ button21;
-private: System::Windows::Forms::Label^ label41;
+
 private: System::Windows::Forms::Label^ label40;
 private: System::Windows::Forms::TextBox^ textBox38;
 private: System::Windows::Forms::TextBox^ textBox37;
 private: System::Windows::Forms::DataGridView^ dataGridView6;
-private: System::Windows::Forms::Label^ label40;
-private: System::Windows::Forms::Label^ label39;
-private: System::Windows::Forms::Label^ label38;
-
 
 
 
@@ -270,10 +266,6 @@ private: System::Windows::Forms::Label^ label41;
 private: System::Windows::Forms::TextBox^ textBox41;
 private: System::Windows::Forms::TextBox^ textBox40;
 private: System::Windows::Forms::TextBox^ textBox39;
-private: System::Windows::Forms::TextBox^ textBox38;
-private: System::Windows::Forms::TextBox^ textBox37;
-
-private: System::Windows::Forms::TextBox^ textBox35;
 private: System::Windows::Forms::DataGridView^ dataGridViewVille;
 private: System::Windows::Forms::Label^ label45;
 private: System::Windows::Forms::Label^ label44;
@@ -2512,71 +2504,24 @@ private: System::Windows::Forms::TextBox^ textBox44;
 	private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 
+		   // Employe
+			   // 
+			   //  id employe   txt_prenom
+			   //  nom          txt_nom
+			   //  prenom       txt_id
+			   //	dateembauche 15
+			   //	idadresse    7
+			   //	id sup       2
+			   // 
 
-		   /*
-		   Fait
-		   client (sauf delete)
-		   employer (sauf update et delete)
-		   
-		   
-		   */
-
-
-
-
-
-
-		   /*
-			*
-			* CLIENT
-			* 1		id
-			* 2		nom
-			* 3		prenom
-			* 14	date de naissance
-			*
-			*/
-
-			// SELECT Client
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Refresh();
-		this->oDs = this->oSvc->select_tout_nos_client("Rsl");
-		this->DataGrindViewClient->DataSource = this->oDs;
-		this->DataGrindViewClient->DataMember = "Rsl";
-	}
-
-		   // UPD client
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->upd_un_client(this->oSvc->convert_string_to_int(this->textBox1->Text), this->textBox2->Text, this->textBox3->Text, this->textBox14->Text);
-	}
-
-		   // INS client 
-	private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->ins_un_client(this->textBox2->Text, this->textBox3->Text, this->textBox14->Text);
-	}
-		   // DEL Client
-	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->oSvc->del_un_client(this->oSvc->convert_string_to_int(this->textBox1->Text));
-	}// end client
-
-
-	// Employe
-	// 
-	//  id employe   txt_prenom
-	//  nom          txt_nom
-	//  prenom       txt_id
-	//	dateembauche 15
-	//	idadresse    7
-	//	id sup       2
-	// 
-
-				// Select employe
+						   // Select employe
 	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 		this->Refresh();
 		this->oDs = this->oSvc->select_tout_nos_employer("Rsl");
 		this->dataGridViewPersonnel->DataSource = this->oDs;
 		this->dataGridViewPersonnel->DataMember = "Rsl";
 	}
-		   
+
 		   //upd employe
 	private: System::Void button1_Click_3(System::Object^ sender, System::EventArgs^ e) {
 		this->oSvc->upd_un_employer(this->oSvc->convert_string_to_int(this->txt_prenom->Text), this->txt_nom->Text, this->txt_id->Text, this->textBox15->Text, this->oSvc->convert_string_to_int(this->textBox7->Text), this->oSvc->convert_string_to_int(this->textBox22->Text));
@@ -2592,7 +2537,67 @@ private: System::Windows::Forms::TextBox^ textBox44;
 	private: System::Void DELETE_Personnel_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->oSvc->del_un_employer(this->oSvc->convert_string_to_int(this->txt_prenom->Text));
 	}
-	
+
+
+
+
+		   // Mode de paiement
+		   // 
+		   // id private: --> textBox35
+		   // mode paiement --> textBox36
+		   // 
+		   // select
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Refresh();
+		this->oDs = this->oSvc->select_tout_nos_ModePaiement("Rsl");
+		this->dataGridView6->DataSource = this->oDs;
+		this->dataGridView6->DataMember = "Rsl";
+
+	}
+		   // del
+	private: System::Void button20_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->del_un_mode_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text));
+
+	}
+		   // ins 
+	private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->ins_un_mode_paiement(this->textBox36->Text);
+	}
+		   //upd
+	private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->upd_un_mode_paiement(this->oSvc->convert_string_to_int(this->textBox35->Text), this->textBox36->Text);
+	}// end mode de paiement 
+
+
+
+		   //  paiement
+			   // 
+			   // 30  id 
+			   // 31  date paiement 
+			   // 32  montant paiement
+			   // 33  ref commande 
+			   // 34  id moyen de paiement
+			   // 
+			   // 
+			   // select
+		   // select
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Refresh();
+		this->oDs = this->oSvc->select_tout_nos_ModePaiement("Rsl");
+		this->dataGridView3->DataSource = this->oDs;
+		this->dataGridView3->DataMember = "Rsl";
+	}
+		   // ins
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->oSvc->ins_un_mode_paiement(this->textBox31->Text, this->oSvc->convert_string_to_int(this->textBox32->Text), this->textBox33->Text, this->oSvc->convert_string_to_int(this->textBox34->Text));
+	}
+		   // upd
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+		   //del
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
 	
 
 

@@ -102,13 +102,13 @@ namespace NS_Comp_Svc
 		System::Data::DataSet^ select_toutes_nos_villes(System::String^);
 		void upd_une_ville(int idville, System::String^ nom_ville);
 		void ins_une_ville(System::String^nom_ville, int idville);
-		void del_une_ville(int idville, System::String^ nom_ville);
+		void del_une_ville(int idville);
 
 		//Paiement
 		System::Data::DataSet^ select_tout_nos_ModePaiement(System::String^);
 		void upd_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
-		void ins_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
-		void del_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement);
+		void ins_un_mode_paiement(System::String^ ModePaiement);
+		void del_un_mode_paiement(int idmodepaiement);
 
 
 

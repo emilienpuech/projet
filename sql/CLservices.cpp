@@ -396,11 +396,10 @@ void NS_Comp_Svc::CLservices::upd_une_ville(int idville, System::String^ nom_vil
 	this->oCad->actionRows(sql);
 }
 
-void NS_Comp_Svc::CLservices::del_une_ville(int idville, System::String^ nom_ville) {
+void NS_Comp_Svc::CLservices::del_une_ville(int idville) {
 
 	System::String^ sql;
 	this->Mapp_ville->setid(idville);
-	this->Mapp_ville->setnom_ville(nom_ville);
 
 	sql = this->Mapp_ville->Delete();
 
@@ -416,11 +415,10 @@ System::Data::DataSet^ NS_Comp_Svc::CLservices::select_tout_nos_ModePaiement(Sys
 	return this->oCad->getRows(sql, dataTableName);
 }
 
-void NS_Comp_Svc::CLservices::ins_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement) {
+void NS_Comp_Svc::CLservices::ins_un_mode_paiement( System::String^ ModePaiement) {
 
 	System::String^ sql;
 
-	this->Mapp_modepaiement->setid(idmodepaiement);
 	this->Mapp_modepaiement->setmodepaiement(ModePaiement);
 
 	sql = this->Mapp_modepaiement->Insert();
@@ -439,11 +437,10 @@ void NS_Comp_Svc::CLservices::upd_un_mode_paiement(int idmodepaiement, System::S
 	this->oCad->actionRows(sql);
 }
 
-void NS_Comp_Svc::CLservices::del_un_mode_paiement(int idmodepaiement, System::String^ ModePaiement) {
+void NS_Comp_Svc::CLservices::del_un_mode_paiement(int idmodepaiement) {
 
 	System::String^ sql;
 	this->Mapp_modepaiement->setid(idmodepaiement);
-	this->Mapp_modepaiement->setmodepaiement(ModePaiement);
 
 	sql = this->Mapp_modepaiement->Delete();
 
