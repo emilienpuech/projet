@@ -15,7 +15,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Insert(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Delete(void)
 {
-bn,	return "exec [projetpoo].[dbo].[supprimerCommande] "+ System::Int32::Parse(this->RefCommande) +";";
+	return "exec [projetpoo].[dbo].[supprimerCommande] "+ this->RefCommande+";";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Update(void)
