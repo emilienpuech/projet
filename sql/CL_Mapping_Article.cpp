@@ -7,7 +7,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Article::Select(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Insert(void)
 {
-	return"INSERT INTO [projetpoo].[dbo].[Article],([nom],[quantite_de_stock],[prix_produit],[seuilreapprovisionnement]) VALUES('" + this->nom + "','" + this->quantite_de_stock + "','" + this->prix_produit + "','" + this->seuil_reapprovisionnement;"');";
+	return"INSERT INTO [projetpoo].[dbo].[Article] ([Nom],[QuantiteStock],[PrixProduit],[SeuilReapprovisionnement]) VALUES('" + this->nom + "'," + this->quantite_de_stock + "," + this->prix_produit + "," + this->seuil_reapprovisionnement+");";
 
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Delete(void)
@@ -16,7 +16,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Article::Delete(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Update(void)
 {
-	return "UPDATE [projetpoo].[dbo].[Article] SET Nom = " + this->nom + ", quantite_de_stock = " + this->quantite_de_stock + ", prix_produit = '' = " + this->nom + " WHERE Reference = " + this->id + "; ";
+	return "UPDATE [projetpoo].[dbo].[Article] SET Nom = '" + this->nom + "', QuantiteStock = '" + this->quantite_de_stock + "', PrixProduit = '" + this->prix_produit + "', SeuilReapprovisionnement = '" +this->seuil_reapprovisionnement +"' WHERE Reference = '" + this->id + "';";
 }
 // tout nos Setter NOM PRENOM quantite_de_produit prix_produit
 void NS_Comp_Mappage::CL_Mapping_Article::setid(int id) { this->id = id; }

@@ -12,10 +12,7 @@ NS_Comp_Svc::CLservices::CLservices(void)
 	this->Mapp_taxe = gcnew NS_Comp_Mappage::CL_Mapping_Taxe();
 	this->Mapp_commande = gcnew NS_Comp_Mappage::CL_Mapping_Commande();
 	this->Mapp_composer = gcnew NS_Comp_Mappage::CL_Mapping_Composer();
-
-
-
-	
+	this->Mapp_article = gcnew NS_Comp_Mappage::CL_Mapping_Article();
 	
 }
 int NS_Comp_Svc::CLservices::convert_string_to_int(System::String^ int_1)

@@ -47,50 +47,8 @@ namespace P6new {
 
 
 
-
-
-
-
-
-
-
-
 	private: NS_Comp_Svc::CLservices^ oSvc;
 	private: System::Data::DataSet^ oDs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -833,6 +791,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->Delete_Stock->TabIndex = 28;
 			this->Delete_Stock->Text = L"DELETE";
 			this->Delete_Stock->UseVisualStyleBackColor = true;
+			this->Delete_Stock->Click += gcnew System::EventHandler(this, &MyForm::Delete_Stock_Click);
 			// 
 			// Update_Stock
 			// 
@@ -843,6 +802,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->Update_Stock->TabIndex = 27;
 			this->Update_Stock->Text = L"UPDATE";
 			this->Update_Stock->UseVisualStyleBackColor = true;
+			this->Update_Stock->Click += gcnew System::EventHandler(this, &MyForm::Update_Stock_Click);
 			// 
 			// Insert_Stock
 			// 
@@ -853,6 +813,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->Insert_Stock->TabIndex = 26;
 			this->Insert_Stock->Text = L"INSERT";
 			this->Insert_Stock->UseVisualStyleBackColor = true;
+			this->Insert_Stock->Click += gcnew System::EventHandler(this, &MyForm::Insert_Stock_Click);
 			// 
 			// Load_Bdd_Stock
 			// 
@@ -863,6 +824,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->Load_Bdd_Stock->TabIndex = 25;
 			this->Load_Bdd_Stock->Text = L"LOAD BDD";
 			this->Load_Bdd_Stock->UseVisualStyleBackColor = true;
+			this->Load_Bdd_Stock->Click += gcnew System::EventHandler(this, &MyForm::Load_Bdd_Stock_Click_1);
 			// 
 			// label16
 			// 
@@ -922,6 +884,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->textBox17->Name = L"textBox17";
 			this->textBox17->Size = System::Drawing::Size(276, 31);
 			this->textBox17->TabIndex = 19;
+			this->textBox17->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox17_TextChanged);
 			// 
 			// textBox16
 			// 
@@ -930,6 +893,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->textBox16->Name = L"textBox16";
 			this->textBox16->Size = System::Drawing::Size(276, 31);
 			this->textBox16->TabIndex = 18;
+			this->textBox16->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox16_TextChanged);
 			// 
 			// ID_Produit
 			// 
@@ -938,6 +902,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->ID_Produit->Name = L"ID_Produit";
 			this->ID_Produit->Size = System::Drawing::Size(278, 31);
 			this->ID_Produit->TabIndex = 15;
+			this->ID_Produit->TextChanged += gcnew System::EventHandler(this, &MyForm::ID_Produit_TextChanged);
 			// 
 			// textBox8
 			// 
@@ -946,6 +911,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(278, 31);
 			this->textBox8->TabIndex = 14;
+			this->textBox8->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox8_TextChanged);
 			// 
 			// textBox9
 			// 
@@ -954,6 +920,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(276, 31);
 			this->textBox9->TabIndex = 13;
+			this->textBox9->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox9_TextChanged);
 			// 
 			// dataGridViewStock
 			// 
@@ -2483,26 +2450,15 @@ private: System::Windows::Forms::TextBox^ textBox46;
 	}
 
 
-
-
-
-
-
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e)
 	{
 		this->oSvc = gcnew NS_Comp_Svc::CLservices();
 	}
 
-
-
-
 	private: System::Void btn_insert_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		//this->oSvc->ajouterUnePersonne(this->txt_nom->Text, this->txt_prenom->Text);
 	}
-
-
-
 
 	private: System::Void btn_update_Click(System::Object^ sender, System::EventArgs^ e) {
 
@@ -2520,10 +2476,6 @@ private: System::Windows::Forms::TextBox^ textBox46;
 	}
 	private: System::Void dataGridView4_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
-
-
-
-
 
 	private: System::Void dataGridView3_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	}
@@ -2646,7 +2598,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 		   // del employe
 	private: System::Void DELETE_Personnel_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->oSvc->del_un_employer(this->oSvc->convert_string_to_int(this->txt_prenom->Text));
-	}
+	}// END Employe
 
 
 
@@ -2660,11 +2612,11 @@ private: System::Windows::Forms::TextBox^ textBox46;
 		   // 
 		   //
 
-private: System::Void Load_Bdd_Stock_Click(System::Object^ sender, System::EventArgs^ e) {
+private: System::Void Load_Bdd_Stock_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	this->Refresh();
-	this->oDs = this->oSvc->select_tout_nos_articles("Rsl");
+	this->oDs = this->oSvc->select_tout_nos_articles("xss");
 	this->dataGridViewStock->DataSource = this->oDs;
-	this->dataGridViewStock->DataMember = "Rsl";
+	this->dataGridViewStock->DataMember = "xss";
 }
 private: System::Void Insert_Stock_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->oSvc->ins_un_article(this->textBox8->Text, this->oSvc->convert_string_to_int(this->textBox9->Text), this->oSvc->convert_string_to_int(this->textBox16->Text), this->oSvc->convert_string_to_int(this->textBox17->Text));
@@ -2675,6 +2627,26 @@ private: System::Void Update_Stock_Click(System::Object^ sender, System::EventAr
 private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->oSvc->del_un_article(this->oSvc->convert_string_to_int(this->ID_Produit->Text));
 }// END STOCK
+
+private: System::Void ID_Produit_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox8_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox9_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox16_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox17_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+
+
+
+
+
+
+
+
+
 
 	   /*   // Paiement
 
@@ -2719,7 +2691,7 @@ private: System::Void DELETE_Commande_Click(System::Object^ sender, System::Even
 	   // 4
 	   // 5
 	   // 46
-
+	   // end commande 
 
 
 
@@ -2762,6 +2734,10 @@ private: System::Void DELETE_Commande_Click(System::Object^ sender, System::Even
 
 private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
+
+
+
+
 };
 }
 
