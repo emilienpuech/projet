@@ -332,7 +332,7 @@ System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(Syst
 	return this->oCad->getRows(sql, dataTableName);
 }
 
-void NS_Comp_Svc::CLservices::ins_une_commande(System::String^, int RefCommande) {
+void NS_Comp_Svc::CLservices::ins_une_commande( System::String^, int RefCommande) {
 
 	System::String^ sql;
 
