@@ -332,23 +332,27 @@ System::Data::DataSet^ NS_Comp_Svc::CLservices::select_toutes_nos_commandes(Syst
 	return this->oCad->getRows(sql, dataTableName);
 }
 
-void NS_Comp_Svc::CLservices::ins_une_commande( System::String^, int RefCommande) {
+void NS_Comp_Svc::CLservices::ins_une_commande(System::String^ RefCommande, System::String^ DateEmission, System::String^ DateLivraison,int numeroclient) {
 
 	System::String^ sql;
 
 	this->Mapp_commande->setRefCommande(RefCommande);
+	this->Mapp_commande->setDateEmission(DateEmission);
+	this->Mapp_commande->setDateLivraison(DateLivraison);
+	this->Mapp_commande->setnumeroclient(numeroclient);
 
 	sql = this->Mapp_commande->Insert();
 
 	this->oCad->actionRows(sql);
 }
 
-void NS_Comp_Svc::CLservices::upd_une_commande(int RefCommande, System::String^ DateEmission, System::String^ DateLivraison ) {
+void NS_Comp_Svc::CLservices::upd_une_commande(System::String^ RefCommande, System::String^ DateEmission, System::String^ DateLivraison,int numeroclient) {
 
 	System::String^ sql;
 	this->Mapp_commande->setRefCommande(RefCommande);
 	this->Mapp_commande->setDateEmission(DateEmission);
 	this->Mapp_commande->setDateLivraison(DateLivraison);
+	this->Mapp_commande->setnumeroclient(numeroclient);
 
 	sql = this->Mapp_commande->Update();
 

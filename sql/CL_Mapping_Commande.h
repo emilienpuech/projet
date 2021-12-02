@@ -6,9 +6,10 @@ namespace NS_Comp_Mappage
 	{
 	private:
 		
-		int RefCommande;
+		System::String^ RefCommande;
 		System::String^ DateEmission;
 		System::String^ DateLivraison;
+		int numeroclient;
 		
 
 	public:
@@ -18,7 +19,8 @@ namespace NS_Comp_Mappage
 		System::String^ Update(void);
 
 
-		void setRefCommande(int RefCommande);
+		void setRefCommande(System::String^ RefCommande);
+		void setnumeroclient(int numeroclient);
 		void setDateLivraison(System::String^ DateLivraison);
 		void setDateEmission(System::String^ DateEmission);
 		

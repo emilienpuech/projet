@@ -2354,9 +2354,10 @@ namespace P6new {
 
 
 
+
 		   /*
 				Fait
-		   
+
 		   client
 		   employer (sauf delete)
 
@@ -2499,6 +2500,29 @@ private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventAr
 
 */
 
+// select commande
+	private: System::Void Load_Bdd_Commande_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		this->Refresh();
+		this->oDs = this->oSvc->select_toutes_nos_commandes("Com");
+		this->dataGridViewStock->DataSource = this->oDs;
+		this->dataGridViewStock->DataMember = "Com";
+	}
+		   //insert commande
+private: System::Void Insert_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->ins_une_commande(this->textBox4->Text, this->oSvc->convert_string_to_int(this->textBox5->Text));
+}
+	   // update commade
+private: System::Void Update_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->upd_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text), this->textBox4->Text, this->textBox6->Text);
+}
+	   // Delete commande
+private: System::Void Delete_Commande(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->del_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text));
+}
+
+
+
+
 
 
 
@@ -2537,21 +2561,7 @@ private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventAr
 	}
 	private: System::Void textBox36_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void Load_Bdd_Commande_Click_1(System::Object^ sender, System::EventArgs^ e) {
-		this->Refresh();
-		this->oDs = this->oSvc->select_toutes_nos_commandes("Com");
-		this->dataGridViewStock->DataSource = this->oDs;
-		this->dataGridViewStock->DataMember = "Com";
-	}
-private: System::Void Insert_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->oSvc->ins_une_commande(this->textBox4->Text, this->oSvc->convert_string_to_int(this->textBox5->Text));
-}
-private: System::Void Update_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->oSvc->upd_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text), this->textBox4->Text, this->textBox6->Text);
-}
-private: System::Void Delete_Commande(System::Object^ sender, System::EventArgs^ e) {
-	this->oSvc->del_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text));
-}
+
 };
 }
 
