@@ -19,8 +19,9 @@ namespace NS_Comp_Mappage
 
 
 		void setRefCommande(int RefCommande);
-		void setDateEmission(System::String^ DateEmission);
 		void setDateLivraison(System::String^ DateLivraison);
+		void setDateEmission(System::String^ DateEmission);
+		
 		
 
 	};
