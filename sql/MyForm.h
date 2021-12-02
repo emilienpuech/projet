@@ -2666,7 +2666,7 @@ private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventAr
 //Select Commande
 	   private: System::Void Load_BDD_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
 		   this->Refresh();
-		   this->oDs = this->oSvc->select_toutes_nos_commandes("Rsl");
+		   this->oDs = this->oSvc->select_toutes_nos_commandes("Com");
 		   this->dataGridViewStock->DataSource = this->oDs;
 		   this->dataGridViewStock->DataMember = "Rsl";
 	   }
