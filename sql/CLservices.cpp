@@ -134,6 +134,7 @@ void NS_Comp_Svc::CLservices::ins_un_employer(System::String^ nom, System::Strin
 void NS_Comp_Svc::CLservices::upd_un_employer(int id, System::String^ nom, System::String^ prenom, System::String^ date, int id_adresse, int id_sup)
 {
 	System::String^ sql;
+	this->Mapp_employer->setid(id);
 	this->Mapp_employer->setNom(nom);
 	this->Mapp_employer->setPrenom(prenom);
 	this->Mapp_employer->setdate_Embauche(date);

@@ -17,7 +17,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Client::Insert(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Delete(void)
 {
-	return "DELETE FROM [projetpoo].[dbo].[Client] WHERE numeroClient = " + this->Id + ";";
+	return "exec [projetpoo].[dbo].[supprimerClient] " + this->Id + ";";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Client::Update(void)
