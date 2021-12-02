@@ -2668,7 +2668,7 @@ private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventAr
 		   this->Refresh();
 		   this->oDs = this->oSvc->select_toutes_nos_commandes("Com");
 		   this->dataGridViewStock->DataSource = this->oDs;
-		   this->dataGridViewStock->DataMember = "Rsl";
+		   this->dataGridViewStock->DataMember = "Com";
 	   }
 private: System::Void Insert_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->oSvc->ins_une_commande(this->textBox4->Text, this->oSvc->convert_string_to_int(this->textBox5->Text));
