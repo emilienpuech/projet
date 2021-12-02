@@ -2416,23 +2416,7 @@ private: System::Windows::Forms::TextBox^ textBox44;
 		   */
 
 
-		/*   // Paiement
-
-
-		   //SELECT Paiement
-		   private: System::Void Load_BDD_Paiement(System::Object^ sender, System::EventArgs^ e) {
-			   this->Refresh();
-			   this->oDs = this->oSvc->select_tout_nos_paiement("Rsl");
-			   this->dataGridViewPaiement->DataSource = this->oDs;
-			   this->dataGridViewPaiement->DataMember = "Rsl";
-		   }
-			//UPD Paiement
-				  private: System::Void UPDATE_Paiement(System::Object^ sender, System::EventArgs^ e) {
-					  this->oSvc->upd_un_paiement(this->oSvc->convert_string_to_int(this->textBox18->Text),)
-				  }
-
-
-*/
+		
 
 		   /*
 			*
