@@ -1117,6 +1117,7 @@ private: System::Windows::Forms::TextBox^ textBox46;
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(272, 31);
 			this->textBox6->TabIndex = 13;
+			this->textBox6->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox6_TextChanged);
 			// 
 			// tabPage2
 			// 
@@ -2551,7 +2552,8 @@ private: System::Windows::Forms::TextBox^ textBox46;
 				Fait
 
 		   client
-		   employer (sauf delete)
+		   employer
+		   Commande
 
 		   stock/article
 
@@ -2709,7 +2711,7 @@ private: System::Void Update_Commande_Click_1(System::Object^ sender, System::Ev
 }
 	   // Delete commande
 private: System::Void DELETE_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->oSvc->del_une_commande(this->textBox5->Text);
+	this->oSvc->del_une_commande(this->oSvc->convert_string_to_int(this->textBox6->Text));
 }
 
 
@@ -2758,6 +2760,8 @@ private: System::Void DELETE_Commande_Click(System::Object^ sender, System::Even
 	}
 
 
+private: System::Void textBox6_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
 

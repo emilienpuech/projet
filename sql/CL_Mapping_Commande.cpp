@@ -15,7 +15,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Insert(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Delete(void)
 {
-	return "exec [projetpoo].[dbo].[supprimerCommande] "+ this->RefCommande+";";
+	return "exec [projetpoo].[dbo].[supprimerCommande] "+ this->numeroclient+";";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Update(void)
@@ -31,3 +31,5 @@ void NS_Comp_Mappage::CL_Mapping_Commande::setDateLivraison(System::String^ Date
 void NS_Comp_Mappage::CL_Mapping_Commande::setDateEmission(System::String^ DateEmission) { this->DateEmission = DateEmission; }
 
 void NS_Comp_Mappage::CL_Mapping_Commande::setnumeroclient(int numeroclient) { this->numeroclient = numeroclient; }
+
+
