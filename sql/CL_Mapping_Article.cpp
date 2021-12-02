@@ -3,7 +3,7 @@
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Select(void)
 {
-	return"Select [Reference],[nom],[quantite_de_stock],[prix_produit],[seuilreapprovisionnement] FROM [projetpoo].[dbo].[Article];";
+	return"SELECT [Reference],[Nom],[QuantiteStock],[PrixProduit],[SeuilReapprovisionnement]FROM [projetpoo].[dbo].[Article]";
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Insert(void)
 {
