@@ -522,9 +522,9 @@ namespace P6new {
 			this->tabPage8->Controls->Add(this->textBox20);
 			this->tabPage8->Controls->Add(this->dataGridViewPaiement);
 			this->tabPage8->Location = System::Drawing::Point(8, 39);
-			this->tabPage8->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage8->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage8->Name = L"tabPage8";
-			this->tabPage8->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage8->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage8->Size = System::Drawing::Size(998, 588);
 			this->tabPage8->TabIndex = 7;
 			this->tabPage8->Text = L"Paiement";
@@ -533,7 +533,7 @@ namespace P6new {
 			// Delete_Paiement
 			// 
 			this->Delete_Paiement->Location = System::Drawing::Point(188, 498);
-			this->Delete_Paiement->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Delete_Paiement->Margin = System::Windows::Forms::Padding(6);
 			this->Delete_Paiement->Name = L"Delete_Paiement";
 			this->Delete_Paiement->Size = System::Drawing::Size(178, 73);
 			this->Delete_Paiement->TabIndex = 34;
@@ -543,7 +543,7 @@ namespace P6new {
 			// UPDATE_Paiement
 			// 
 			this->UPDATE_Paiement->Location = System::Drawing::Point(188, 413);
-			this->UPDATE_Paiement->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->UPDATE_Paiement->Margin = System::Windows::Forms::Padding(6);
 			this->UPDATE_Paiement->Name = L"UPDATE_Paiement";
 			this->UPDATE_Paiement->Size = System::Drawing::Size(178, 73);
 			this->UPDATE_Paiement->TabIndex = 33;
@@ -553,7 +553,7 @@ namespace P6new {
 			// Insert_Paiement
 			// 
 			this->Insert_Paiement->Location = System::Drawing::Point(188, 327);
-			this->Insert_Paiement->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Paiement->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Paiement->Name = L"Insert_Paiement";
 			this->Insert_Paiement->Size = System::Drawing::Size(178, 73);
 			this->Insert_Paiement->TabIndex = 32;
@@ -563,7 +563,7 @@ namespace P6new {
 			// Load_BDD_Paiement
 			// 
 			this->Load_BDD_Paiement->Location = System::Drawing::Point(30, 327);
-			this->Load_BDD_Paiement->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_BDD_Paiement->Margin = System::Windows::Forms::Padding(6);
 			this->Load_BDD_Paiement->Name = L"Load_BDD_Paiement";
 			this->Load_BDD_Paiement->Size = System::Drawing::Size(144, 244);
 			this->Load_BDD_Paiement->TabIndex = 31;
@@ -613,7 +613,7 @@ namespace P6new {
 			// textBox21
 			// 
 			this->textBox21->Location = System::Drawing::Point(680, 483);
-			this->textBox21->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox21->Margin = System::Windows::Forms::Padding(6);
 			this->textBox21->Name = L"textBox21";
 			this->textBox21->Size = System::Drawing::Size(294, 31);
 			this->textBox21->TabIndex = 26;
@@ -621,7 +621,7 @@ namespace P6new {
 			// textBox18
 			// 
 			this->textBox18->Location = System::Drawing::Point(680, 327);
-			this->textBox18->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox18->Margin = System::Windows::Forms::Padding(6);
 			this->textBox18->Name = L"textBox18";
 			this->textBox18->Size = System::Drawing::Size(294, 31);
 			this->textBox18->TabIndex = 25;
@@ -629,7 +629,7 @@ namespace P6new {
 			// textBox19
 			// 
 			this->textBox19->Location = System::Drawing::Point(680, 377);
-			this->textBox19->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox19->Margin = System::Windows::Forms::Padding(6);
 			this->textBox19->Name = L"textBox19";
 			this->textBox19->Size = System::Drawing::Size(294, 31);
 			this->textBox19->TabIndex = 24;
@@ -637,7 +637,7 @@ namespace P6new {
 			// textBox20
 			// 
 			this->textBox20->Location = System::Drawing::Point(680, 433);
-			this->textBox20->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox20->Margin = System::Windows::Forms::Padding(6);
 			this->textBox20->Name = L"textBox20";
 			this->textBox20->Size = System::Drawing::Size(294, 31);
 			this->textBox20->TabIndex = 23;
@@ -646,7 +646,7 @@ namespace P6new {
 			// 
 			this->dataGridViewPaiement->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewPaiement->Location = System::Drawing::Point(30, 4);
-			this->dataGridViewPaiement->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridViewPaiement->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridViewPaiement->Name = L"dataGridViewPaiement";
 			this->dataGridViewPaiement->RowHeadersWidth = 82;
 			this->dataGridViewPaiement->Size = System::Drawing::Size(942, 313);
@@ -680,9 +680,9 @@ namespace P6new {
 			this->tabPage5->Controls->Add(this->textBox11);
 			this->tabPage5->Controls->Add(this->textBox12);
 			this->tabPage5->Location = System::Drawing::Point(8, 39);
-			this->tabPage5->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage5->Margin = System::Windows::Forms::Padding(4);
 			this->tabPage5->Name = L"tabPage5";
-			this->tabPage5->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage5->Padding = System::Windows::Forms::Padding(4);
 			this->tabPage5->Size = System::Drawing::Size(998, 588);
 			this->tabPage5->TabIndex = 4;
 			this->tabPage5->Text = L"Stats";
@@ -691,7 +691,7 @@ namespace P6new {
 			// Delete_Stat
 			// 
 			this->Delete_Stat->Location = System::Drawing::Point(218, 498);
-			this->Delete_Stat->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Delete_Stat->Margin = System::Windows::Forms::Padding(6);
 			this->Delete_Stat->Name = L"Delete_Stat";
 			this->Delete_Stat->Size = System::Drawing::Size(164, 73);
 			this->Delete_Stat->TabIndex = 24;
@@ -701,7 +701,7 @@ namespace P6new {
 			// Update_Stat
 			// 
 			this->Update_Stat->Location = System::Drawing::Point(218, 413);
-			this->Update_Stat->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Update_Stat->Margin = System::Windows::Forms::Padding(6);
 			this->Update_Stat->Name = L"Update_Stat";
 			this->Update_Stat->Size = System::Drawing::Size(164, 71);
 			this->Update_Stat->TabIndex = 23;
@@ -711,7 +711,7 @@ namespace P6new {
 			// Insert_Stat
 			// 
 			this->Insert_Stat->Location = System::Drawing::Point(218, 329);
-			this->Insert_Stat->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Stat->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Stat->Name = L"Insert_Stat";
 			this->Insert_Stat->Size = System::Drawing::Size(164, 75);
 			this->Insert_Stat->TabIndex = 22;
@@ -721,7 +721,7 @@ namespace P6new {
 			// Load_Bdd_Stat
 			// 
 			this->Load_Bdd_Stat->Location = System::Drawing::Point(16, 329);
-			this->Load_Bdd_Stat->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_Bdd_Stat->Margin = System::Windows::Forms::Padding(6);
 			this->Load_Bdd_Stat->Name = L"Load_Bdd_Stat";
 			this->Load_Bdd_Stat->Size = System::Drawing::Size(152, 242);
 			this->Load_Bdd_Stat->TabIndex = 21;
@@ -762,7 +762,7 @@ namespace P6new {
 			// 
 			this->dataGridViewStat->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewStat->Location = System::Drawing::Point(18, 0);
-			this->dataGridViewStat->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridViewStat->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridViewStat->Name = L"dataGridViewStat";
 			this->dataGridViewStat->RowHeadersWidth = 82;
 			this->dataGridViewStat->Size = System::Drawing::Size(962, 313);
@@ -772,7 +772,7 @@ namespace P6new {
 			// textBox10
 			// 
 			this->textBox10->Location = System::Drawing::Point(680, 323);
-			this->textBox10->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox10->Margin = System::Windows::Forms::Padding(6);
 			this->textBox10->Name = L"textBox10";
 			this->textBox10->Size = System::Drawing::Size(294, 31);
 			this->textBox10->TabIndex = 15;
@@ -780,7 +780,7 @@ namespace P6new {
 			// textBox11
 			// 
 			this->textBox11->Location = System::Drawing::Point(680, 373);
-			this->textBox11->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox11->Margin = System::Windows::Forms::Padding(6);
 			this->textBox11->Name = L"textBox11";
 			this->textBox11->Size = System::Drawing::Size(294, 31);
 			this->textBox11->TabIndex = 14;
@@ -788,7 +788,7 @@ namespace P6new {
 			// textBox12
 			// 
 			this->textBox12->Location = System::Drawing::Point(680, 429);
-			this->textBox12->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox12->Margin = System::Windows::Forms::Padding(6);
 			this->textBox12->Name = L"textBox12";
 			this->textBox12->Size = System::Drawing::Size(294, 31);
 			this->textBox12->TabIndex = 13;
@@ -811,9 +811,9 @@ namespace P6new {
 			this->tabPage4->Controls->Add(this->textBox9);
 			this->tabPage4->Controls->Add(this->dataGridViewStock);
 			this->tabPage4->Location = System::Drawing::Point(8, 39);
-			this->tabPage4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage4->Margin = System::Windows::Forms::Padding(4);
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage4->Padding = System::Windows::Forms::Padding(4);
 			this->tabPage4->Size = System::Drawing::Size(998, 588);
 			this->tabPage4->TabIndex = 3;
 			this->tabPage4->Text = L"Stock";
@@ -823,7 +823,7 @@ namespace P6new {
 			// Delete_Stock
 			// 
 			this->Delete_Stock->Location = System::Drawing::Point(194, 506);
-			this->Delete_Stock->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Delete_Stock->Margin = System::Windows::Forms::Padding(6);
 			this->Delete_Stock->Name = L"Delete_Stock";
 			this->Delete_Stock->Size = System::Drawing::Size(170, 69);
 			this->Delete_Stock->TabIndex = 28;
@@ -833,7 +833,7 @@ namespace P6new {
 			// Update_Stock
 			// 
 			this->Update_Stock->Location = System::Drawing::Point(194, 413);
-			this->Update_Stock->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Update_Stock->Margin = System::Windows::Forms::Padding(6);
 			this->Update_Stock->Name = L"Update_Stock";
 			this->Update_Stock->Size = System::Drawing::Size(170, 81);
 			this->Update_Stock->TabIndex = 27;
@@ -843,7 +843,7 @@ namespace P6new {
 			// Insert_Stock
 			// 
 			this->Insert_Stock->Location = System::Drawing::Point(194, 337);
-			this->Insert_Stock->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Stock->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Stock->Name = L"Insert_Stock";
 			this->Insert_Stock->Size = System::Drawing::Size(170, 75);
 			this->Insert_Stock->TabIndex = 26;
@@ -853,7 +853,7 @@ namespace P6new {
 			// Load_Bdd_Stock
 			// 
 			this->Load_Bdd_Stock->Location = System::Drawing::Point(16, 342);
-			this->Load_Bdd_Stock->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_Bdd_Stock->Margin = System::Windows::Forms::Padding(6);
 			this->Load_Bdd_Stock->Name = L"Load_Bdd_Stock";
 			this->Load_Bdd_Stock->Size = System::Drawing::Size(142, 225);
 			this->Load_Bdd_Stock->TabIndex = 25;
@@ -914,7 +914,7 @@ namespace P6new {
 			// textBox17
 			// 
 			this->textBox17->Location = System::Drawing::Point(696, 537);
-			this->textBox17->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox17->Margin = System::Windows::Forms::Padding(6);
 			this->textBox17->Name = L"textBox17";
 			this->textBox17->Size = System::Drawing::Size(276, 31);
 			this->textBox17->TabIndex = 19;
@@ -922,7 +922,7 @@ namespace P6new {
 			// textBox16
 			// 
 			this->textBox16->Location = System::Drawing::Point(694, 487);
-			this->textBox16->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox16->Margin = System::Windows::Forms::Padding(6);
 			this->textBox16->Name = L"textBox16";
 			this->textBox16->Size = System::Drawing::Size(276, 31);
 			this->textBox16->TabIndex = 18;
@@ -930,7 +930,7 @@ namespace P6new {
 			// ID_Produit
 			// 
 			this->ID_Produit->Location = System::Drawing::Point(694, 337);
-			this->ID_Produit->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->ID_Produit->Margin = System::Windows::Forms::Padding(6);
 			this->ID_Produit->Name = L"ID_Produit";
 			this->ID_Produit->Size = System::Drawing::Size(278, 31);
 			this->ID_Produit->TabIndex = 15;
@@ -938,7 +938,7 @@ namespace P6new {
 			// textBox8
 			// 
 			this->textBox8->Location = System::Drawing::Point(696, 387);
-			this->textBox8->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox8->Margin = System::Windows::Forms::Padding(6);
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(278, 31);
 			this->textBox8->TabIndex = 14;
@@ -946,7 +946,7 @@ namespace P6new {
 			// textBox9
 			// 
 			this->textBox9->Location = System::Drawing::Point(698, 437);
-			this->textBox9->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox9->Margin = System::Windows::Forms::Padding(6);
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(276, 31);
 			this->textBox9->TabIndex = 13;
@@ -955,7 +955,7 @@ namespace P6new {
 			// 
 			this->dataGridViewStock->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewStock->Location = System::Drawing::Point(16, 6);
-			this->dataGridViewStock->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridViewStock->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridViewStock->Name = L"dataGridViewStock";
 			this->dataGridViewStock->RowHeadersWidth = 82;
 			this->dataGridViewStock->Size = System::Drawing::Size(960, 308);
@@ -976,9 +976,9 @@ namespace P6new {
 			this->tabPage3->Controls->Add(this->textBox5);
 			this->tabPage3->Controls->Add(this->textBox6);
 			this->tabPage3->Location = System::Drawing::Point(8, 39);
-			this->tabPage3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage3->Margin = System::Windows::Forms::Padding(4);
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage3->Padding = System::Windows::Forms::Padding(4);
 			this->tabPage3->Size = System::Drawing::Size(998, 588);
 			this->tabPage3->TabIndex = 2;
 			this->tabPage3->Text = L"Commande";
@@ -987,7 +987,7 @@ namespace P6new {
 			// DELETE_Commande
 			// 
 			this->DELETE_Commande->Location = System::Drawing::Point(236, 513);
-			this->DELETE_Commande->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->DELETE_Commande->Margin = System::Windows::Forms::Padding(6);
 			this->DELETE_Commande->Name = L"DELETE_Commande";
 			this->DELETE_Commande->Size = System::Drawing::Size(162, 65);
 			this->DELETE_Commande->TabIndex = 24;
@@ -997,7 +997,7 @@ namespace P6new {
 			// Update_Commande
 			// 
 			this->Update_Commande->Location = System::Drawing::Point(236, 429);
-			this->Update_Commande->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Update_Commande->Margin = System::Windows::Forms::Padding(6);
 			this->Update_Commande->Name = L"Update_Commande";
 			this->Update_Commande->Size = System::Drawing::Size(162, 71);
 			this->Update_Commande->TabIndex = 23;
@@ -1007,7 +1007,7 @@ namespace P6new {
 			// Insert_Commande
 			// 
 			this->Insert_Commande->Location = System::Drawing::Point(236, 342);
-			this->Insert_Commande->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Commande->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Commande->Name = L"Insert_Commande";
 			this->Insert_Commande->Size = System::Drawing::Size(162, 75);
 			this->Insert_Commande->TabIndex = 22;
@@ -1017,12 +1017,13 @@ namespace P6new {
 			// Load_Bdd_Commande
 			// 
 			this->Load_Bdd_Commande->Location = System::Drawing::Point(14, 342);
-			this->Load_Bdd_Commande->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_Bdd_Commande->Margin = System::Windows::Forms::Padding(6);
 			this->Load_Bdd_Commande->Name = L"Load_Bdd_Commande";
 			this->Load_Bdd_Commande->Size = System::Drawing::Size(162, 229);
 			this->Load_Bdd_Commande->TabIndex = 21;
 			this->Load_Bdd_Commande->Text = L"Load BDD";
 			this->Load_Bdd_Commande->UseVisualStyleBackColor = true;
+			this->Load_Bdd_Commande->Click += gcnew System::EventHandler(this, &MyForm::Load_Bdd_Commande_Click_1);
 			// 
 			// label11
 			// 
@@ -1060,7 +1061,7 @@ namespace P6new {
 			// 
 			this->dataGridViewCommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewCommande->Location = System::Drawing::Point(8, 12);
-			this->dataGridViewCommande->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridViewCommande->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridViewCommande->Name = L"dataGridViewCommande";
 			this->dataGridViewCommande->RowHeadersWidth = 82;
 			this->dataGridViewCommande->Size = System::Drawing::Size(950, 302);
@@ -1069,7 +1070,7 @@ namespace P6new {
 			// textBox4
 			// 
 			this->textBox4->Location = System::Drawing::Point(682, 337);
-			this->textBox4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox4->Margin = System::Windows::Forms::Padding(6);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(272, 31);
 			this->textBox4->TabIndex = 15;
@@ -1077,7 +1078,7 @@ namespace P6new {
 			// textBox5
 			// 
 			this->textBox5->Location = System::Drawing::Point(682, 387);
-			this->textBox5->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox5->Margin = System::Windows::Forms::Padding(6);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(272, 31);
 			this->textBox5->TabIndex = 14;
@@ -1085,7 +1086,7 @@ namespace P6new {
 			// textBox6
 			// 
 			this->textBox6->Location = System::Drawing::Point(682, 437);
-			this->textBox6->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox6->Margin = System::Windows::Forms::Padding(6);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(272, 31);
 			this->textBox6->TabIndex = 13;
@@ -1110,9 +1111,9 @@ namespace P6new {
 			this->tabPage2->Controls->Add(this->txt_id);
 			this->tabPage2->Controls->Add(this->dataGridViewPersonnel);
 			this->tabPage2->Location = System::Drawing::Point(8, 39);
-			this->tabPage2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage2->Margin = System::Windows::Forms::Padding(4);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->tabPage2->Padding = System::Windows::Forms::Padding(4);
 			this->tabPage2->Size = System::Drawing::Size(998, 588);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Personnel";
@@ -1143,7 +1144,7 @@ namespace P6new {
 			// textBox22
 			// 
 			this->textBox22->Location = System::Drawing::Point(596, 544);
-			this->textBox22->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox22->Margin = System::Windows::Forms::Padding(6);
 			this->textBox22->Name = L"textBox22";
 			this->textBox22->Size = System::Drawing::Size(358, 31);
 			this->textBox22->TabIndex = 20;
@@ -1152,7 +1153,7 @@ namespace P6new {
 			// textBox7
 			// 
 			this->textBox7->Location = System::Drawing::Point(596, 502);
-			this->textBox7->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox7->Margin = System::Windows::Forms::Padding(6);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(358, 31);
 			this->textBox7->TabIndex = 19;
@@ -1161,7 +1162,7 @@ namespace P6new {
 			// DELETE_Personnel
 			// 
 			this->DELETE_Personnel->Location = System::Drawing::Point(202, 488);
-			this->DELETE_Personnel->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->DELETE_Personnel->Margin = System::Windows::Forms::Padding(4);
 			this->DELETE_Personnel->Name = L"DELETE_Personnel";
 			this->DELETE_Personnel->Size = System::Drawing::Size(178, 60);
 			this->DELETE_Personnel->TabIndex = 18;
@@ -1172,7 +1173,7 @@ namespace P6new {
 			// Update_Personnel
 			// 
 			this->Update_Personnel->Location = System::Drawing::Point(202, 404);
-			this->Update_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Update_Personnel->Margin = System::Windows::Forms::Padding(6);
 			this->Update_Personnel->Name = L"Update_Personnel";
 			this->Update_Personnel->Size = System::Drawing::Size(178, 67);
 			this->Update_Personnel->TabIndex = 17;
@@ -1183,7 +1184,7 @@ namespace P6new {
 			// Insert_Personnel
 			// 
 			this->Insert_Personnel->Location = System::Drawing::Point(202, 315);
-			this->Insert_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Personnel->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Personnel->Name = L"Insert_Personnel";
 			this->Insert_Personnel->Size = System::Drawing::Size(178, 69);
 			this->Insert_Personnel->TabIndex = 16;
@@ -1194,7 +1195,7 @@ namespace P6new {
 			// Load_BDD_Personnel
 			// 
 			this->Load_BDD_Personnel->Location = System::Drawing::Point(14, 312);
-			this->Load_BDD_Personnel->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_BDD_Personnel->Margin = System::Windows::Forms::Padding(6);
 			this->Load_BDD_Personnel->Name = L"Load_BDD_Personnel";
 			this->Load_BDD_Personnel->Size = System::Drawing::Size(152, 235);
 			this->Load_BDD_Personnel->TabIndex = 15;
@@ -1247,7 +1248,7 @@ namespace P6new {
 			// textBox15
 			// 
 			this->textBox15->Location = System::Drawing::Point(596, 458);
-			this->textBox15->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox15->Margin = System::Windows::Forms::Padding(6);
 			this->textBox15->Name = L"textBox15";
 			this->textBox15->Size = System::Drawing::Size(358, 31);
 			this->textBox15->TabIndex = 10;
@@ -1256,7 +1257,7 @@ namespace P6new {
 			// txt_prenom
 			// 
 			this->txt_prenom->Location = System::Drawing::Point(596, 325);
-			this->txt_prenom->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->txt_prenom->Margin = System::Windows::Forms::Padding(6);
 			this->txt_prenom->Name = L"txt_prenom";
 			this->txt_prenom->Size = System::Drawing::Size(358, 31);
 			this->txt_prenom->TabIndex = 7;
@@ -1265,7 +1266,7 @@ namespace P6new {
 			// txt_nom
 			// 
 			this->txt_nom->Location = System::Drawing::Point(596, 367);
-			this->txt_nom->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->txt_nom->Margin = System::Windows::Forms::Padding(6);
 			this->txt_nom->Name = L"txt_nom";
 			this->txt_nom->Size = System::Drawing::Size(358, 31);
 			this->txt_nom->TabIndex = 6;
@@ -1274,7 +1275,7 @@ namespace P6new {
 			// txt_id
 			// 
 			this->txt_id->Location = System::Drawing::Point(596, 413);
-			this->txt_id->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->txt_id->Margin = System::Windows::Forms::Padding(6);
 			this->txt_id->Name = L"txt_id";
 			this->txt_id->Size = System::Drawing::Size(358, 31);
 			this->txt_id->TabIndex = 5;
@@ -1284,7 +1285,7 @@ namespace P6new {
 			// 
 			this->dataGridViewPersonnel->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewPersonnel->Location = System::Drawing::Point(12, 8);
-			this->dataGridViewPersonnel->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridViewPersonnel->Margin = System::Windows::Forms::Padding(4);
 			this->dataGridViewPersonnel->Name = L"dataGridViewPersonnel";
 			this->dataGridViewPersonnel->RowHeadersWidth = 82;
 			this->dataGridViewPersonnel->Size = System::Drawing::Size(946, 294);
@@ -1307,9 +1308,9 @@ namespace P6new {
 			this->tabPage1->Controls->Add(this->button5);
 			this->tabPage1->Controls->Add(this->DataGrindViewClient);
 			this->tabPage1->Location = System::Drawing::Point(8, 39);
-			this->tabPage1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage1->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage1->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage1->Size = System::Drawing::Size(998, 588);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Client";
@@ -1350,7 +1351,7 @@ namespace P6new {
 			// textBox14
 			// 
 			this->textBox14->Location = System::Drawing::Point(470, 483);
-			this->textBox14->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox14->Margin = System::Windows::Forms::Padding(6);
 			this->textBox14->Name = L"textBox14";
 			this->textBox14->Size = System::Drawing::Size(504, 31);
 			this->textBox14->TabIndex = 18;
@@ -1358,7 +1359,7 @@ namespace P6new {
 			// textBox1
 			// 
 			this->textBox1->Location = System::Drawing::Point(470, 319);
-			this->textBox1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox1->Margin = System::Windows::Forms::Padding(6);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(504, 31);
 			this->textBox1->TabIndex = 15;
@@ -1367,7 +1368,7 @@ namespace P6new {
 			// textBox2
 			// 
 			this->textBox2->Location = System::Drawing::Point(470, 369);
-			this->textBox2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox2->Margin = System::Windows::Forms::Padding(6);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(504, 31);
 			this->textBox2->TabIndex = 14;
@@ -1376,7 +1377,7 @@ namespace P6new {
 			// textBox3
 			// 
 			this->textBox3->Location = System::Drawing::Point(470, 427);
-			this->textBox3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox3->Margin = System::Windows::Forms::Padding(6);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(504, 31);
 			this->textBox3->TabIndex = 13;
@@ -1395,7 +1396,7 @@ namespace P6new {
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(14, 302);
-			this->button2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button2->Margin = System::Windows::Forms::Padding(6);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(142, 71);
 			this->button2->TabIndex = 16;
@@ -1406,7 +1407,7 @@ namespace P6new {
 			// button3
 			// 
 			this->button3->Location = System::Drawing::Point(14, 483);
-			this->button3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button3->Margin = System::Windows::Forms::Padding(6);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(150, 71);
 			this->button3->TabIndex = 10;
@@ -1417,7 +1418,7 @@ namespace P6new {
 			// button4
 			// 
 			this->button4->Location = System::Drawing::Point(14, 385);
-			this->button4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button4->Margin = System::Windows::Forms::Padding(6);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(150, 71);
 			this->button4->TabIndex = 12;
@@ -1428,7 +1429,7 @@ namespace P6new {
 			// button5
 			// 
 			this->button5->Location = System::Drawing::Point(168, 302);
-			this->button5->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button5->Margin = System::Windows::Forms::Padding(6);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(150, 71);
 			this->button5->TabIndex = 11;
@@ -1440,7 +1441,7 @@ namespace P6new {
 			// 
 			this->DataGrindViewClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->DataGrindViewClient->Location = System::Drawing::Point(14, 13);
-			this->DataGrindViewClient->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->DataGrindViewClient->Margin = System::Windows::Forms::Padding(6);
 			this->DataGrindViewClient->Name = L"DataGrindViewClient";
 			this->DataGrindViewClient->RowHeadersWidth = 82;
 			this->DataGrindViewClient->Size = System::Drawing::Size(944, 288);
@@ -1463,7 +1464,7 @@ namespace P6new {
 			this->tabControl1->Controls->Add(this->tabPage14);
 			this->tabControl1->Controls->Add(this->tabPage15);
 			this->tabControl1->Location = System::Drawing::Point(2, 2);
-			this->tabControl1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabControl1->Margin = System::Windows::Forms::Padding(6);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(1014, 635);
@@ -1483,9 +1484,9 @@ namespace P6new {
 			this->tabPage9->Controls->Add(this->button6);
 			this->tabPage9->Controls->Add(this->button1);
 			this->tabPage9->Location = System::Drawing::Point(8, 39);
-			this->tabPage9->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage9->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage9->Name = L"tabPage9";
-			this->tabPage9->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage9->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage9->Size = System::Drawing::Size(998, 588);
 			this->tabPage9->TabIndex = 8;
 			this->tabPage9->Text = L"Taxe";
@@ -1524,7 +1525,7 @@ namespace P6new {
 			// textBox25
 			// 
 			this->textBox25->Location = System::Drawing::Point(756, 475);
-			this->textBox25->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox25->Margin = System::Windows::Forms::Padding(6);
 			this->textBox25->Name = L"textBox25";
 			this->textBox25->Size = System::Drawing::Size(196, 31);
 			this->textBox25->TabIndex = 7;
@@ -1532,7 +1533,7 @@ namespace P6new {
 			// textBox24
 			// 
 			this->textBox24->Location = System::Drawing::Point(756, 412);
-			this->textBox24->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox24->Margin = System::Windows::Forms::Padding(6);
 			this->textBox24->Name = L"textBox24";
 			this->textBox24->Size = System::Drawing::Size(196, 31);
 			this->textBox24->TabIndex = 6;
@@ -1540,7 +1541,7 @@ namespace P6new {
 			// textBox23
 			// 
 			this->textBox23->Location = System::Drawing::Point(756, 350);
-			this->textBox23->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox23->Margin = System::Windows::Forms::Padding(6);
 			this->textBox23->Name = L"textBox23";
 			this->textBox23->Size = System::Drawing::Size(196, 31);
 			this->textBox23->TabIndex = 5;
@@ -1549,7 +1550,7 @@ namespace P6new {
 			// 
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(32, 12);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 82;
 			this->dataGridView1->Size = System::Drawing::Size(926, 306);
@@ -1558,7 +1559,7 @@ namespace P6new {
 			// button8
 			// 
 			this->button8->Location = System::Drawing::Point(182, 483);
-			this->button8->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button8->Margin = System::Windows::Forms::Padding(6);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(150, 60);
 			this->button8->TabIndex = 3;
@@ -1568,7 +1569,7 @@ namespace P6new {
 			// button7
 			// 
 			this->button7->Location = System::Drawing::Point(182, 408);
-			this->button7->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button7->Margin = System::Windows::Forms::Padding(6);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(150, 63);
 			this->button7->TabIndex = 2;
@@ -1578,7 +1579,7 @@ namespace P6new {
 			// button6
 			// 
 			this->button6->Location = System::Drawing::Point(182, 329);
-			this->button6->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button6->Margin = System::Windows::Forms::Padding(6);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(150, 65);
 			this->button6->TabIndex = 1;
@@ -1588,7 +1589,7 @@ namespace P6new {
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(14, 350);
-			this->button1->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button1->Margin = System::Windows::Forms::Padding(6);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(130, 221);
 			this->button1->TabIndex = 0;
@@ -1611,9 +1612,9 @@ namespace P6new {
 			this->tabPage10->Controls->Add(this->button9);
 			this->tabPage10->Controls->Add(this->dataGridView2);
 			this->tabPage10->Location = System::Drawing::Point(8, 39);
-			this->tabPage10->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage10->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage10->Name = L"tabPage10";
-			this->tabPage10->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage10->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage10->Size = System::Drawing::Size(998, 588);
 			this->tabPage10->TabIndex = 9;
 			this->tabPage10->Text = L"Adresse";
@@ -1622,7 +1623,7 @@ namespace P6new {
 			// textBox29
 			// 
 			this->textBox29->Location = System::Drawing::Point(778, 517);
-			this->textBox29->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox29->Margin = System::Windows::Forms::Padding(6);
 			this->textBox29->Name = L"textBox29";
 			this->textBox29->Size = System::Drawing::Size(196, 31);
 			this->textBox29->TabIndex = 12;
@@ -1671,7 +1672,7 @@ namespace P6new {
 			// textBox28
 			// 
 			this->textBox28->Location = System::Drawing::Point(778, 467);
-			this->textBox28->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox28->Margin = System::Windows::Forms::Padding(6);
 			this->textBox28->Name = L"textBox28";
 			this->textBox28->Size = System::Drawing::Size(196, 31);
 			this->textBox28->TabIndex = 7;
@@ -1679,7 +1680,7 @@ namespace P6new {
 			// textBox27
 			// 
 			this->textBox27->Location = System::Drawing::Point(778, 417);
-			this->textBox27->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox27->Margin = System::Windows::Forms::Padding(6);
 			this->textBox27->Name = L"textBox27";
 			this->textBox27->Size = System::Drawing::Size(196, 31);
 			this->textBox27->TabIndex = 6;
@@ -1687,7 +1688,7 @@ namespace P6new {
 			// textBox26
 			// 
 			this->textBox26->Location = System::Drawing::Point(778, 367);
-			this->textBox26->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox26->Margin = System::Windows::Forms::Padding(6);
 			this->textBox26->Name = L"textBox26";
 			this->textBox26->Size = System::Drawing::Size(196, 31);
 			this->textBox26->TabIndex = 5;
@@ -1695,7 +1696,7 @@ namespace P6new {
 			// button12
 			// 
 			this->button12->Location = System::Drawing::Point(192, 394);
-			this->button12->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button12->Margin = System::Windows::Forms::Padding(6);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(150, 44);
 			this->button12->TabIndex = 4;
@@ -1705,7 +1706,7 @@ namespace P6new {
 			// button11
 			// 
 			this->button11->Location = System::Drawing::Point(192, 506);
-			this->button11->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button11->Margin = System::Windows::Forms::Padding(6);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(150, 44);
 			this->button11->TabIndex = 3;
@@ -1715,7 +1716,7 @@ namespace P6new {
 			// button10
 			// 
 			this->button10->Location = System::Drawing::Point(192, 450);
-			this->button10->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button10->Margin = System::Windows::Forms::Padding(6);
 			this->button10->Name = L"button10";
 			this->button10->Size = System::Drawing::Size(150, 44);
 			this->button10->TabIndex = 2;
@@ -1725,7 +1726,7 @@ namespace P6new {
 			// button9
 			// 
 			this->button9->Location = System::Drawing::Point(38, 379);
-			this->button9->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button9->Margin = System::Windows::Forms::Padding(6);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(142, 185);
 			this->button9->TabIndex = 1;
@@ -1736,7 +1737,7 @@ namespace P6new {
 			// 
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Location = System::Drawing::Point(16, 13);
-			this->dataGridView2->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView2->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridView2->Name = L"dataGridView2";
 			this->dataGridView2->RowHeadersWidth = 82;
 			this->dataGridView2->Size = System::Drawing::Size(970, 342);
@@ -1760,9 +1761,9 @@ namespace P6new {
 			this->tabPage11->Controls->Add(this->dataGridView3);
 			this->tabPage11->Controls->Add(this->button13);
 			this->tabPage11->Location = System::Drawing::Point(8, 39);
-			this->tabPage11->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage11->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage11->Name = L"tabPage11";
-			this->tabPage11->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage11->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage11->Size = System::Drawing::Size(998, 588);
 			this->tabPage11->TabIndex = 10;
 			this->tabPage11->Text = L"Paiement";
@@ -1821,7 +1822,7 @@ namespace P6new {
 			// textBox34
 			// 
 			this->textBox34->Location = System::Drawing::Point(786, 531);
-			this->textBox34->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox34->Margin = System::Windows::Forms::Padding(6);
 			this->textBox34->Name = L"textBox34";
 			this->textBox34->Size = System::Drawing::Size(196, 31);
 			this->textBox34->TabIndex = 9;
@@ -1829,7 +1830,7 @@ namespace P6new {
 			// textBox33
 			// 
 			this->textBox33->Location = System::Drawing::Point(786, 488);
-			this->textBox33->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox33->Margin = System::Windows::Forms::Padding(6);
 			this->textBox33->Name = L"textBox33";
 			this->textBox33->Size = System::Drawing::Size(196, 31);
 			this->textBox33->TabIndex = 8;
@@ -1837,7 +1838,7 @@ namespace P6new {
 			// textBox32
 			// 
 			this->textBox32->Location = System::Drawing::Point(786, 438);
-			this->textBox32->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox32->Margin = System::Windows::Forms::Padding(6);
 			this->textBox32->Name = L"textBox32";
 			this->textBox32->Size = System::Drawing::Size(196, 31);
 			this->textBox32->TabIndex = 7;
@@ -1845,7 +1846,7 @@ namespace P6new {
 			// textBox31
 			// 
 			this->textBox31->Location = System::Drawing::Point(786, 385);
-			this->textBox31->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox31->Margin = System::Windows::Forms::Padding(6);
 			this->textBox31->Name = L"textBox31";
 			this->textBox31->Size = System::Drawing::Size(196, 31);
 			this->textBox31->TabIndex = 6;
@@ -1853,7 +1854,7 @@ namespace P6new {
 			// textBox30
 			// 
 			this->textBox30->Location = System::Drawing::Point(786, 335);
-			this->textBox30->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox30->Margin = System::Windows::Forms::Padding(6);
 			this->textBox30->Name = L"textBox30";
 			this->textBox30->Size = System::Drawing::Size(196, 31);
 			this->textBox30->TabIndex = 5;
@@ -1861,7 +1862,7 @@ namespace P6new {
 			// button16
 			// 
 			this->button16->Location = System::Drawing::Point(180, 488);
-			this->button16->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button16->Margin = System::Windows::Forms::Padding(6);
 			this->button16->Name = L"button16";
 			this->button16->Size = System::Drawing::Size(150, 44);
 			this->button16->TabIndex = 4;
@@ -1871,7 +1872,7 @@ namespace P6new {
 			// button15
 			// 
 			this->button15->Location = System::Drawing::Point(180, 433);
-			this->button15->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button15->Margin = System::Windows::Forms::Padding(6);
 			this->button15->Name = L"button15";
 			this->button15->Size = System::Drawing::Size(150, 44);
 			this->button15->TabIndex = 3;
@@ -1881,7 +1882,7 @@ namespace P6new {
 			// button14
 			// 
 			this->button14->Location = System::Drawing::Point(180, 377);
-			this->button14->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button14->Margin = System::Windows::Forms::Padding(6);
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(150, 44);
 			this->button14->TabIndex = 2;
@@ -1892,7 +1893,7 @@ namespace P6new {
 			// 
 			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView3->Location = System::Drawing::Point(16, 13);
-			this->dataGridView3->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView3->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridView3->Name = L"dataGridView3";
 			this->dataGridView3->RowHeadersWidth = 82;
 			this->dataGridView3->Size = System::Drawing::Size(962, 288);
@@ -1901,7 +1902,7 @@ namespace P6new {
 			// button13
 			// 
 			this->button13->Location = System::Drawing::Point(16, 375);
-			this->button13->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button13->Margin = System::Windows::Forms::Padding(6);
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(152, 196);
 			this->button13->TabIndex = 0;
@@ -1917,9 +1918,9 @@ namespace P6new {
 			this->tabPage12->Controls->Add(this->button18);
 			this->tabPage12->Controls->Add(this->button17);
 			this->tabPage12->Location = System::Drawing::Point(8, 39);
-			this->tabPage12->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage12->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage12->Name = L"tabPage12";
-			this->tabPage12->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage12->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage12->Size = System::Drawing::Size(998, 588);
 			this->tabPage12->TabIndex = 11;
 			this->tabPage12->Text = L"Mode Paiement";
@@ -1929,7 +1930,7 @@ namespace P6new {
 			// 
 			this->dataGridView6->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView6->Location = System::Drawing::Point(48, 0);
-			this->dataGridView6->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView6->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridView6->Name = L"dataGridView6";
 			this->dataGridView6->RowHeadersWidth = 82;
 			this->dataGridView6->Size = System::Drawing::Size(890, 306);
@@ -1938,7 +1939,7 @@ namespace P6new {
 			// textBox36
 			// 
 			this->textBox36->Location = System::Drawing::Point(738, 383);
-			this->textBox36->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox36->Margin = System::Windows::Forms::Padding(6);
 			this->textBox36->Name = L"textBox36";
 			this->textBox36->Size = System::Drawing::Size(196, 31);
 			this->textBox36->TabIndex = 6;
@@ -1947,7 +1948,7 @@ namespace P6new {
 			// button20
 			// 
 			this->button20->Location = System::Drawing::Point(242, 327);
-			this->button20->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button20->Margin = System::Windows::Forms::Padding(6);
 			this->button20->Name = L"button20";
 			this->button20->Size = System::Drawing::Size(150, 44);
 			this->button20->TabIndex = 4;
@@ -1957,7 +1958,7 @@ namespace P6new {
 			// button19
 			// 
 			this->button19->Location = System::Drawing::Point(242, 438);
-			this->button19->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button19->Margin = System::Windows::Forms::Padding(6);
 			this->button19->Name = L"button19";
 			this->button19->Size = System::Drawing::Size(150, 44);
 			this->button19->TabIndex = 3;
@@ -1967,7 +1968,7 @@ namespace P6new {
 			// button18
 			// 
 			this->button18->Location = System::Drawing::Point(242, 383);
-			this->button18->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button18->Margin = System::Windows::Forms::Padding(6);
 			this->button18->Name = L"button18";
 			this->button18->Size = System::Drawing::Size(150, 44);
 			this->button18->TabIndex = 2;
@@ -1977,7 +1978,7 @@ namespace P6new {
 			// button17
 			// 
 			this->button17->Location = System::Drawing::Point(48, 317);
-			this->button17->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button17->Margin = System::Windows::Forms::Padding(6);
 			this->button17->Name = L"button17";
 			this->button17->Size = System::Drawing::Size(150, 254);
 			this->button17->TabIndex = 1;
@@ -1996,9 +1997,9 @@ namespace P6new {
 			this->tabPage13->Controls->Add(this->button22);
 			this->tabPage13->Controls->Add(this->button21);
 			this->tabPage13->Location = System::Drawing::Point(8, 39);
-			this->tabPage13->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage13->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage13->Name = L"tabPage13";
-			this->tabPage13->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage13->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage13->Size = System::Drawing::Size(998, 588);
 			this->tabPage13->TabIndex = 12;
 			this->tabPage13->Text = L"Ville";
@@ -2027,7 +2028,7 @@ namespace P6new {
 			// textBox43
 			// 
 			this->textBox43->Location = System::Drawing::Point(766, 392);
-			this->textBox43->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox43->Margin = System::Windows::Forms::Padding(6);
 			this->textBox43->Name = L"textBox43";
 			this->textBox43->Size = System::Drawing::Size(196, 31);
 			this->textBox43->TabIndex = 7;
@@ -2035,7 +2036,7 @@ namespace P6new {
 			// textBox42
 			// 
 			this->textBox42->Location = System::Drawing::Point(766, 337);
-			this->textBox42->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox42->Margin = System::Windows::Forms::Padding(6);
 			this->textBox42->Name = L"textBox42";
 			this->textBox42->Size = System::Drawing::Size(196, 31);
 			this->textBox42->TabIndex = 6;
@@ -2044,7 +2045,7 @@ namespace P6new {
 			// 
 			this->dataGridViewVille->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewVille->Location = System::Drawing::Point(16, 13);
-			this->dataGridViewVille->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridViewVille->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridViewVille->Name = L"dataGridViewVille";
 			this->dataGridViewVille->RowHeadersWidth = 82;
 			this->dataGridViewVille->Size = System::Drawing::Size(962, 308);
@@ -2053,7 +2054,7 @@ namespace P6new {
 			// button24
 			// 
 			this->button24->Location = System::Drawing::Point(226, 444);
-			this->button24->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button24->Margin = System::Windows::Forms::Padding(6);
 			this->button24->Name = L"button24";
 			this->button24->Size = System::Drawing::Size(150, 44);
 			this->button24->TabIndex = 4;
@@ -2063,7 +2064,7 @@ namespace P6new {
 			// button23
 			// 
 			this->button23->Location = System::Drawing::Point(226, 388);
-			this->button23->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button23->Margin = System::Windows::Forms::Padding(6);
 			this->button23->Name = L"button23";
 			this->button23->Size = System::Drawing::Size(150, 44);
 			this->button23->TabIndex = 3;
@@ -2073,7 +2074,7 @@ namespace P6new {
 			// button22
 			// 
 			this->button22->Location = System::Drawing::Point(226, 333);
-			this->button22->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button22->Margin = System::Windows::Forms::Padding(6);
 			this->button22->Name = L"button22";
 			this->button22->Size = System::Drawing::Size(150, 44);
 			this->button22->TabIndex = 2;
@@ -2083,7 +2084,7 @@ namespace P6new {
 			// button21
 			// 
 			this->button21->Location = System::Drawing::Point(54, 333);
-			this->button21->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button21->Margin = System::Windows::Forms::Padding(6);
 			this->button21->Name = L"button21";
 			this->button21->Size = System::Drawing::Size(160, 238);
 			this->button21->TabIndex = 0;
@@ -2110,9 +2111,9 @@ namespace P6new {
 			this->tabPage14->Controls->Add(this->Load_BDD_Composer);
 			this->tabPage14->Controls->Add(this->dataGridViewComposer);
 			this->tabPage14->Location = System::Drawing::Point(8, 39);
-			this->tabPage14->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage14->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage14->Name = L"tabPage14";
-			this->tabPage14->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage14->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage14->Size = System::Drawing::Size(998, 588);
 			this->tabPage14->TabIndex = 13;
 			this->tabPage14->Text = L"Composer";
@@ -2121,7 +2122,7 @@ namespace P6new {
 			// textBox41
 			// 
 			this->textBox41->Location = System::Drawing::Point(762, 538);
-			this->textBox41->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox41->Margin = System::Windows::Forms::Padding(6);
 			this->textBox41->Name = L"textBox41";
 			this->textBox41->Size = System::Drawing::Size(196, 31);
 			this->textBox41->TabIndex = 17;
@@ -2129,7 +2130,7 @@ namespace P6new {
 			// textBox40
 			// 
 			this->textBox40->Location = System::Drawing::Point(762, 496);
-			this->textBox40->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox40->Margin = System::Windows::Forms::Padding(6);
 			this->textBox40->Name = L"textBox40";
 			this->textBox40->Size = System::Drawing::Size(196, 31);
 			this->textBox40->TabIndex = 16;
@@ -2137,7 +2138,7 @@ namespace P6new {
 			// textBox39
 			// 
 			this->textBox39->Location = System::Drawing::Point(762, 450);
-			this->textBox39->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox39->Margin = System::Windows::Forms::Padding(6);
 			this->textBox39->Name = L"textBox39";
 			this->textBox39->Size = System::Drawing::Size(196, 31);
 			this->textBox39->TabIndex = 15;
@@ -2145,7 +2146,7 @@ namespace P6new {
 			// textBox38
 			// 
 			this->textBox38->Location = System::Drawing::Point(762, 400);
-			this->textBox38->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox38->Margin = System::Windows::Forms::Padding(6);
 			this->textBox38->Name = L"textBox38";
 			this->textBox38->Size = System::Drawing::Size(196, 31);
 			this->textBox38->TabIndex = 14;
@@ -2153,7 +2154,7 @@ namespace P6new {
 			// textBox37
 			// 
 			this->textBox37->Location = System::Drawing::Point(762, 356);
-			this->textBox37->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox37->Margin = System::Windows::Forms::Padding(6);
 			this->textBox37->Name = L"textBox37";
 			this->textBox37->Size = System::Drawing::Size(196, 31);
 			this->textBox37->TabIndex = 13;
@@ -2161,7 +2162,7 @@ namespace P6new {
 			// textBox35
 			// 
 			this->textBox35->Location = System::Drawing::Point(762, 296);
-			this->textBox35->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox35->Margin = System::Windows::Forms::Padding(6);
 			this->textBox35->Name = L"textBox35";
 			this->textBox35->Size = System::Drawing::Size(196, 31);
 			this->textBox35->TabIndex = 11;
@@ -2230,7 +2231,7 @@ namespace P6new {
 			// Uptade_Composer
 			// 
 			this->Uptade_Composer->Location = System::Drawing::Point(212, 477);
-			this->Uptade_Composer->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Uptade_Composer->Margin = System::Windows::Forms::Padding(6);
 			this->Uptade_Composer->Name = L"Uptade_Composer";
 			this->Uptade_Composer->Size = System::Drawing::Size(150, 44);
 			this->Uptade_Composer->TabIndex = 4;
@@ -2240,7 +2241,7 @@ namespace P6new {
 			// Delete_Composer
 			// 
 			this->Delete_Composer->Location = System::Drawing::Point(212, 387);
-			this->Delete_Composer->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Delete_Composer->Margin = System::Windows::Forms::Padding(6);
 			this->Delete_Composer->Name = L"Delete_Composer";
 			this->Delete_Composer->Size = System::Drawing::Size(150, 44);
 			this->Delete_Composer->TabIndex = 3;
@@ -2250,7 +2251,7 @@ namespace P6new {
 			// Insert_Composer
 			// 
 			this->Insert_Composer->Location = System::Drawing::Point(212, 296);
-			this->Insert_Composer->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Insert_Composer->Margin = System::Windows::Forms::Padding(6);
 			this->Insert_Composer->Name = L"Insert_Composer";
 			this->Insert_Composer->Size = System::Drawing::Size(150, 44);
 			this->Insert_Composer->TabIndex = 2;
@@ -2260,7 +2261,7 @@ namespace P6new {
 			// Load_BDD_Composer
 			// 
 			this->Load_BDD_Composer->Location = System::Drawing::Point(14, 296);
-			this->Load_BDD_Composer->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Load_BDD_Composer->Margin = System::Windows::Forms::Padding(6);
 			this->Load_BDD_Composer->Name = L"Load_BDD_Composer";
 			this->Load_BDD_Composer->Size = System::Drawing::Size(150, 44);
 			this->Load_BDD_Composer->TabIndex = 1;
@@ -2271,7 +2272,7 @@ namespace P6new {
 			// 
 			this->dataGridViewComposer->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridViewComposer->Location = System::Drawing::Point(12, 6);
-			this->dataGridViewComposer->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridViewComposer->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridViewComposer->Name = L"dataGridViewComposer";
 			this->dataGridViewComposer->RowHeadersWidth = 82;
 			this->dataGridViewComposer->Size = System::Drawing::Size(962, 252);
@@ -2290,9 +2291,9 @@ namespace P6new {
 			this->tabPage15->Controls->Add(this->button25);
 			this->tabPage15->Controls->Add(this->dataGridView4);
 			this->tabPage15->Location = System::Drawing::Point(8, 39);
-			this->tabPage15->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage15->Margin = System::Windows::Forms::Padding(6);
 			this->tabPage15->Name = L"tabPage15";
-			this->tabPage15->Padding = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->tabPage15->Padding = System::Windows::Forms::Padding(6);
 			this->tabPage15->Size = System::Drawing::Size(998, 588);
 			this->tabPage15->TabIndex = 14;
 			this->tabPage15->Text = L"Remise";
@@ -2321,7 +2322,7 @@ namespace P6new {
 			// textBox45
 			// 
 			this->textBox45->Location = System::Drawing::Point(780, 379);
-			this->textBox45->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox45->Margin = System::Windows::Forms::Padding(6);
 			this->textBox45->Name = L"textBox45";
 			this->textBox45->Size = System::Drawing::Size(196, 31);
 			this->textBox45->TabIndex = 6;
@@ -2329,7 +2330,7 @@ namespace P6new {
 			// textBox44
 			// 
 			this->textBox44->Location = System::Drawing::Point(780, 327);
-			this->textBox44->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->textBox44->Margin = System::Windows::Forms::Padding(6);
 			this->textBox44->Name = L"textBox44";
 			this->textBox44->Size = System::Drawing::Size(196, 31);
 			this->textBox44->TabIndex = 5;
@@ -2337,7 +2338,7 @@ namespace P6new {
 			// button28
 			// 
 			this->button28->Location = System::Drawing::Point(246, 440);
-			this->button28->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button28->Margin = System::Windows::Forms::Padding(6);
 			this->button28->Name = L"button28";
 			this->button28->Size = System::Drawing::Size(150, 44);
 			this->button28->TabIndex = 4;
@@ -2347,7 +2348,7 @@ namespace P6new {
 			// button27
 			// 
 			this->button27->Location = System::Drawing::Point(246, 385);
-			this->button27->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button27->Margin = System::Windows::Forms::Padding(6);
 			this->button27->Name = L"button27";
 			this->button27->Size = System::Drawing::Size(150, 44);
 			this->button27->TabIndex = 3;
@@ -2357,7 +2358,7 @@ namespace P6new {
 			// button26
 			// 
 			this->button26->Location = System::Drawing::Point(246, 323);
-			this->button26->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button26->Margin = System::Windows::Forms::Padding(6);
 			this->button26->Name = L"button26";
 			this->button26->Size = System::Drawing::Size(150, 44);
 			this->button26->TabIndex = 2;
@@ -2367,7 +2368,7 @@ namespace P6new {
 			// button25
 			// 
 			this->button25->Location = System::Drawing::Point(64, 298);
-			this->button25->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->button25->Margin = System::Windows::Forms::Padding(6);
 			this->button25->Name = L"button25";
 			this->button25->Size = System::Drawing::Size(170, 244);
 			this->button25->TabIndex = 1;
@@ -2378,7 +2379,7 @@ namespace P6new {
 			// 
 			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView4->Location = System::Drawing::Point(16, 13);
-			this->dataGridView4->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->dataGridView4->Margin = System::Windows::Forms::Padding(6);
 			this->dataGridView4->Name = L"dataGridView4";
 			this->dataGridView4->RowHeadersWidth = 82;
 			this->dataGridView4->Size = System::Drawing::Size(962, 273);
@@ -2390,7 +2391,7 @@ namespace P6new {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1012, 638);
 			this->Controls->Add(this->tabControl1);
-			this->Margin = System::Windows::Forms::Padding(6, 6, 6, 6);
+			this->Margin = System::Windows::Forms::Padding(6);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
@@ -2715,7 +2716,9 @@ private: System::Void Delete_Commande(System::Object^ sender, System::EventArgs^
 	}
 	private: System::Void textBox36_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void Load_Bdd_Commande_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
 
 /*

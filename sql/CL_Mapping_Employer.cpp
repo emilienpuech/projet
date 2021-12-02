@@ -16,7 +16,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Insert(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Delete(void)
 {
-	return"Delete FROM [projetpoo].[dbo].[Employer] WHERE IDE_Employer = '" + this->id + "';";
+	return"Delete FROM [projetpoo].[dbo].[Employe] WHERE IDEmploye = " + this->id + ";";
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Employer::Update(void)
 {
