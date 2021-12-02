@@ -2663,6 +2663,22 @@ private: System::Void Delete_Stock_Click(System::Object^ sender, System::EventAr
 
 */
 
+//Select Commande
+	   private: System::Void Load_BDD_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
+		   this->Refresh();
+		   this->oDs = this->oSvc->select_toutes_nos_commandes("Rsl");
+		   this->dataGridViewStock->DataSource = this->oDs;
+		   this->dataGridViewStock->DataMember = "Rsl";
+	   }
+private: System::Void Insert_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->ins_une_commande(this->textBox4->Text, this->oSvc->convert_string_to_int(this->textBox5->Text));
+}
+private: System::Void Update_Commande_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->upd_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text), this->textBox4->Text, this->textBox6->Text);
+}
+private: System::Void Delete_Commande(System::Object^ sender, System::EventArgs^ e) {
+	this->oSvc->del_une_commande(this->oSvc->convert_string_to_int(this->textBox5->Text));
+}
 
 
 
