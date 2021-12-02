@@ -10,17 +10,17 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Select(void)
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Insert(void)
 {
-	return "INSERT INTO [projetpoo].[dbo].[Commande] ([RefCommande],[DateLivraison],[DateEmission],[numeroClient]) VALUES('" + this->RefCommande + "', '" + this->DateLivraison + "', '" + this->DateEmission + "', " + this->client + ", " + this->id_superieur + ")";
+	return "INSERT INTO [projetpoo].[dbo].[Commande] ([RefCommande],[DateLivraison],[DateEmission],[numeroClient]) VALUES('" + this->RefCommande + "', '" + this->DateLivraison + "', '" + this->DateEmission + "', " + this->numeroclient + ")";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Delete(void)
 {
-	return "DELETE FROM [projetpoo].[dbo].[Commande] WHERE RefCommande = '" + this->RefCommande + "';";
+bn,	return "exec [projetpoo].[dbo].[supprimerCommande] "+ System::Int32::Parse(this->RefCommande) +";";
 }
 
 System::String^ NS_Comp_Mappage::CL_Mapping_Commande::Update(void)
 {
-	return "UPDATE [projetpoo].[dbo].[Commande] SET RefCommande='" + this->RefCommande + "', DateLivraison='" + this->DateLivraison + "', DateEmission='" + this->DateEmission + "', numeroClient=" + this->numeroclient + "; ";
+	return "UPDATE [projetpoo].[dbo].[Commande] SET DateLivraison='" + this->DateLivraison + "', DateEmission='" + this->DateEmission + "', numeroClient=" + this->numeroclient + " WHERE RefCommande='" + this->RefCommande + "';";
 }
 
 

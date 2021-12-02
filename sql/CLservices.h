@@ -94,7 +94,7 @@ namespace NS_Comp_Svc
 		System::Data::DataSet^ select_toutes_nos_commandes(System::String^);
 		void upd_une_commande(System::String^ RefCommande, System::String^ DateEmission, System::String^ DateLivraison, int numeroclieent);
 		void ins_une_commande(System::String^ RefCommande, System::String^ DateEmission, System::String^ DateLivraison, int numeroclient);
-		void del_une_commande(int);
+		void del_une_commande(System::String^ RefCommande);
 			
 
 		//Ville

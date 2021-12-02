@@ -359,7 +359,7 @@ void NS_Comp_Svc::CLservices::upd_une_commande(System::String^ RefCommande, Syst
 	this->oCad->actionRows(sql);
 }
 
-void NS_Comp_Svc::CLservices::del_une_commande(int RefCommande) {
+void NS_Comp_Svc::CLservices::del_une_commande(System::String^ RefCommande) {
 
 	System::String^ sql;
 	this->Mapp_commande->setRefCommande(RefCommande);
