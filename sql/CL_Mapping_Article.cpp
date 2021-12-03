@@ -12,7 +12,7 @@ System::String^ NS_Comp_Mappage::CL_Mapping_Article::Insert(void)
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Delete(void)
 {
-	return"Delete FROM [projetpoo].[dbo].[Article] WHERE Reference = " + this->id + ";";
+	return"exec [projetpoo].[dbo].[supprimerArticle] " + this->id + ";";
 }
 System::String^ NS_Comp_Mappage::CL_Mapping_Article::Update(void)
 {
