@@ -2328,10 +2328,10 @@ private: System::Windows::Forms::TextBox^ textBox46;
 	}
 	private: System::Void label11_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+	private: delegate int *Fonctions(System::String^ a);
 
 
-
-
+		   
 
 		   /*
 				Fait
@@ -2383,10 +2383,29 @@ private: System::Windows::Forms::TextBox^ textBox46;
 		this->DataGrindViewClient->DataMember = "A";
 	}
 
+		   
+
+
 		   // UPD client
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+		/*
+		Fonctions^ convert = gcnew Fonctions(this->oSvc, &NS_Comp_Svc::CLservices::convert_string_to_int());
+
+		
+		typedef int (*pf)(String);
+		//pf = &convert();
+
+		*/
+
+		
+
 		this->oSvc->upd_un_client(this->oSvc->convert_string_to_int(this->textBox1->Text), this->textBox2->Text, this->textBox3->Text, this->textBox14->Text);
+	
+
+
+
 	}
+	
 
 		   // INS client 
 	private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
