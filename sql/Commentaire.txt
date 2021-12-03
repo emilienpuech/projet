@@ -100,30 +100,28 @@ GO
 
 
 
+CREATE PROCEDURE supprimerCommande
+@inputIDCommande int AS
 
+delete from Paiement where RefCommande = @inputIDCommande
+delete from Beneficier where RefCommande = @inputIDCommande
+delete from Composer where RefCommande = @inputIDCommande
 
-CREATE PROCEDURE supprimerClient
-@inputIDClient int AS
-DECLARE @IDValue table (IDAdresse int)
-
-insert @IDValue																	
-select Adresse.IDAdresse FROM Posseder join Adresse on Posseder.IDAdresse = Adresse.IDAdresse WHERE Posseder.NumeroClient = @inputIDClient
-
-SELECT * from @IDValue
-
-delete from Posseder where NumeroClient = @inputIDClient							
-delete from Adresse where IDAdresse in (select * from @IDValue)						
-
-update Commande set NumeroClient = NULL where NumeroClient = @inputIDClient			
-
-delete from Client where NumeroClient = @inputIDClient								
+delete from Commande where RefCommande = @inputIDCommande
 GO
 
 
+	
 
+CREATE PROCEDURE supprimerArticle
+@inputIDArticle int 
+AS
 
+delete from Taxer where Reference = @inputIDArticle
 
+delete from Article where Reference = @inputIDArticle
 
+GO
 
 
 
